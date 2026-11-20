@@ -1,0 +1,97 @@
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code locales
+.claude/settings.local.json
+.claude/.local/
+
+# Operator data — privado por utilizador, não é commitado
+context/daily-memory/
+context/user.md
+context/me.md
+context/work.md
+context/team.md
+context/current-priorities.md
+context/goals.md
+context/decisions-log.md
+context/learnings.md
+context/soul.md
+brand-context/voice/voice-profile.md
+brand-context/voice/samples.md
+brand-context/voice/vocabulary.md
+brand-context/voice/audit-prompt.md
+brand-context/voice/installation.md
+brand-context/voice/register-a-*.md
+brand-context/voice/register-b-*.md
+brand-context/voice/register-c-*.md
+brand-context/positioning/positioning.md
+brand-context/icp/icp.md
+brand-context/assets/
+
+# v0.6 — state machine vive em ~/.claude/skills/, nunca no repo
+# (por precaução caso se gere aqui por erro)
+_install-state.json
+_install-state.*.bak
+
+# Project outputs — são do utilizador, não do repo
+projects/briefs/*
+projects/*/
+!projects/.gitkeep
+!projects/briefs/.gitkeep
+# Exceção: o showcase faz parte do repo (material de referência)
+!projects/_showcase/
+!projects/_showcase/**
+
+# Client data — sensível
+clients/*
+!clients/_templates
+!clients/_templates/**
+
+# GSD planning folders (per-project, não do repo)
+.planning/
+**/.planning/
+
+# Logs
+*.log
+logs/
+
+# Backups
+.backup/
+*.bak
+_backup_*
+
+# Tests output
+tests/output/
+tests/.cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Synapsis temporary files (caso alguma vez sejam gerados dentro do repo)
+*.tmp
+*.lock

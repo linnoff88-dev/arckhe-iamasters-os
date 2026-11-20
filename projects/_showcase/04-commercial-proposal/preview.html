@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta — Logística do Norte SL · Sintaxis Lab</title>
+<style>
+  :root {
+    --bg: #F4EFE7;
+    --surface: #FFFFFF;
+    --ink: #1A1A1A;
+    --body: #3F3F3F;
+    --muted: #707070;
+    --accent: #FF8C42;
+    --accent-dark: #C2410C;
+    --accent-soft: #FFF5EB;
+    --green: #1E9B50;
+    --border: #E5E0D5;
+    --font-display: Georgia, "Source Serif Pro", serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font-family: var(--font-body);
+    color: var(--body);
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 10% 0%, rgba(255,140,66,0.08) 0%, transparent 40%),
+      radial-gradient(circle at 90% 100%, rgba(255,140,66,0.05) 0%, transparent 45%);
+    background-attachment: fixed;
+    line-height: 1.6; font-size: 15px;
+  }
+  .container { max-width: 920px; margin: 0 auto; padding: 0 24px 80px; }
+
+  .cover {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 13px;
+    letter-spacing: 0.18em;
+    color: var(--accent-dark);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.05;
+    margin: 0 0 20px;
+  }
+  .cover-meta {
+    margin-top: 36px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 18px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+  }
+  .cover-meta div { font-size: 13px; }
+  .cover-meta .k { color: var(--muted); text-transform: uppercase; font-size: 10px; letter-spacing: 0.1em; font-weight: 600; }
+  .cover-meta .v { color: var(--ink); font-weight: 600; margin-top: 4px; }
+
+  section { padding: 56px 0 16px; }
+  h2 {
+    font-family: var(--font-display);
+    font-size: 30px; font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+  .h2-sub { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 22px; }
+
+  p { margin: 12px 0; }
+  strong { color: var(--ink); }
+
+  .quote-pull {
+    border-left: 4px solid var(--accent);
+    background: var(--surface);
+    padding: 22px 28px;
+    border-radius: 4px;
+    margin: 28px 0;
+    font-family: var(--font-display);
+    font-size: 19px;
+    color: var(--ink);
+    line-height: 1.4;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .quote-pull span { display: block; font-family: var(--font-body); font-size: 13px; color: var(--muted); margin-top: 14px; font-weight: 600; }
+
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+  }
+  .stat {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    border-top: 3px solid var(--accent);
+  }
+  .stat .num { font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--ink); line-height: 1; }
+  .stat .lbl { color: var(--body); font-size: 13px; margin-top: 8px; }
+  .stat .src { color: var(--muted); font-size: 11px; margin-top: 6px; }
+
+  .approach {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+  }
+  .phase {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 22px 22px 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    position: relative;
+  }
+  .phase-tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    font-family: ui-monospace, monospace;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 4px 10px; border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  .phase h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--ink); margin: 0 0 8px; }
+  .phase ul { padding-left: 18px; margin: 8px 0 0; font-size: 14px; }
+  .phase li { margin: 5px 0; }
+
+  .pricing {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    margin-top: 28px;
+  }
+  .pricing-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .pricing-row:last-of-type { border-bottom: none; }
+  .pricing-row .label { font-family: var(--font-display); font-size: 18px; color: var(--ink); }
+  .pricing-row .desc { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .pricing-row .price { font-family: var(--font-display); font-size: 24px; font-weight: 800; color: var(--ink); white-space: nowrap; margin-left: 16px; }
+  .total {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding-top: 24px; margin-top: 12px;
+    border-top: 2px solid var(--ink);
+  }
+  .total .label { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--ink); }
+  .total .price { font-family: var(--font-display); font-size: 38px; font-weight: 900; color: var(--accent-dark); }
+  .pricing-note { background: var(--accent-soft); padding: 16px 20px; border-radius: 8px; margin-top: 22px; font-size: 14px; color: var(--accent-dark); }
+
+  .calendar {
+    margin-top: 28px;
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .week {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .week:last-of-type { border-bottom: none; }
+  .week .w { font-family: ui-monospace, monospace; font-weight: 700; color: var(--accent-dark); font-size: 13px; padding-top: 2px; }
+  .week .content { font-size: 14px; }
+  .week .content b { color: var(--ink); }
+
+  .sign-block {
+    margin-top: 56px;
+    background: var(--ink);
+    color: white;
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+  }
+  .sign-block h2 { color: white; font-size: 26px; }
+  .sign-block p { color: rgba(255,255,255,0.8); max-width: 480px; margin: 14px auto; }
+  .cta {
+    display: inline-block;
+    background: var(--accent); color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 18px;
+    font-size: 15px;
+  }
+  .sign-block small { display: block; color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 18px; }
+
+  .footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 12px; color: var(--muted);
+  }
+  .footer b { color: var(--ink); font-family: var(--font-display); font-size: 14px; }
+
+  ul.deliverables { padding-left: 20px; }
+  ul.deliverables li { margin: 8px 0; font-size: 15px; }
+  ul.deliverables li::marker { color: var(--accent); font-weight: 700; }
+
+  .showcase-banner {
+    background: #FFF5EB; color: #C2410C;
+    border: 1px solid #FFE0BF;
+    padding: 10px 16px; text-align: center;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<div class="showcase-banner">SHOWCASE 04 · PROPOSTA COMERCIAL · DADOS SINTÉTICOS PARA REFERÊNCIA</div>
+
+<div class="container">
+
+  <header class="cover">
+    <div class="brand">Sintaxis Lab · Consultoria IA para PMEs</div>
+    <h1>Automação de guias de transporte com IA<br>na Logística do Norte</h1>
+    <p style="font-size:18px; color:var(--body); max-width:680px; margin-top:18px;">Proposta para digitalizar o fluxo de guias de transporte via captura por telemóvel, OCR validado e entrada automática no ATLAS. Foco: que a Pilar e os 18 camionistas recuperem tempo a partir da semana 3.</p>
+
+    <div class="cover-meta">
+      <div><div class="k">Cliente</div><div class="v">Logística do Norte SL</div></div>
+      <div><div class="k">Contacto</div><div class="v">Javier Aznar, Diretor</div></div>
+      <div><div class="k">Preparado por</div><div class="v">Marta Sánchez · Sintaxis Lab</div></div>
+      <div><div class="k">Data</div><div class="v">13 maio 2026</div></div>
+      <div><div class="k">Validade</div><div class="v">30 dias</div></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="h2-sub">Contexto</div>
+    <h2>O problema em 1 frase</h2>
+    <p>A Logística do Norte movimenta 380 guias de transporte por dia. Hoje são digitalizadas à mão à tarde, geram erros em 11% dos casos e produzem 6-8 chamadas semanais fora de horas ao diretor. É o gargalo que mais roça com a satisfação da equipa.</p>
+
+    <div class="quote-pull">
+      "Marta, não quero IA. Quero que os meus camionistas deixem de me ligar às 11 da noite porque a guia de transporte não chega."
+      <span>— Javier Aznar, reunião inicial de 7 de maio</span>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="num">380</div>
+        <div class="lbl">Guias/dia</div>
+        <div class="src">Média dos últimos 3 meses</div>
+      </div>
+      <div class="stat">
+        <div class="num">11%</div>
+        <div class="lbl">Guias com erro</div>
+        <div class="src">Erros após digitalização manual</div>
+      </div>
+      <div class="stat">
+        <div class="num">4h/dia</div>
+        <div class="lbl">Tempo Pilar dedicado</div>
+        <div class="src">Só a meter dados, não a rever</div>
+      </div>
+      <div class="stat">
+        <div class="num">36h</div>
+        <div class="lbl">Fecho de incidência</div>
+        <div class="src">Desde aviso → cliente informado</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h2-sub">Como resolvemos</div>
+    <h2>Abordagem</h2>
+    <p>O sistema vive no telemóvel do camionista. Após a entrega, fotografa a guia assinada, o OCR identifica os campos-chave, valida-os contra a encomenda original e deixa o registo numa pasta que o ATLAS importa automaticamente. A Pilar só revê os casos duvidosos (~12% segundo os nossos pilotos em clientes similares).</p>
+
+    <div class="approach">
+      <div class="phase">
+        <div class="phase-tag">FASE 1</div>
+        <h3>Captura</h3>
+        <ul>
+          <li>App móvel leve (PWA, sem App Store)</li>
+          <li>Foto + 3 campos a confirmar</li>
+          <li>Funciona offline em rotas rurais</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="phase-tag">FASE 2</div>
+        <h3>Processamento</h3>
+        <ul>
+          <li>OCR sobre template de guia LdN</li>
+          <li>Cruzamento automático com encomenda no ATLAS</li>
+          <li>Marca dúvidas conforme threshold configurável</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="phase-tag">FASE 3</div>
+        <h3>Revisão</h3>
+        <ul>
+          <li>Painel da Pilar (web) com casos duvidosos</li>
+          <li>Métricas semanais de qualidade do OCR</li>
+          <li>Aprovação em 2 cliques por guia</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="phase-tag">FASE 4</div>
+        <h3>Integração ATLAS</h3>
+        <ul>
+          <li>CSV formatado em pasta partilhada</li>
+          <li>Importação horária nativa do ATLAS</li>
+          <li>Sem tocar nada do ERP existente</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h2-sub">Calendário</div>
+    <h2>8 semanas de princípio ao fim</h2>
+    <div class="calendar">
+      <div class="week">
+        <div class="w">Sem 1-2</div>
+        <div class="content"><b>Discovery e design com a Pilar.</b> Visita de campo, recolha de 200 guias exemplo, mock-ups do painel de revisão. Resultado: protótipo navegável validado pela Pilar.</div>
+      </div>
+      <div class="week">
+        <div class="w">Sem 3-4</div>
+        <div class="content"><b>Desenvolvimento MVP.</b> App móvel PWA + pipeline OCR treinado com os 200 exemplos + painel da Pilar. Resultado: sistema em pré-produção.</div>
+      </div>
+      <div class="week">
+        <div class="w">Sem 5-6</div>
+        <div class="content"><b>Piloto com 2 camionistas.</b> Os mais colaborativos fazem o fluxo novo em paralelo com o atual. Ajustes diários com a Pilar e o Marc. Resultado: KPIs reais para decidir go/no-go.</div>
+      </div>
+      <div class="week">
+        <div class="w">Sem 7</div>
+        <div class="content"><b>Rollout ao resto da equipa.</b> Onboarding 30 min por camionista + manual visual + suporte direto com a Marta nos primeiros dias.</div>
+      </div>
+      <div class="week">
+        <div class="w">Sem 8</div>
+        <div class="content"><b>Entrega + handover.</b> Documentação, runbook para o Marc, métricas baseline e plano de manutenção. Fecho formal.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h2-sub">Entregáveis</div>
+    <h2>O que levas</h2>
+    <ul class="deliverables">
+      <li><b>App móvel PWA</b> (iOS + Android, sem necessidade de stores)</li>
+      <li><b>Pipeline de OCR treinado</b> sobre o teu template de guia</li>
+      <li><b>Painel web de revisão</b> para a Pilar (acesso por login com email)</li>
+      <li><b>Integração CSV ↔ ATLAS</b> + monitorização nos primeiros 30 dias</li>
+      <li><b>Manual visual</b> (5 páginas, no idioma do operador, com capturas)</li>
+      <li><b>Runbook técnico</b> para o Marc (o que fazer se algo falhar)</li>
+      <li><b>30 dias de suporte direto</b> pós-entrega via WhatsApp / email</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="h2-sub">Investimento</div>
+    <h2>Orçamento</h2>
+    <div class="pricing">
+      <div class="pricing-row">
+        <div>
+          <div class="label">Desenvolvimento (8 semanas)</div>
+          <div class="desc">Design + desenvolvimento + piloto + rollout + entrega</div>
+        </div>
+        <div class="price">14.500 €</div>
+      </div>
+      <div class="pricing-row">
+        <div>
+          <div class="label">Operação mensal</div>
+          <div class="desc">Modelo OCR + hosting + monitorização (a partir do mês 2)</div>
+        </div>
+        <div class="price">290 €/mês</div>
+      </div>
+
+      <div class="total">
+        <div class="label">Total investimento inicial</div>
+        <div class="price">14.500 €</div>
+      </div>
+
+      <div class="pricing-note">
+        <b>Pagamento</b>: 40% ao assinar · 40% ao validar piloto (semana 6) · 20% ao entregar (semana 8).<br>
+        <b>Garantia</b>: se os KPIs do piloto (semana 6) não chegarem a 80% dos acordados, não continuamos e só se cobra o trabalhado.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h2-sub">Porque confiar</div>
+    <h2>O que NÃO te vamos vender</h2>
+    <p>Não vamos montar uma IA com "agentes". Não vamos vender-te como "transformação digital". O que vamos fazer é algo aborrecido mas útil: <strong>tirar 4 horas por dia à Pilar e deixar o Javier dormir</strong>. O resto são palavras.</p>
+    <p>Se no piloto da semana 6 isto não funcionar como te descrevi, paramos. Não quero um cliente que diga "tentámos mas nada". Quero um cliente a quem o diretor financeiro ligue em setembro e diga "isto vale o que custa".</p>
+  </section>
+
+  <div class="sign-block">
+    <h2>Avançamos?</h2>
+    <p>Se a proposta te encaixa, o próximo passo é assinar o contrato (prepara-o o teu advogado, têm modelo) e arrancar na semana de 19 de maio com a visita de campo.</p>
+    <a class="cta">Marcar 15 min para fechar →</a>
+    <small>Ou responde-me diretamente por WhatsApp · 600 123 456</small>
+  </div>
+
+  <div class="footer">
+    <b>Marta Sánchez · Sintaxis Lab</b><br>
+    Consultoria IA para PMEs · Saragoça · marta@sintaxislab.io
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+# CODEOWNERS — iAmasters OS
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Owner global do repo: qualquer PR requer review
+* @angelapaia
+
+# (Quando a org tiver teams configurados, substituir por:)
+# * @iamasters-academy/owners
+
+# Áreas específicas
+/.claude/skills/_meta/  @angelapaia
+/.claude/skills/marketing/ @angelapaia
+/vendor/sinapsis/  @angelapaia
+/scripts/  @angelapaia
+/docs/  @angelapaia
+
+# El repo es propiedad de:
+# Angel Aparicio · IA Masters Academy (a brand of AASC Associates)
+# Contacto: aaparicio@iamastersacademy.com
+# Web: https://angelaparicio.com
+# LinkedIn: https://www.linkedin.com/in/angel-aparicio92/
+# Comunidad: https://www.skool.com/ia-masters-automations

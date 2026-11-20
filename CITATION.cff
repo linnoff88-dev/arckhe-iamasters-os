@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+title: "iAmasters OS"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Aparicio
+    given-names: Angel
+    affiliation: "IA Masters Academy (AASC Associates)"
+    email: "aaparicio@iamastersacademy.com"
+    website: "https://angelaparicio.com"
+    alias: "angelapaia"
+identifiers: []
+repository-code: "https://github.com/iamasters-academy/iamasters-os"
+url: "https://github.com/iamasters-academy/iamasters-os"
+abstract: >-
+  Sistema operativo agêntico para operadores de IA. Combina Sinapsis v4.5
+  (engine de memória persistente) com uma camada OS que adiciona brand context,
+  agent context, skills curadas e multi-cliente. Construído em português
+  como repositório neutro e reutilizável.
+keywords:
+  - claude-code
+  - agentic-os
+  - sinapsis
+  - ai-operator
+  - skills-on-demand
+  - multi-client
+  - brand-voice
+  - portugues
+  - iamasters
+  - iamasters-academy
+license: MIT
+license-url: "https://github.com/iamasters-academy/iamasters-os/blob/main/LICENSE"
+version: "0.5.1"
+date-released: "2026-05-13"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Aparicio
+      given-names: Angel
+      affiliation: "IA Masters Academy"
+  title: "iAmasters OS"
+  year: "2025-2026"
+  url: "https://github.com/iamasters-academy/iamasters-os"
+  publisher:
+    name: "IA Masters Academy"
+references:
+  - type: software
+    title: "Sinapsis"
+    authors:
+      - family-names: Pitik
+        given-names: Luis
+    repository-code: "https://github.com/Luispitik/sinapsis"
+    notes: "Vendored as engine in vendor/sinapsis/"
