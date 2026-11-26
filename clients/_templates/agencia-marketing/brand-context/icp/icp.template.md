@@ -1,23 +1,23 @@
 # ICP — {{CLIENT_NAME}}
 
-> Template `agencia-marketing`. ICP do cliente final do cliente, não do cliente.
+> Template `agencia-marketing`. ICP do cliente final do cliente, nêo do cliente.
 
 ## Demográfico
 
 - **Setor**: {{específico}}
 - **Tamanho**: {{revenue range}}
 - **Headcount**: {{intervalo}}
-- **Geografia**: {{país/região}}
+- **Geografia**: {{país/regiêo}}
 
 ## Quem decide
 
 - **Papel**: {{CMO / Marketing Manager / Founder}}
 - **Veta**: {{CFO / CEO}}
-- **Tempo de decisão**: {{semanas/meses}}
+- **Tempo de decisêo**: {{semanas/meses}}
 
 ## Dor concreta
 
-> "{{Citação textual da dor}}"
+> "{{Citaçêo textual da dor}}"
 
 Sintomas:
 - {{...}}
@@ -40,22 +40,22 @@ Palavras suas:
 - {{termos do nicho}}
 
 Palavras proibidas:
-- jargão marketing genérico que possa soar a agência medíocre
+- jargêo marketing genérico que possa soar a agência medíocre
 
 ## Objeções + resposta
 
-| Objeção | Resposta |
+| Objeçêo | Resposta |
 |---|---|
 | "É caro" | {{ROI específico, ex. cliente gerou X€ no mês 3}} |
 | "Já tentámos antes com outra agência e correu mal" | {{Pergunta o que falhou, mostrar diferença}} |
-| "Não tenho tempo para gerir uma agência" | {{Modelo com pouco input do cliente, agência executa}} |
-| "E se não funcionar?" | {{Contrato curto inicial de 3 meses, métricas claras}} |
+| "Nêo tenho tempo para gerir uma agência" | {{Modelo com pouco input do cliente, agência executa}} |
+| "E se nêo funcionar?" | {{Contrato curto inicial de 3 meses, métricas claras}} |
 
 ## Anti-ICP
 
 - Cliente que muda objetivos a cada 2 semanas
 - Cliente sem orçamento real (só "exploramos")
-- Cliente que quer "transformação completa" sem foco
+- Cliente que quer "transformaçêo completa" sem foco
 - Cliente que pediu a 5 agências uma proposta e compara apenas preço
 
 ## Customer journey

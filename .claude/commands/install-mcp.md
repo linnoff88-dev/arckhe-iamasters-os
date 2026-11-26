@@ -30,12 +30,12 @@ Lista completa: ver `docs/mcps-curated.md`.
 ### Passo 1 · Validar input
 
 Se o nome está na lista curada (`docs/mcps-curated.md`):
-- Carregar a configuração recomendada
+- Carregar a configuraçêo recomendada
 - Verificar prerequisitos (env vars necessárias, plano API)
 
 Se é URL custom:
-- Avisar o utilizador sobre risco (não validado pela iAmasters)
-- Pedir confirmação
+- Avisar o utilizador sobre risco (nêo validado pela iAmasters)
+- Pedir confirmaçêo
 - Inspecionar repo para detetar package.json ou setup.json do MCP
 
 ### Passo 2 · Verificar `.mcp.json`
@@ -44,7 +44,7 @@ Se é URL custom:
 cat .mcp.json 2>/dev/null
 ```
 
-Se não existe → criar novo
+Se nêo existe → criar novo
 Se existe → ler para detetar conflitos (mesmo MCP já instalado)
 
 ### Passo 3 · Configurar entrada
@@ -88,7 +88,7 @@ Após instalar:
 - Reiniciar o Claude Code (Ctrl+C × 2 + claude)
 - Testar o MCP com prompt simples ("usa o MCP de [nome] para...")
 - Se ativa corretamente: confirmar
-- Se não: rever logs e derivar para os docs do MCP
+- Se nêo: rever logs e derivar para os docs do MCP
 
 ### Passo 7 · Documentar
 
@@ -96,15 +96,15 @@ Após instalar:
   ```
   - YYYY-MM-DD: instalado MCP <name> para <caso>
   ```
-- Atualizar `CLAUDE.md` a mencionar MCP ativo (secção "Apps externas ligadas")
+- Atualizar `CLAUDE.md` a mencionar MCP ativo (secçêo "Apps externas ligadas")
 
 ## Edge cases
 
-- **MCP requer instalação global de um pacote npm**: avisar o operador, dar comando `npm install -g`, NÃO executar automaticamente
+- **MCP requer instalaçêo global de um pacote npm**: avisar o operador, dar comando `npm install -g`, NêO executar automaticamente
 - **MCP muda a API**: a lista curada atualiza-se com o repo. `git pull` para latest config
-- **MCP custom não validado**: marcar em `.mcp.json` com comentário `_unverified: true`
+- **MCP custom nêo validado**: marcar em `.mcp.json` com comentário `_unverified: true`
 - **MCP causa loop infinito ou timeout**: removê-lo de `.mcp.json` e reportar issue
 
-## Implementação
+## Implementaçêo
 
-Este comando é interpretativo. Lê `docs/mcps-curated.md` e aplica a configuração recomendada do MCP escolhido. Se não está na lista curada, deriva para o instalador genérico com warnings.
+Este comando é interpretativo. Lê `docs/mcps-curated.md` e aplica a configuraçêo recomendada do MCP escolhido. Se nêo está na lista curada, deriva para o instalador genérico com warnings.

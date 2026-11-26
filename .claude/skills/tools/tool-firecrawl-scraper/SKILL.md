@@ -1,6 +1,6 @@
 ---
 name: tool-firecrawl-scraper
-description: Wrapper de Firecrawl API para fazer scraping a páginas web sem bot blockers. Usado por marketing-brand-voice (extrair voice samples + assets), strategy-competitor-monitor (analisar concorrentes), e outras skills que precisem de conteúdo público de URLs. Degradação graceful se não houver API key.
+description: Wrapper de Firecrawl API para fazer scraping a páginas web sem bot blockers. Usado por marketing-brand-voice (extrair voice samples + assets), strategy-competitor-monitor (analisar concorrentes), e outras skills que precisem de conteúdo público de URLs. Degradaçêo graceful se nêo houver API key.
 ---
 
 # tool-firecrawl-scraper
@@ -18,8 +18,8 @@ description: Wrapper de Firecrawl API para fazer scraping a páginas web sem bot
 Lê `.env` (variável `FIRECRAWL_API_KEY`).
 
 - **Se existir** → usar Firecrawl API (https://api.firecrawl.dev/v1/scrape)
-- **Se não existir** → degradar para fetch nativo (built-in WebFetch tool de Claude Code) e avisar:
-  > "Sem Firecrawl API key. Algumas webs com bot-blockers não poderão ser scraped. Para o ativar, regista-te em https://www.firecrawl.dev (500 créditos grátis) e adiciona FIRECRAWL_API_KEY em .env"
+- **Se nêo existir** → degradar para fetch nativo (built-in WebFetch tool de Claude Code) e avisar:
+  > "Sem Firecrawl API key. Algumas webs com bot-blockers nêo poderêo ser scraped. Para o ativar, regista-te em https://www.firecrawl.dev (500 créditos grátis) e adiciona FIRECRAWL_API_KEY em .env"
 
 ### Passo 2 · Validar input
 
@@ -34,9 +34,9 @@ Input:
 ```
 
 Validações:
-- URLs são válidas (regex http(s))
-- Não são URLs de ficheiro grande (.zip, .pdf > 50MB)
-- Não são URLs de serviços bloqueados por TOS (linkedin.com requer session, etc.)
+- URLs sêo válidas (regex http(s))
+- Nêo sêo URLs de ficheiro grande (.zip, .pdf > 50MB)
+- Nêo sêo URLs de serviços bloqueados por TOS (linkedin.com requer session, etc.)
 
 ### Passo 3 · Fazer scraping com Firecrawl
 
@@ -58,7 +58,7 @@ Capturar:
 - `data.html` — HTML completo (se extract_assets: true)
 - `data.metadata` — title, description, og:image, etc.
 
-### Passo 4 · Extração de assets visuais (se extract_assets: true)
+### Passo 4 · Extraçêo de assets visuais (se extract_assets: true)
 
 Do HTML, extrair:
 - Logos: `<img>` com classes/alt que contenham "logo", "brand", ou `<link rel="icon">`
@@ -99,13 +99,13 @@ Nenhuma. É tool primitiva.
 
 ## Edge cases
 
-- **URL devolve 401/403 (login required)**: marcar como não-scrapável. Avisar o utilizador para copiar/colar conteúdo manualmente.
-- **JS-heavy SPA com pouco conteúdo server-side**: o Firecrawl lida com isto, mas se falhar, o fallback não funciona. Avisar.
-- **YouTube URL**: o Firecrawl não extrai transcripts. Derivar para `tool-youtube-transcript` (skill futura).
+- **URL devolve 401/403 (login required)**: marcar como nêo-scrapável. Avisar o utilizador para copiar/colar conteúdo manualmente.
+- **JS-heavy SPA com pouco conteúdo server-side**: o Firecrawl lida com isto, mas se falhar, o fallback nêo funciona. Avisar.
+- **YouTube URL**: o Firecrawl nêo extrai transcripts. Derivar para `tool-youtube-transcript` (skill futura).
 - **PDF URL**: passar para `tool-pdf-extractor` (skill futura).
 - **Páginas com paywall**: detetar (HTTP 200 mas conteúdo < 100 chars do expected). Marcar e reportar.
 
-## Configuração Firecrawl recomendada
+## Configuraçêo Firecrawl recomendada
 
 Em `.env`:
 ```

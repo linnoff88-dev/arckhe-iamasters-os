@@ -22,7 +22,7 @@
 
 - {{Algo único do cliente que muda a forma de trabalhar}}
 - {{Tom/estilo que pediu explicitamente}}
-- {{Áreas que NÃO tocar}}
+- {{Áreas que NêO tocar}}
 
 ## Cadence
 

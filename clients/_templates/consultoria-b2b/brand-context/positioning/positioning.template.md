@@ -8,9 +8,9 @@
 
 ## Categoria
 
-NÃO genérico:
+NêO genérico:
 - ❌ "Consultor de estratégia"
-- ❌ "Consultor de transformação digital"
+- ❌ "Consultor de transformaçêo digital"
 - ❌ "Consultor de management"
 
 Sim específico:
@@ -22,20 +22,20 @@ Sim específico:
 
 1. {{Vertical ou método próprio com nome}}
 2. {{Track record verificável: X engagements, Y resultados}}
-3. {{Algo que Big4 não pode oferecer (proximidade / agilidade / especialização)}}
+3. {{Algo que Big4 nêo pode oferecer (proximidade / agilidade / especializaçêo)}}
 
 ## Alternativas que o teu cliente considera
 
 | Alternativa | Quando escolhem outra | Quando te escolhem a ti |
 |---|---|---|
 | Big4 (McKinsey/BCG/Bain) | Empresa muito grande, problema mainstream | Empresa média, problema específico |
-| Boutique generalista | Confiança / network | Especialização + agilidade |
+| Boutique generalista | Confiança / network | Especializaçêo + agilidade |
 | Equipa interna | Caso "estratégico core" | Caso que requer perspetiva externa |
-| Freelancer/independente | Orçamento baixo | Precisam de reputação + estrutura |
+| Freelancer/independente | Orçamento baixo | Precisam de reputaçêo + estrutura |
 
 ## Unfair advantage
 
-{{Track record em vertical específico, asset (livro, framework próprio com nome), network, ex-empresa-de-prestígio, certificação rara}}
+{{Track record em vertical específico, asset (livro, framework próprio com nome), network, ex-empresa-de-prestígio, certificaçêo rara}}
 
 ## Mensagem em 3 comprimentos
 
@@ -61,8 +61,8 @@ Posicionamentos que funcionam:
 O que mata o posicionamento em B2B:
 - Ser horizontal ("ajudo empresas a crescer")
 - Cobrar por horas em vez de por engagement
-- Não ter um framework próprio com nome
-- Não publicar (LinkedIn / artigos): a tua IP tem de ser visível
+- Nêo ter um framework próprio com nome
+- Nêo publicar (LinkedIn / artigos): a tua IP tem de ser visível
 
 Quando o posicionamento funciona:
 - Quando um CEO no teu mercado consegue dizer o teu nome + categoria sem pensar

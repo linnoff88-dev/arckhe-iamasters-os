@@ -22,10 +22,10 @@ Cria um novo cliente em `clients/<nome>/` com o seu próprio brand-context, cont
 
 - O cliente herda o `CLAUDE.md` raiz do repo (aplica-se a todos por defeito)
 - Podes adicionar `clients/<nome>/CLAUDE.md` com overrides específicos
-- As skills copiam-se da raiz para o cliente; não se herdam, mas sincronizam-se com `bash scripts/update.sh`
+- As skills copiam-se da raiz para o cliente; nêo se herdam, mas sincronizam-se com `bash scripts/update.sh`
 - `cd clients/<nome> && claude` para trabalhar dentro do workspace do cliente
 
-## Implementação
+## Implementaçêo
 
 > Na v0.1.0 este comando é um wrapper para `bash scripts/add-client.sh`.
 > Na v0.3.0 integra-se com templates preenchidos dos 4 verticais.
@@ -34,4 +34,4 @@ Cria um novo cliente em `clients/<nome>/` com o seu próprio brand-context, cont
 bash scripts/add-client.sh
 ```
 
-Se `scripts/add-client.sh` ainda não existe, cria-o com template mínimo (só cria estrutura de pastas + `.gitkeep`).
+Se `scripts/add-client.sh` ainda nêo existe, cria-o com template mínimo (só cria estrutura de pastas + `.gitkeep`).

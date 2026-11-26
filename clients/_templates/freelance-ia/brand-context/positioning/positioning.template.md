@@ -12,7 +12,7 @@
 
 ## Categoria
 
-{{Como queres que te classifiquem mentalmente. Exemplo: "Operador IA aplicado a [vertical específico]" e não "consultoria geral"}}
+{{Como queres que te classifiquem mentalmente. Exemplo: "Operador IA aplicado a [vertical específico]" e nêo "consultoria geral"}}
 
 ## Diferencial
 
@@ -22,15 +22,15 @@
 
 ## Alternativas que o teu cliente considera
 
-| Alternativa | Porque não funciona para ele |
+| Alternativa | Porque nêo funciona para ele |
 |---|---|
-| Agência grande de IA | {{razão específica para a tua vertical}} |
-| Estagiário com ChatGPT | Não escala, sem garantias de qualidade |
+| Agência grande de IA | {{razêo específica para a tua vertical}} |
+| Estagiário com ChatGPT | Nêo escala, sem garantias de qualidade |
 | DIY (interno) | Sem tempo, sem expertise técnica |
 
 ## O teu unfair advantage
 
-{{O que só tu ou poucos têm. Pode ser: experiência em vertical, network, capacidade técnica + comercial juntas, certificação específica, idioma, time-to-market}}
+{{O que só tu ou poucos têm. Pode ser: experiência em vertical, network, capacidade técnica + comercial juntas, certificaçêo específica, idioma, time-to-market}}
 
 ## Mensagem em 3 comprimentos
 
@@ -54,7 +54,7 @@
 - A cada 6 meses
 - Quando aparecer um concorrente novo que copie o teu ângulo
 - Quando entrares numa vertical adicional
-- Quando observares que a mensagem não converte (engagement cai)
+- Quando observares que a mensagem nêo converte (engagement cai)
 
 ---
 
@@ -63,13 +63,13 @@
 Posicionamentos comuns que funcionam:
 - **Vertical-specialist**: "Operador IA para [contabilistas / clínicas dentárias / escritórios de advogados]"
 - **Use-case-specialist**: "Implemento [agentes de suporte / automatizações de email / dashboards] para PME"
-- **Anti-vende-banhas**: "IA aterrada na operativa real, não demos espetaculares"
+- **Anti-vende-banhas**: "IA aterrada na operativa real, nêo demos espetaculares"
 
 Combinações potentes:
 - Vertical + Use-case: "Agentes de suporte para contabilistas"
 - Vertical + Anti-genérico: "IA em clínicas dentárias — sem slop, com métricas reais"
 
-O que NÃO funciona tipicamente:
+O que NêO funciona tipicamente:
 - "Consultoria 360 de IA"
-- "O teu partner estratégico de transformação digital"
+- "O teu partner estratégico de transformaçêo digital"
 - "Soluções à medida para o teu negócio"

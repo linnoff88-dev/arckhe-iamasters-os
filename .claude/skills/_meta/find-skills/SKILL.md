@@ -20,7 +20,7 @@ Usa esta skill quando o utilizador:
 
 ## O que é o Skills CLI?
 
-O Skills CLI (`npx skills`) é o package manager do ecossistema open agent skills. Skills são pacotes modulares que estendem capacidades do agente com conhecimento especializado, workflows e ferramentas.
+O Skills CLI (`npx skills`) é o package manager do ecossistema open agent skills. Skills sêo pacotes modulares que estendem capacidades do agente com conhecimento especializado, workflows e ferramentas.
 
 **Comandos chave:**
 
@@ -69,14 +69,14 @@ vercel-labs/agent-skills@vercel-react-best-practices
 Quando encontras skills relevantes, apresenta-as ao utilizador com:
 
 1. O nome da skill e o que faz
-2. O comando de instalação que podem executar
+2. O comando de instalaçêo que podem executar
 3. Um link para saber mais em skills.sh
 
 Exemplo de resposta:
 
 ```
 Encontrei uma skill que pode ajudar! A skill "vercel-react-best-practices" fornece
-guidelines de otimização de performance React e Next.js da Vercel Engineering.
+guidelines de otimizaçêo de performance React e Next.js da Vercel Engineering.
 
 Para instalar:
 npx skills add vercel-labs/agent-skills@vercel-react-best-practices
@@ -84,7 +84,7 @@ npx skills add vercel-labs/agent-skills@vercel-react-best-practices
 Saber mais: https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices
 ```
 
-### Passo 4 · Oferecer instalação
+### Passo 4 · Oferecer instalaçêo
 
 Se o utilizador quiser prosseguir, podes instalar a skill por ele:
 
@@ -92,7 +92,7 @@ Se o utilizador quiser prosseguir, podes instalar a skill por ele:
 npx skills add <owner/repo@skill> -g -y
 ```
 
-A flag `-g` instala globalmente (user-level) e `-y` salta prompts de confirmação.
+A flag `-g` instala globalmente (user-level) e `-y` salta prompts de confirmaçêo.
 
 ## Categorias comuns de skills
 
@@ -111,21 +111,21 @@ Ao pesquisar, considera estas categorias comuns:
 ## Dicas para pesquisas eficazes
 
 1. **Usa keywords específicas**: "react testing" é melhor do que só "testing"
-2. **Tenta termos alternativos**: Se "deploy" não funcionar, tenta "deployment" ou "ci-cd"
+2. **Tenta termos alternativos**: Se "deploy" nêo funcionar, tenta "deployment" ou "ci-cd"
 3. **Verifica fontes populares**: Muitas skills vêm de `vercel-labs/agent-skills` ou `ComposioHQ/awesome-claude-skills`
 
-## Quando não se encontram skills
+## Quando nêo se encontram skills
 
-Se não existirem skills relevantes:
+Se nêo existirem skills relevantes:
 
-1. Reconhece que não foi encontrada nenhuma skill existente
+1. Reconhece que nêo foi encontrada nenhuma skill existente
 2. Oferece ajudar com a tarefa diretamente usando as tuas capacidades gerais
 3. Sugere que o utilizador pode criar a sua própria skill com `npx skills init`
 
 Exemplo:
 
 ```
-Pesquisei skills relacionadas com "xyz" mas não encontrei correspondências.
+Pesquisei skills relacionadas com "xyz" mas nêo encontrei correspondências.
 Ainda assim posso ajudar-te com esta tarefa diretamente! Queres que avance?
 
 Se isto é algo que fazes muitas vezes, podias criar a tua própria skill:

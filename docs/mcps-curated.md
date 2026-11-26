@@ -1,9 +1,9 @@
 # MCPs curados para iAmasters OS
 
 > Lista validada de Model Context Protocol servers úteis para operadores IA.
-> Cada entrada inclui: para que serve, quando usar, instalação, risco de tokens, alternativas.
+> Cada entrada inclui: para que serve, quando usar, instalaçêo, risco de tokens, alternativas.
 >
-> Última revisão: 2026-05-07
+> Última revisêo: 2026-05-07
 
 ## Como usar
 
@@ -19,13 +19,13 @@ Ou manualmente: copia a config para `.mcp.json` e preenche variáveis de ambient
 
 ### 1. context7 · Docs vivos para LLMs
 
-**Para que**: quando constróis com um framework/lib (Next.js, Supabase, Tailwind, etc.), o Context7 injeta a documentação oficial atualizada no contexto. Evita que o Claude alucine APIs obsoletas.
+**Para que**: quando constróis com um framework/lib (Next.js, Supabase, Tailwind, etc.), o Context7 injeta a documentaçêo oficial atualizada no contexto. Evita que o Claude alucine APIs obsoletas.
 
-**Quando ativar**: em qualquer sessão onde escrevas código com frameworks.
+**Quando ativar**: em qualquer sessêo onde escrevas código com frameworks.
 
 **Risco de tokens**: médio-alto se usares em CADA prompt. Melhor: invocá-lo explicitamente com "usa context7 para [tema]".
 
-**Plano**: grátis, não requer API key.
+**Plano**: grátis, nêo requer API key.
 
 **Config**:
 ```json
@@ -69,7 +69,7 @@ Ou manualmente: copia a config para `.mcp.json` e preenche variáveis de ambient
 
 ### 3. supabase · A tua base de dados
 
-**Para que**: queries SQL, gestão de tabelas, RLS, edge functions, storage. Operador do projeto Supabase a partir do Claude.
+**Para que**: queries SQL, gestêo de tabelas, RLS, edge functions, storage. Operador do projeto Supabase a partir do Claude.
 
 **Quando ativar**: se tens apps no Supabase (self-hosted ou cloud) e constróis com Claude Code.
 
@@ -119,7 +119,7 @@ Ou manualmente: copia a config para `.mcp.json` e preenche variáveis de ambient
 
 **Variáveis**: `NOTION_API_KEY` (Internal Integration Token desde notion.so/my-integrations).
 
-**⚠️ Importante**: só dá acesso às páginas que a integration partilhar. Não dá acesso a todo o workspace por defeito.
+**⚠️ Importante**: só dá acesso às páginas que a integration partilhar. Nêo dá acesso a todo o workspace por defeito.
 
 ---
 
@@ -133,7 +133,7 @@ Ou manualmente: copia a config para `.mcp.json` e preenche variáveis de ambient
 
 **Plano**: 500 créditos free one-time. Hobby $16/mo, 3000 créditos.
 
-**Config**: este MCP NÃO se invoca como MCP server do Claude Code, mas como API direta desde skills. Não vai em `.mcp.json`. Configuração só em `.env`:
+**Config**: este MCP NêO se invoca como MCP server do Claude Code, mas como API direta desde skills. Nêo vai em `.mcp.json`. Configuraçêo só em `.env`:
 
 ```bash
 FIRECRAWL_API_KEY=fc-xxxxx
@@ -143,7 +143,7 @@ FIRECRAWL_API_KEY=fc-xxxxx
 
 ## 🔧 Úteis para casos específicos
 
-### linear · Gestão de projetos
+### linear · Gestêo de projetos
 
 **Para que**: se usas o Linear para issue tracking em vez do GitHub Issues.
 **Plano**: grátis até certo uso.
@@ -151,7 +151,7 @@ FIRECRAWL_API_KEY=fc-xxxxx
 
 ### gmail · Leitura de emails
 
-**Para que**: ler/procurar emails, criar drafts. NÃO enviar (isso requer user explicit ok).
+**Para que**: ler/procurar emails, criar drafts. NêO enviar (isso requer user explicit ok).
 **Plano**: grátis com Google Workspace.
 **Config**: requer OAuth setup mais complexo.
 **Risco**: alto se deres write permissions. Mantém READ-ONLY até confiar.
@@ -166,21 +166,21 @@ FIRECRAWL_API_KEY=fc-xxxxx
 ### filesystem · Acesso ao sistema de ficheiros local
 
 **Para que**: explorar pastas fora do repo atual de forma controlada.
-**Quando ativar**: só se precisares que o Claude vá para outra pasta sem abrir nova sessão.
+**Quando ativar**: só se precisares que o Claude vá para outra pasta sem abrir nova sessêo.
 **Config**: `@modelcontextprotocol/server-filesystem` com paths whitelisted.
 **⚠️**: risco de segurança. Whitelist específica obrigatória.
 
 ---
 
-## ⚠️ MCPs a evitar (em produção)
+## ⚠️ MCPs a evitar (em produçêo)
 
 ### Qualquer MCP que dê write a redes sociais sem gates
 
 LinkedIn, Twitter, Instagram, Facebook auto-post: **alto risco de fuga de identidade**. Melhor: skill que prepara o draft e operador faz post manualmente.
 
-### MCPs que não documentam claramente os seus scopes
+### MCPs que nêo documentam claramente os seus scopes
 
-Se a documentação não especifica que permissões pede e o que faz, não instalar.
+Se a documentaçêo nêo especifica que permissões pede e o que faz, nêo instalar.
 
 ### MCPs custom de developers desconhecidos
 
@@ -208,9 +208,9 @@ Estrutura recomendada por entrada:
 
 Cada MCP server ativo no `.mcp.json` adiciona contexto ao system prompt ao iniciar Claude Code (as descrições das suas tools). Mais MCPs = mais tokens base.
 
-**Regra prática**: 5-7 MCPs ativos máximo. Se precisares mais, considera comentar os que não usas frequentemente.
+**Regra prática**: 5-7 MCPs ativos máximo. Se precisares mais, considera comentar os que nêo usas frequentemente.
 
-**Pro tip**: ter um `.mcp.json` por cliente (em `clients/<nome>/.mcp.json` se o Claude Code suportar) ou mudar `.mcp.json` antes de cada sessão conforme necessidade.
+**Pro tip**: ter um `.mcp.json` por cliente (em `clients/<nome>/.mcp.json` se o Claude Code suportar) ou mudar `.mcp.json` antes de cada sessêo conforme necessidade.
 
 ---
 
@@ -218,11 +218,11 @@ Cada MCP server ativo no `.mcp.json` adiciona contexto ao system prompt ao inici
 
 Para incluir um MCP na curated list (PR ao repo):
 
-1. Testar o MCP em produção mínimo 2 semanas
+1. Testar o MCP em produçêo mínimo 2 semanas
 2. Documentar:
    - Casos onde acrescenta valor real
-   - Casos onde NÃO acrescenta (ou é contraproducente)
+   - Casos onde NêO acrescenta (ou é contraproducente)
    - Riscos identificados
 3. Submit PR com a entrada nova seguindo o formato do top 5
 
-As contribuições devem vir com experiência real, não "instalei e parece OK".
+As contribuições devem vir com experiência real, nêo "instalei e parece OK".

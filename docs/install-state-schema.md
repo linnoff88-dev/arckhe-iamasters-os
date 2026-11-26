@@ -6,44 +6,44 @@
 
 ## Porque existe
 
-Antes (v0.5.x): a instalação era um script bash de um único disparo + um wizard conversacional. Se algo falhasse a meio (Python no Windows, compressão de contexto, utilizador que se cansava), o sistema não sabia que fase tinha realmente completado. Resultado: o agente reportava "tudo instalado" quando só tinha criado ficheiros vazios.
+Antes (v0.5.x): a instalaçêo era um script bash de um único disparo + um wizard conversacional. Se algo falhasse a meio (Python no Windows, compressêo de contexto, utilizador que se cansava), o sistema nêo sabia que fase tinha realmente completado. Resultado: o agente reportava "tudo instalado" quando só tinha criado ficheiros vazios.
 
-Desde a v0.6: cada fase de instalação tem um estado persistente verificável. Um hook `SessionStart` lê este estado e bloqueia respostas ao utilizador até que a instalação esteja completa. A instalação é **reentrante**: se se partir, `/install --resume` continua desde a última fase bem-sucedida.
+Desde a v0.6: cada fase de instalaçêo tem um estado persistente verificável. Um hook `SessionStart` lê este estado e bloqueia respostas ao utilizador até que a instalaçêo esteja completa. A instalaçêo é **reentrante**: se se partir, `/install --resume` continua desde a última fase bem-sucedida.
 
-## Localização
+## Localizaçêo
 
 ```
 ~/.claude/skills/_install-state.json
 ```
 
-Cria-o o `scripts/install.sh` ao arrancar. Vários componentes escrevem-no ao longo do fluxo. O hook `_install-gate.sh` lê-o antes de cada sessão.
+Cria-o o `scripts/install.sh` ao arrancar. Vários componentes escrevem-no ao longo do fluxo. O hook `_install-gate.sh` lê-o antes de cada sessêo.
 
 ## Fases
 
-| # | Fase | `required` | Escreve | Validação de "done" |
+| # | Fase | `required` | Escreve | Validaçêo de "done" |
 |---|---|---|---|---|
 | 1 | `prereqs` | sim | `install.sh` | git ≥2.0 + claude code + node ≥18 |
 | 2 | `sinapsis-engine` | sim | `install.sh` | operator-state.json válido + hooks executáveis + ≥1 skill real |
 | 3 | `context-files` | sim | `meta-onboarding-wizard` | 4 ficheiros criados em `context/` com conteúdo real |
 | 4 | `operator-state` | sim | `meta-onboarding-wizard` | `needsOnboarding: false` + campos mínimos |
 | 5 | `welcome-completed` | sim | `welcome-quick-win` | 1 deliverable em `projects/welcome/` |
-| 6 | `deep-dive-completed` | não (deferrable) | `meta-deep-dive` | 22 dimensões cobertas em context/ |
+| 6 | `deep-dive-completed` | nêo (deferrable) | `meta-deep-dive` | 22 dimensões cobertas em context/ |
 
-**Regra:** a instalação considera-se completa quando todas as fases `required: true` estão em `done`. A fase 6 é deferrable — o sistema funciona sem ela, só te conhece mais superficialmente.
+**Regra:** a instalaçêo considera-se completa quando todas as fases `required: true` estêo em `done`. A fase 6 é deferrable — o sistema funciona sem ela, só te conhece mais superficialmente.
 
 ## Estados por fase
 
 | Estado | Significado |
 |---|---|
-| `pending` | Não iniciada ainda |
-| `in-progress` | Iniciada, não completada (pode ter checkpoint parcial) |
-| `done` | Completada e validada externamente (não por declaração do agente) |
+| `pending` | Nêo iniciada ainda |
+| `in-progress` | Iniciada, nêo completada (pode ter checkpoint parcial) |
+| `done` | Completada e validada externamente (nêo por declaraçêo do agente) |
 | `failed` | Tentada e falhou (com detalhe em `errors[]`) |
-| `skipped` | Saltada por decisão explícita do utilizador (só válido em fases com `deferrable: true`) |
+| `skipped` | Saltada por decisêo explícita do utilizador (só válido em fases com `deferrable: true`) |
 
-## Validação de "done" — não confia no agente
+## Validaçêo de "done" — nêo confia no agente
 
-Cada fase tem uma validação que NÃO consiste em "o agente diz que o fez". São checks mecânicos:
+Cada fase tem uma validaçêo que NêO consiste em "o agente diz que o fez". Sêo checks mecânicos:
 
 **Fase 2 (`sinapsis-engine`)**:
 ```bash
@@ -57,17 +57,17 @@ Cada fase tem uma validação que NÃO consiste em "o agente diz que o fez". Sã
   [ "$(find ~/.claude/skills -name SKILL.md -maxdepth 3 | wc -l)" -gt 0 ]
 ```
 
-Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `SessionStart` deteta e guia recuperação.
+Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `SessionStart` deteta e guia recuperaçêo.
 
 **Fase 3 (`context-files`)**:
 - Os 4 ficheiros existem
-- Cada um tem ≥100 caracteres de conteúdo (não é template vazio)
+- Cada um tem ≥100 caracteres de conteúdo (nêo é template vazio)
 - O ficheiro `me.md` tem `## Nome` com valor real
 
 **Fase 4 (`operator-state`)**:
 - `_operator-state.json` parseable
 - `needsOnboarding: false`
-- `operator.name` não é null nem vazio
+- `operator.name` nêo é null nem vazio
 - `operator.language` está set
 
 **Fase 5 (`welcome-completed`)**:
@@ -76,14 +76,14 @@ Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `Session
 ## Quem escreve o quê (contrato)
 
 **`install.sh`** (ao executar `bash scripts/install.sh`):
-1. Cria o ficheiro se não existir (a partir de `scripts/_install-state.template.json`)
+1. Cria o ficheiro se nêo existir (a partir de `scripts/_install-state.template.json`)
 2. Define `repoPath`, `startedAt`
 3. Após validar prereqs → `phases.prereqs.status = "done"`
 4. Após instalar Sinapsis e validar profundo → `phases.sinapsis-engine.status = "done"` com checksum
 5. Se algum falhar → `failed` com detalhe em `errors[]` e `exit 1`
 
 **`meta-onboarding-wizard`** (skill):
-- Depois da **fase 1 interna** (identidade+localização capturadas): escreve `context/me.md` e marca `filesCreated += ["context/me.md"]`
+- Depois da **fase 1 interna** (identidade+localizaçêo capturadas): escreve `context/me.md` e marca `filesCreated += ["context/me.md"]`
 - Depois da **fase 2 interna** (negócio): escreve `context/work.md` e marca progresso
 - Idem fase 3 e 4
 - Ao terminar as 4: `phases.context-files.status = "done"` + `phases.operator-state.status = "done"`
@@ -100,7 +100,7 @@ Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `Session
 
 **Hook `_install-gate.sh`** (SessionStart, executa antes do modelo ver a primeira mensagem):
 - Lê o state
-- Se alguma fase `required: true` não está em `done`, injeta `additionalContext` ao modelo:
+- Se alguma fase `required: true` nêo está em `done`, injeta `additionalContext` ao modelo:
   ```
   [INSTALL GATE] iAmasters OS installation incomplete: <N>/5 required phases done.
   Current phase: <currentPhase> (<status>).
@@ -110,7 +110,7 @@ Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `Session
 
 **Comando `/install`** e `/install --resume`:
 - Lê state
-- Se tudo `done`: diz "já instalado, não faço nada" e aborta
+- Se tudo `done`: diz "já instalado, nêo faço nada" e aborta
 - Se há fase em progresso: continua onde ficou
 - Se há fase falhada: mostra o erro + sugere fix
 
@@ -132,7 +132,7 @@ Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `Session
 **Skill `health-check`** (`/doctor`):
 - Lê state como fonte da verdade sobre o que está instalado
 - Se tudo está `done` mas há ficheiros em falta no disco → drift detetado
-- Se state diz `pending` mas ficheiros existem → re-validação profunda + atualizar state
+- Se state diz `pending` mas ficheiros existem → re-validaçêo profunda + atualizar state
 
 **Skill `meta-start-here`**:
 - Lê state ao início
@@ -141,29 +141,29 @@ Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `Session
 ## Edge cases
 
 **Utilizador reinstala de zero**:
-- Se `~/.claude/skills/_install-state.json` já existir e todas as fases estão `done`:
+- Se `~/.claude/skills/_install-state.json` já existir e todas as fases estêo `done`:
   - `install.sh` pergunta: reinstalar? (`--force-reinstall` flag ou prompt interativo)
   - Se sim: faz backup do state atual para `_install-state.<timestamp>.json` e arranca fresco
 
 **Utilizador abre Claude Code num repo iamasters-os diferente do que instalou**:
-- O state tem `repoPath`. Se não coincide com o atual:
+- O state tem `repoPath`. Se nêo coincide com o atual:
   - O hook mostra: "Mudaste de repo iAmasters OS. O anterior estava em X. É intencional? (`/install` para reconfigurar)"
 
-**Compressão de contexto a meio do wizard**:
-- O state tem o detalhe do progresso parcial. A nova sessão:
+**Compressêo de contexto a meio do wizard**:
+- O state tem o detalhe do progresso parcial. A nova sessêo:
   1. Lê state
   2. Deteta `currentPhase: "context-files"` com `filesCreated: ["me.md"]`
   3. O hook injeta: "Estavas em context-files, já tens me.md, faltam-te work.md/current-priorities.md/goals.md. Retoma com /install --resume"
 
-**Instalação corrupta** (ficheiros eliminados manualmente após state `done`):
+**Instalaçêo corrupta** (ficheiros eliminados manualmente após state `done`):
 - `health-check` deteta drift (state diz done, ficheiros faltam)
 - Marca a fase como `failed` com motivo e propõe re-executar
 
 ## Versionamento do schema
 
-`schemaVersion: 1` (v0.6.0). Se no futuro o contrato mudar, sobe-se `schemaVersion` e `install.sh` migra estados antigos para o novo formato (função `migrate_state_v1_to_v2()`).
+`schemaVersion: 1` (v0.6.0). Se no futuro o contrato mudar, sobe-se `schemaVersion` e `install.sh` migra estados antigos para o novo formato (funçêo `migrate_state_v1_to_v2()`).
 
-## Exemplo completo de state (instalação a meias)
+## Exemplo completo de state (instalaçêo a meias)
 
 ```json
 {
@@ -240,4 +240,4 @@ Se algum falhar, a fase fica `failed` com detalhe em `errors[]`. O hook `Session
 }
 ```
 
-Leitura: o utilizador começou a instalação, terminou prereqs e Sinapsis, abriu Claude Code, o wizard arrancou context-files, escreveu `me.md`, o utilizador disse "para, volto depois". Na próxima sessão, o hook lê isto e força `/install --resume` que retoma desde `work.md`.
+Leitura: o utilizador começou a instalaçêo, terminou prereqs e Sinapsis, abriu Claude Code, o wizard arrancou context-files, escreveu `me.md`, o utilizador disse "para, volto depois". Na próxima sessêo, o hook lê isto e força `/install --resume` que retoma desde `work.md`.

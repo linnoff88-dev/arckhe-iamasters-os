@@ -26,14 +26,14 @@
 | Verbo sobreusado "leverage", "empower", "unlock", "streamline", "elevate", "navigate", "foster" | 7 | -3.5 |
 | Abuso de em-dash | 3 | -2.0 |
 | Regra de 3 abusada | 2 (lista + fecho) | -1.5 |
-| Negação-afirmação "it's not X, it's Y" | 2 | -1.0 |
+| Negaçêo-afirmaçêo "it's not X, it's Y" | 2 | -1.0 |
 | Triplo emoji | 1 (🚀💡✨) | -2.0 |
 | Hashtags excessivas | 5 | -1.0 |
-| Conclusão óbvia | 1 ("Remember...") | -1.0 |
+| Conclusêo óbvia | 1 ("Remember...") | -1.0 |
 
 **Score: 0/10** (clamp). Output: completamente IA.
 
-### Versão humanizada
+### Versêo humanizada
 
 > Llevo 3 años montando IA en empresas y he visto patrón claro:
 >
@@ -55,7 +55,7 @@
 - Verbos abstratos → verbos concretos ("aterrice", "pelear", "ahorra")
 - Em-dashes → pontos
 - Regra de 3 → estrutura de contraste com 2 pontos
-- Negação-afirmação reduzida a 1 (continua a ser retórica útil quando não se abusa)
+- Negaçêo-afirmaçêo reduzida a 1 (continua a ser retórica útil quando nêo se abusa)
 - Triplo emoji → 0 emojis
 - Hashtags → 0
 - "Remember: ..." → pergunta aberta no fim
@@ -100,7 +100,7 @@
 
 **Score: 0/10** (slop muito típico de proposta).
 
-### Versão humanizada
+### Versêo humanizada
 
 > Hola Juan,
 >
@@ -124,10 +124,10 @@
 
 ### Principais alterações
 
-- Saudação formal vazia → direta, contextualizada ("tras nuestra reunión del martes")
+- Saudaçêo formal vazia → direta, contextualizada ("tras nuestra reunión del martes")
 - Linguagem abstrata → entregáveis concretos com tempos
-- Adicionado "qué no incluye" (humano honesto, não o faria IA por defeito)
-- Investimento e forma de pagamento explícitos (não "ROI demonstrado e proposta competitiva")
+- Adicionado "qué no incluye" (humano honesto, nêo o faria IA por defeito)
+- Investimento e forma de pagamento explícitos (nêo "ROI demonstrado e proposta competitiva")
 - Fecho com opções reais ("contrato esta semana" ou "responde / llámame al X")
 - Sem frases-muleta de fecho formal ("quedo a tu disposición")
 
@@ -153,11 +153,11 @@
 | Frase-muleta "delve into" | 1 | -1.0 |
 | Adjetivos vazios: transformative, evolving, modern | 3 | -1.5 |
 | Verbos sobreusados: navigate, reshape | 2 | -1.0 |
-| Negação-afirmação "not merely a buzzword" | 1 | -0.5 |
+| Negaçêo-afirmaçêo "not merely a buzzword" | 1 | -0.5 |
 
 **Score: 5/10**.
 
-### Versão humanizada
+### Versêo humanizada
 
 > ## Cómo está cambiando el trabajo con IA (3 patrones que veo en clientes reales)
 >
@@ -173,7 +173,7 @@
 
 - Headline genérico → headline com número e promessa específica
 - "In today's evolving landscape" → contexto pessoal ("18 meses... 23 proyectos")
-- Promessa abstrata → promessa específica (o que funciona e o que não)
+- Promessa abstrata → promessa específica (o que funciona e o que nêo)
 - Eliminada a frase "not merely a buzzword"
 - Tom autoral estabelecido na frase 1 ("llevo, vi, vengo")
 
@@ -183,7 +183,7 @@
 
 ## Notas para o detector
 
-- Em espanhol, "delve into" não aparece mas sim "profundizar en", "adentrarse en"
+- Em espanhol, "delve into" nêo aparece mas sim "profundizar en", "adentrarse en"
 - "Holístico" é um tell castelhano sem equivalente direto em inglês (o termo existe mas a IA sobreusa-o só em espanhol)
 - "Aprovechar el potencial" = literal de "leverage potential" — um dos mais óbvios
-- Os emojis 🚀💡✨🔥 no início ou fim são tells fortes no LinkedIn ES
+- Os emojis 🚀💡✨🔥 no início ou fim sêo tells fortes no LinkedIn ES

@@ -4,13 +4,13 @@
 
 ## Statement principal
 
-> Para {{persona aspiracional com dor X}}, {{NOMBRE}} é {{quem o ajuda a}} {{transformação mensurável}}, ao contrário de {{alternativas: cursos genéricos / coaches sem método / autodidata}}.
+> Para {{persona aspiracional com dor X}}, {{NOMBRE}} é {{quem o ajuda a}} {{transformaçêo mensurável}}, ao contrário de {{alternativas: cursos genéricos / coaches sem método / autodidata}}.
 
 ## Categoria
 
 {{Como quer ser visto: "especialista em [vertical]" / "o que ensina [skill] a [persona]"}}
 
-NÃO genérico:
+NêO genérico:
 - ❌ "Coach de produtividade"
 - ❌ "Mentor de empreendedores"
 - ❌ "Formador de IA"
@@ -28,10 +28,10 @@ Sim específico:
 
 ## Alternativas
 
-| Alternativa | Porque não converte |
+| Alternativa | Porque nêo converte |
 |---|---|
 | Curso genérico de [tema] | Demasiado superficial, sem caso real |
-| YouTube grátis | Não estruturado, sem acompanhamento |
+| YouTube grátis | Nêo estruturado, sem acompanhamento |
 | Coach 1:1 caro | Inalcançável, sem comunidade |
 | Autodidata | Lento, sem feedback, frustrante |
 
@@ -61,9 +61,9 @@ Três ângulos que costumam funcionar:
 
 Combinações potentes:
 - Vertical + Method: "Sistema X para freelancers tech"
-- Anti-genérico + Vertical: "Formação de IA para operadores — sem demos espetaculares, casos reais"
+- Anti-genérico + Vertical: "Formaçêo de IA para operadores — sem demos espetaculares, casos reais"
 
-NÃO posicionar:
+NêO posicionar:
 - "Coach de [X] genérico"
 - "Mentor para empreendedores" (sem especificar)
 - "Especialista em [tema super amplo]"

@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
 #  iAmasters OS — check-translation.sh
-#  Verifica qualidade da tradução PT-PT e integridade estrutural.
+#  Verifica qualidade da traduçêo PT-PT e integridade estrutural.
 #  Exit 0 = OK · Exit 1 = falhas detetadas.
 #
 #  Uso:    bash scripts/check-translation.sh
@@ -90,10 +90,10 @@ if command -v node >/dev/null 2>&1; then
     if node -e "JSON.parse(require('fs').readFileSync('scripts/_install-state.template.json','utf8'))" 2>/dev/null; then
         ok "_install-state.template.json parseable"
     else
-        fail "_install-state.template.json não é JSON válido"
+        fail "_install-state.template.json nêo é JSON válido"
     fi
 else
-    warn "node não disponível, salta validação JSON"
+    warn "node nêo disponível, salta validaçêo JSON"
 fi
 
 # ── F. Placeholders preservados nos templates de cliente ──

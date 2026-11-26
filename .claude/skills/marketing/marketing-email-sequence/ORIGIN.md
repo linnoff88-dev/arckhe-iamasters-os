@@ -6,18 +6,18 @@ Esta skill vem do repositório externo:
 - **Skill original**: `skills/email-sequence/`
 - **Autor**: Corey Haines
 - **Licença**: MIT (ver `LICENSE` nesta pasta)
-- **Versão vendorizada**: 1.1.0
+- **Versêo vendorizada**: 1.1.0
 - **Data de vendoreio**: 2026-05-13
 
 ## Mudanças face ao original
 
-- Renomeada `email-sequence` → `marketing-email-sequence` (convenção iAmasters OS)
+- Renomeada `email-sequence` → `marketing-email-sequence` (convençêo iAmasters OS)
 - LICENSE original conservado intacto
 
 ## Como se atualiza
 
 Quando o upstream publicar mudanças:
 1. Clonar o repo de origem.
-2. Fazer diff com a versão vendorizada atual.
+2. Fazer diff com a versêo vendorizada atual.
 3. Se as mudanças forem relevantes, atualizar SKILL.md e references/ conservando o rename do `name:`.
-4. Bump de versão + entry no CHANGELOG.md raiz.
+4. Bump de versêo + entry no CHANGELOG.md raiz.

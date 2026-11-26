@@ -1,35 +1,35 @@
 #!/bin/bash
 # ============================================================
 #  iAmasters OS — Install Gate (SessionStart hook)
-#  Bloqueia respostas do agente se a instalação estiver incompleta.
+#  Bloqueia respostas do agente se a instalaçêo estiver incompleta.
 #
 #  Output: JSON com additionalContext em stdout (formato Claude Code hooks).
 #  Comportamento:
-#    - Se OS não instalado (sem state) → injeta mensagem "instalar primeiro"
+#    - Se OS nêo instalado (sem state) → injeta mensagem "instalar primeiro"
 #    - Se OS instalado parcial → injeta mensagem "executa /install --resume"
-#    - Se OS completo → não faz nada (sai 0 sem output)
+#    - Se OS completo → nêo faz nada (sai 0 sem output)
 #
-#  Este hook regista-se em ~/.claude/settings.json na secção
+#  Este hook regista-se em ~/.claude/settings.json na secçêo
 #  "hooks.SessionStart". Instala-o scripts/install.sh.
 # ============================================================
 
-set +e  # Nunca queremos que um hook partido bloqueie a sessão
+set +e  # Nunca queremos que um hook partido bloqueie a sessêo
 
 STATE_FILE="$HOME/.claude/skills/_install-state.json"
 
-# Se não temos node, não conseguimos fazer parse do state. Saímos silencioso.
-# (Se node não está, o Sinapsis também não funciona, portanto o OS está partido na mesma.)
+# Se nêo temos node, nêo conseguimos fazer parse do state. Saímos silencioso.
+# (Se node nêo está, o Sinapsis também nêo funciona, portanto o OS está partido na mesma.)
 if ! command -v node >/dev/null 2>&1; then
     exit 0
 fi
 
-# Caso 1: state file NÃO existe → OS não instalado de todo
+# Caso 1: state file NêO existe → OS nêo instalado de todo
 if [ ! -f "$STATE_FILE" ]; then
     # Só injetamos o aviso se estivermos dentro de um repo iamasters-os
-    # (detetado pela presença de vendor/sinapsis/ + CLAUDE.md com menção)
+    # (detetado pela presença de vendor/sinapsis/ + CLAUDE.md com mençêo)
     if [ -d "$PWD/vendor/sinapsis" ] && [ -f "$PWD/CLAUDE.md" ] && grep -q "iAmasters OS" "$PWD/CLAUDE.md" 2>/dev/null; then
         cat <<'EOF'
-{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"[INSTALL GATE] iAmasters OS detetado neste repo mas NÃO instalado (não existe ~/.claude/skills/_install-state.json).\n\nAntes de responder ao utilizador:\n1. Indica-lhe claramente: 'iAmasters OS não está instalado. Preciso que executes no terminal:\\n\\n   bash scripts/install.sh\\n\\nQuando terminar, volta aqui e retomamos.'\n2. NÃO tentes criar ficheiros manualmente para simular a instalação.\n3. NÃO reportes que instalaste nada até o state file existir e todas as fases required estarem em 'done'.\n4. Se o utilizador insistir em avançar sem instalar, lembra-o que o sistema não funcionará corretamente."}}
+{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"[INSTALL GATE] iAmasters OS detetado neste repo mas NêO instalado (nêo existe ~/.claude/skills/_install-state.json).\n\nAntes de responder ao utilizador:\n1. Indica-lhe claramente: 'iAmasters OS nêo está instalado. Preciso que executes no terminal:\\n\\n   bash scripts/install.sh\\n\\nQuando terminar, volta aqui e retomamos.'\n2. NêO tentes criar ficheiros manualmente para simular a instalaçêo.\n3. NêO reportes que instalaste nada até o state file existir e todas as fases required estarem em 'done'.\n4. Se o utilizador insistir em avançar sem instalar, lembra-o que o sistema nêo funcionará corretamente."}}
 EOF
     fi
     exit 0
@@ -45,7 +45,7 @@ try {
   const required = Object.entries(phases).filter(([k, v]) => v.required === true);
   const pending = required.filter(([k, v]) => v.status !== 'done');
 
-  // Tudo OK: não injetamos nada
+  // Tudo OK: nêo injetamos nada
   if (pending.length === 0) {
     process.exit(0);
   }
@@ -100,7 +100,7 @@ try {
   context += '5. If the FIRST pending phase is "welcome-completed", invoke welcome-quick-win.\n';
   context += '6. NEVER report installation as complete unless the state file confirms all required phases are "done".\n';
   context += '7. NEVER create installation files manually to simulate progress — only the wizard and welcome-quick-win can mark phases done.\n\n';
-  context += 'If the user says "stop", "para" or "não quero seguir":\n';
+  context += 'If the user says "stop", "para" or "nêo quero seguir":\n';
   context += '- Mark pausedBy="user" in the state file and pausedAtPhase=<current>.\n';
   context += '- Remind them they can resume anytime with /install --resume.\n';
   context += '- Do NOT pretend the installation is complete.\n';

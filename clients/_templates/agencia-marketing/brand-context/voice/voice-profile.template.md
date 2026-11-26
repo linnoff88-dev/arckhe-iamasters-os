@@ -2,8 +2,8 @@
 
 > Template do template `agencia-marketing`. Substitui pela voz do cliente.
 >
-> IMPORTANTE: numa agência, cada cliente tem a SUA voice. Este template são os defaults inteligentes
-> para arrancar; é obrigatório refiná-lo com `marketing-brand-voice` em sessão de onboarding.
+> IMPORTANTE: numa agência, cada cliente tem a SUA voice. Este template sêo os defaults inteligentes
+> para arrancar; é obrigatório refiná-lo com `marketing-brand-voice` em sessêo de onboarding.
 
 ## Personalidade
 - {{Trait dominante 1 — extrair do brief do cliente}}
@@ -31,7 +31,7 @@ Exemplos típicos por setor:
 - "leverage", "aproveitar o potencial"
 - "sinergia", "ecossistema integral"
 - "soluções à medida"
-- "transformação digital"
+- "transformaçêo digital"
 - "experiência 360"
 - Em-dashes excessivos
 
@@ -43,11 +43,11 @@ Exemplos típicos por setor:
 ## Estrutura típica
 - {{Comprimento médio de frase: variar consoante a vertical}}
 - {{Listas vs prosa consoante plataforma}}
-- {{Posição da opinião}}
+- {{Posiçêo da opiniêo}}
 - {{Fecho típico}}
 
 ## Anti-modelo (o que evitar para este cliente)
-- {{Concorrente cujo tom não quer parecer-se}}
+- {{Concorrente cujo tom nêo quer parecer-se}}
 
 ## Modelo a aspirar
 - {{Conta/marca cujo tom o cliente admira}}
@@ -58,7 +58,7 @@ Exemplos típicos por setor:
 - Email marketing do cliente
 - Landing page copy
 
-## Quando NÃO aplicar
-- Comunicação interna agência ↔ cliente (mais casual)
-- Reports ao cliente (semi-formal mas não esta voice)
-- Materiais de marketing da agência (esses vão com voice da agência, não do cliente)
+## Quando NêO aplicar
+- Comunicaçêo interna agência ↔ cliente (mais casual)
+- Reports ao cliente (semi-formal mas nêo esta voice)
+- Materiais de marketing da agência (esses vêo com voice da agência, nêo do cliente)

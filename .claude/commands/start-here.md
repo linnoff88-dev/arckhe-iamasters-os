@@ -1,5 +1,5 @@
 ---
-description: Ritual de início de sessão iAmasters OS. Carrega contexto, recapitula pendentes, propõe tarefa do dia.
+description: Ritual de início de sessêo iAmasters OS. Carrega contexto, recapitula pendentes, propõe tarefa do dia.
 ---
 
 # /start-here
@@ -13,7 +13,7 @@ Invoca a skill `meta-start-here` que vive em `.claude/skills/_meta/meta-start-he
 3. Lista projetos abertos em `projects/briefs/`
 4. Saúda com resumo + proposta de tarefa para hoje
 
-Se é primeiro arranque (não há operator-state ou user.md vazio), automaticamente deriva para `meta-onboarding-wizard`.
+Se é primeiro arranque (nêo há operator-state ou user.md vazio), automaticamente deriva para `meta-onboarding-wizard`.
 
 ## Comando
 

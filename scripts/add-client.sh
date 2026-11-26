@@ -69,7 +69,7 @@ if [ -z "$TEMPLATE" ] || [ "$TEMPLATE" = "vacio" ]; then
 else
     TEMPLATE_DIR="$TEMPLATES_DIR/$TEMPLATE"
     if [ ! -d "$TEMPLATE_DIR" ]; then
-        echo -e "${RED}ERROR${NC} Template '$TEMPLATE' não existe em $TEMPLATES_DIR"
+        echo -e "${RED}ERROR${NC} Template '$TEMPLATE' nêo existe em $TEMPLATES_DIR"
         echo ""
         echo "Verticais disponíveis:"
         for t in "$TEMPLATES_DIR"/*/; do
@@ -120,7 +120,7 @@ else
     echo -e "${GREEN}  OK${NC} Estrutura vazia criada"
     echo -e "${CYAN}  ->${NC} Configura o cliente com:"
     echo -e "       cd clients/$CLIENT_NAME && claude"
-    echo -e "       E executa: /start-here (lança marketing-brand-voice se não houver voice profile)"
+    echo -e "       E executa: /start-here (lança marketing-brand-voice se nêo houver voice profile)"
 fi
 
 # Step 3: Optional client-specific CLAUDE.md (override do raiz)
@@ -175,5 +175,5 @@ echo -e "  └── projects/"
 echo ""
 echo -e "  ${BOLD}Próximo passo:${NC}"
 echo -e "  ${CYAN}cd clients/$CLIENT_NAME && claude${NC}"
-echo -e "  E executa ${CYAN}/start-here${NC} para arrancar a sessão com este cliente"
+echo -e "  E executa ${CYAN}/start-here${NC} para arrancar a sessêo com este cliente"
 echo ""

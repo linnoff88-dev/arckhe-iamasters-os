@@ -8,22 +8,22 @@
 - Vertical: marketing, conteúdo, social media, paid ads
 - Atendem 5-30 clientes em simultâneo
 - Precisam padronizar entregáveis e voice por cliente
-- Vendem tempo de equipa + produção mensal recorrente
+- Vendem tempo de equipa + produçêo mensal recorrente
 
 ## O que vem pré-configurado
 
 - **Voice profile**: profissional criativo, equilíbrio formal-próximo (B com A para premium)
-- **Positioning**: agência especialista (não full-service) com foco vertical ou serviço
+- **Positioning**: agência especialista (nêo full-service) com foco vertical ou serviço
 - **ICP**: PMEs/scaleups com MRR já estabelecido a buscar crescer
 - **Estrutura projetos**: orientada a entregáveis mensais recorrentes (content calendar, ad creatives, reports)
-- **Workflow**: separação clara entre work-on-account (cliente) vs work-on-firm (agência própria)
+- **Workflow**: separaçêo clara entre work-on-account (cliente) vs work-on-firm (agência própria)
 
 ## Diferença com freelance-ia
 
 | Aspeto | freelance-ia | agencia-marketing |
 |---|---|---|
 | Quem decide | Founder solo | Account manager ou sócio |
-| Tipo de output | Implementação técnica IA | Conteúdo + estratégia + reports |
+| Tipo de output | Implementaçêo técnica IA | Conteúdo + estratégia + reports |
 | Cliente principal | PMEs com dor concreta | PMEs/scaleups com marketing budget |
 | Frequência entrega | Por projeto | Mensal recorrente |
 | Voice | A tua voice (operador) | Cada cliente tem a sua voice |

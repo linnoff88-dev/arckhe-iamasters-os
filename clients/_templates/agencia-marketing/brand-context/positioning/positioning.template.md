@@ -18,11 +18,11 @@
 
 ## Alternativas que o seu cliente considera
 
-| Alternativa | Porque não funciona |
+| Alternativa | Porque nêo funciona |
 |---|---|
-| Concorrente direto | {{razão}} |
-| DIY | {{razão}} |
-| Não fazer nada | {{custo de inação}} |
+| Concorrente direto | {{razêo}} |
+| DIY | {{razêo}} |
+| Nêo fazer nada | {{custo de inaçêo}} |
 
 ## Unfair advantage
 
@@ -48,7 +48,7 @@ Posicionamentos típicos que funcionam em clientes B2B:
 - "O [adjetivo diferencial] [categoria] do mercado"
 - "Fazemos com que [processo] seja [adjetivo: 10x mais rápido / sem código / etc.]"
 
-O que NÃO funciona em B2B:
+O que NêO funciona em B2B:
 - "O teu partner integral"
 - "Soluções 360"
 - "Excelência operacional"

@@ -1,6 +1,6 @@
 # Dimensões · Deep Dive (22-25 profundas)
 
-Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado sólido — não genérica, não evasiva.
+Definiçêo de "done" do deep-dive. Cada dimensêo deve ficar capturada com dado sólido — nêo genérica, nêo evasiva.
 
 ---
 
@@ -10,9 +10,9 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 **O que capturar**: em que franja do dia te concentras melhor, e se tens ritmos distintos para tarefas distintas.
 
-**Dado sólido**: "Manhã 8-12 para trabalho profundo (propostas, código), tarde para reuniões e comunicação. Depois das 19h nada importante."
+**Dado sólido**: "Manhê 8-12 para trabalho profundo (propostas, código), tarde para reuniões e comunicaçêo. Depois das 19h nada importante."
 
-**Fraco**: "De manhã" (faltam detalhes de blocos ou tipos de tarefa).
+**Fraco**: "De manhê" (faltam detalhes de blocos ou tipos de tarefa).
 
 ---
 
@@ -20,7 +20,7 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 **O que capturar**: o que te interrompe mais durante o dia — clientes, equipa, família, distrações próprias (telemóvel, redes sociais).
 
-**Dado sólido**: "Email de clientes a meio da execução (3-4 vezes por dia). Notificações de Slack da equipa. Filho pequeno duas vezes durante a tarde, previsível."
+**Dado sólido**: "Email de clientes a meio da execuçêo (3-4 vezes por dia). Notificações de Slack da equipa. Filho pequeno duas vezes durante a tarde, previsível."
 
 **Fraco**: "O do costume" ou "muitas coisas".
 
@@ -32,15 +32,15 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 **Dado sólido**: "Pai pela primeira vez de bebé de 7 meses. Sono irregular. Final do dia menos produtivo do que há 1 ano. Isto vai manter-se ~2 anos mais."
 
-**Se o utilizador disser "não se aplica" / "nada relevante"**: respeita-o, não insistas.
+**Se o utilizador disser "nêo se aplica" / "nada relevante"**: respeita-o, nêo insistas.
 
 ---
 
 ### 4. Motivadores profundos
 
-**O que capturar**: o que te motiva profissionalmente para além do dinheiro. Concreto, não genérico.
+**O que capturar**: o que te motiva profissionalmente para além do dinheiro. Concreto, nêo genérico.
 
-**Dado sólido**: "Construir coisas que continuem a funcionar quando eu não estou. A satisfação de ver o cliente sem aquele problema operacional que tinha há 6 meses."
+**Dado sólido**: "Construir coisas que continuem a funcionar quando eu nêo estou. A satisfaçêo de ver o cliente sem aquele problema operacional que tinha há 6 meses."
 
 **Fraco**: "Ajudar as pessoas", "o desafio", "a liberdade" (todos genéricos sem contexto).
 
@@ -50,15 +50,15 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 **O que capturar**: tipo de tarefas que te drenam ao ponto de as evitares ou adiares.
 
-**Dado sólido**: "Fazer follow-up comercial repetitivo. Reuniões de discovery em que já sei como vão acabar. Excel financeiro detalhado."
+**Dado sólido**: "Fazer follow-up comercial repetitivo. Reuniões de discovery em que já sei como vêo acabar. Excel financeiro detalhado."
 
 ---
 
-### 6. Estilo preferido de comunicação com IA
+### 6. Estilo preferido de comunicaçêo com IA
 
 **O que capturar**: como preferes que te fale. Direta, conversacional, formal, com humor, etc.
 
-**Dado sólido**: "Direta sem rodeios. Sem 'que boa pergunta'. Com humor seco se encaixar, não forçado. Que me corrija se eu me enganar."
+**Dado sólido**: "Direta sem rodeios. Sem 'que boa pergunta'. Com humor seco se encaixar, nêo forçado. Que me corrija se eu me enganar."
 
 ---
 
@@ -72,11 +72,11 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 ## Bloco B · Negócio profundo (6 dimensões)
 
-### 8. Saúde financeira (intervalo de faturação)
+### 8. Saúde financeira (intervalo de faturaçêo)
 
-**O que capturar**: intervalo aproximado de faturação mensal ou anual. Serve para calibrar o que recomendar.
+**O que capturar**: intervalo aproximado de faturaçêo mensal ou anual. Serve para calibrar o que recomendar.
 
-**Dado sólido**: "Entre 8K e 14K€/mês. Variável consoante haja projeto fechado ou não."
+**Dado sólido**: "Entre 8K e 14K€/mês. Variável consoante haja projeto fechado ou nêo."
 
 **Se o utilizador estiver desconfortável com valor exato**: oferece intervalos: <2K / 2-5K / 5-15K / 15-50K / 50K+ /mês.
 
@@ -84,9 +84,9 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 ### 9. Margem aproximada
 
-**O que capturar**: margem bruta (não líquida) na escala baixa / média / alta.
+**O que capturar**: margem bruta (nêo líquida) na escala baixa / média / alta.
 
-**Dado sólido**: "Margem alta, ~70%. Os meus custos principais são ferramentas SaaS e o meu tempo."
+**Dado sólido**: "Margem alta, ~70%. Os meus custos principais sêo ferramentas SaaS e o meu tempo."
 
 ---
 
@@ -98,13 +98,13 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 ---
 
-### 11. Diferencial real (não genérico)
+### 11. Diferencial real (nêo genérico)
 
-**O que capturar**: algo concreto que te diferencia. Não "qualidade" ou "atenção ao cliente".
+**O que capturar**: algo concreto que te diferencia. Nêo "qualidade" ou "atençêo ao cliente".
 
-**Dado sólido**: "Sou a única consultora de IA na zona que já trabalhou em fábrica antes. Entendo o jargão e os medos do operário, não só do diretor."
+**Dado sólido**: "Sou a única consultora de IA na zona que já trabalhou em fábrica antes. Entendo o jargêo e os medos do operário, nêo só do diretor."
 
-**Fraco**: "Dou boa atenção", "sou profissional", "tenho experiência" — todas genéricas. Aprofunda com 5 whys ligeiro.
+**Fraco**: "Dou boa atençêo", "sou profissional", "tenho experiência" — todas genéricas. Aprofunda com 5 whys ligeiro.
 
 ---
 
@@ -112,17 +112,17 @@ Definição de "done" do deep-dive. Cada dimensão deve ficar capturada com dado
 
 **O que capturar**: projetos secundários, side projects, produtos paralelos. Mesmo sem revenue.
 
-**Dado sólido**: "Newsletter semanal sobre automação (1.200 subscritores, sem revenue). Curso autoeditado de OCR em preparação (não lançado)."
+**Dado sólido**: "Newsletter semanal sobre automaçêo (1.200 subscritores, sem revenue). Curso autoeditado de OCR em preparaçêo (nêo lançado)."
 
-**Se não tiver nada**: "Não há" é resposta válida, não aprofundar.
+**Se nêo tiver nada**: "Nêo há" é resposta válida, nêo aprofundar.
 
 ---
 
 ### 13. Fricções do modelo
 
-**O que capturar**: que parte do modelo de negócio gostavas de mudar mas ainda não mudaste. E porque não.
+**O que capturar**: que parte do modelo de negócio gostavas de mudar mas ainda nêo mudaste. E porque nêo.
 
-**Dado sólido**: "Quero largar as propostas comerciais — faço-as todas eu e não escalo. Tenho medo que outro as faça pior e que perca clientes na fase comercial."
+**Dado sólido**: "Quero largar as propostas comerciais — faço-as todas eu e nêo escalo. Tenho medo que outro as faça pior e que perca clientes na fase comercial."
 
 ---
 
@@ -141,71 +141,71 @@ Se "sozinho" → saltar dimensões 15-17. Ir diretamente para 18-19.
 **O que capturar**: para cada pessoa-chave (3-5 máx): nome, papel, ponto forte, ponto fraco.
 
 **Dado sólido**:
-> "Pilar — administração. Forte: detalhista, conhece todos os clientes históricos. Fraca: resistente a processos novos.
-> Marc — técnico. Forte: rápido a entender ferramentas. Fraco: comunicação com clientes."
+> "Pilar — administraçêo. Forte: detalhista, conhece todos os clientes históricos. Fraca: resistente a processos novos.
+> Marc — técnico. Forte: rápido a entender ferramentas. Fraco: comunicaçêo com clientes."
 
 ---
 
-### 16. Comunicação interna (só se tiver equipa)
+### 16. Comunicaçêo interna (só se tiver equipa)
 
 **O que capturar**: como comunica a equipa. Canais + ritmo de reuniões.
 
-**Dado sólido**: "Slack para o dia a dia. Reunião semanal segunda-feira às 9h, 45 min, agenda preparada por mim. WhatsApp só emergências."
+**Dado sólido**: "Slack para o dia a dia. Reuniêo semanal segunda-feira às 9h, 45 min, agenda preparada por mim. WhatsApp só emergências."
 
 ---
 
-### 17. Delegação (só se tiver equipa)
+### 17. Delegaçêo (só se tiver equipa)
 
-**O que capturar**: o que está delegado vs. o que não está, e PORQUÊ o resto não está.
+**O que capturar**: o que está delegado vs. o que nêo está, e PORQUÊ o resto nêo está.
 
-**Dado sólido**: "Delegado: execução técnica, suporte a clientes. Não delegado: comercial, propostas, decisões de pricing. Não o delego porque sinto que fecha melhor com a minha voz."
+**Dado sólido**: "Delegado: execuçêo técnica, suporte a clientes. Nêo delegado: comercial, propostas, decisões de pricing. Nêo o delego porque sinto que fecha melhor com a minha voz."
 
 ---
 
 ### 18. Clientes top (sempre)
 
-**O que capturar**: 3-5 clientes mais importantes agora. Nome (ou nome-tipo se for confidencial) + faturação aproximada.
+**O que capturar**: 3-5 clientes mais importantes agora. Nome (ou nome-tipo se for confidencial) + faturaçêo aproximada.
 
 **Dado sólido**:
-> "1. Logística do Norte — 4.5K€/mês manutenção + 14K€ projeto fechado em março.
+> "1. Logística do Norte — 4.5K€/mês manutençêo + 14K€ projeto fechado em março.
 > 2. Café do Mediterrâneo — 2.2K€/mês recorrente.
-> 3. Academia Sintaxis — 8K€ projeto em curso, ainda não recorrente."
+> 3. Academia Sintaxis — 8K€ projeto em curso, ainda nêo recorrente."
 
 ---
 
 ### 19. Clientes problemáticos (sempre)
 
-**O que capturar**: há clientes que aguentas por dinheiro mas que são problemáticos. Honestidade.
+**O que capturar**: há clientes que aguentas por dinheiro mas que sêo problemáticos. Honestidade.
 
-**Dado sólido**: "Sim, um: uma clínica dentária. Ligam-me fora de horas, mudam de opinião, dão instruções contraditórias entre sócios. Aguento porque pagam 1.8K€/mês recorrente."
+**Dado sólido**: "Sim, um: uma clínica dentária. Ligam-me fora de horas, mudam de opiniêo, dêo instruções contraditórias entre sócios. Aguento porque pagam 1.8K€/mês recorrente."
 
-**Se disser "não, não tenho"**: ok, respeita. Não insistas.
+**Se disser "nêo, nêo tenho"**: ok, respeita. Nêo insistas.
 
 ---
 
 ## Bloco D · Foco profundo (6 dimensões)
 
-### 20. Decisão pendente
+### 20. Decisêo pendente
 
-**O que capturar**: que decisão importante tens pendente de tomar agora mesmo.
+**O que capturar**: que decisêo importante tens pendente de tomar agora mesmo.
 
-**Dado sólido**: "Se contrato perfil júnior técnico (~28K/ano) ou continuo com freelance pontual (~15K/ano mas menos disponível). Decisão pendente desde fevereiro."
+**Dado sólido**: "Se contrato perfil júnior técnico (~28K/ano) ou continuo com freelance pontual (~15K/ano mas menos disponível). Decisêo pendente desde fevereiro."
 
 ---
 
 ### 21. Meta a 3 anos (profissional)
 
-**O que capturar**: o que te imaginas profissionalmente daqui a 3 anos. Sem pressão de "ter que".
+**O que capturar**: o que te imaginas profissionalmente daqui a 3 anos. Sem pressêo de "ter que".
 
 **Dado sólido**: "Equipa de 4 pessoas. A faturar 350-400K€/ano. Eu a fechar 1-2 dias por semana e a dedicar 2-3 a produto."
 
 ---
 
-### 22. Meta a 3 anos (vital, não profissional)
+### 22. Meta a 3 anos (vital, nêo profissional)
 
-**O que capturar**: meta pessoal a 3 anos. Família, saúde, lifestyle, o que não é trabalho.
+**O que capturar**: meta pessoal a 3 anos. Família, saúde, lifestyle, o que nêo é trabalho.
 
-**Dado sólido**: "Viver 3-4 meses por ano fora da minha cidade (digital nomad ligeiro). Voltar a fazer desporto 4x semana (deixei este ano). Segundo filho ou decidir não o ter."
+**Dado sólido**: "Viver 3-4 meses por ano fora da minha cidade (digital nomad ligeiro). Voltar a fazer desporto 4x semana (deixei este ano). Segundo filho ou decidir nêo o ter."
 
 ---
 
@@ -225,11 +225,11 @@ Se "sozinho" → saltar dimensões 15-17. Ir diretamente para 18-19.
 
 **Dado sólido**: "Toda sexta-feira: caixa projetada a 90 dias + número de propostas ativas + horas de trabalho profundo (sem reuniões) que consegui essa semana."
 
-**Se não tiver métrica**: capturar o "não tenho, faço-o à sensação" como dado. Sugerir definir uma em sessões futuras.
+**Se nêo tiver métrica**: capturar o "nêo tenho, faço-o à sensaçêo" como dado. Sugerir definir uma em sessões futuras.
 
 ---
 
-### 25. Definição pessoal de sucesso
+### 25. Definiçêo pessoal de sucesso
 
 **O que capturar**: como defines sucesso a 12 meses PARA ALÉM dos KPIs. O qualitativo.
 
@@ -254,7 +254,7 @@ Lê o ficheiro atual primeiro (foi deixado pelo wizard). Adiciona as secções s
 - **Me drena**: <respuesta dim 5>
 ```
 
-### `context/soul.md` — secção a adicionar
+### `context/soul.md` — secçêo a adicionar
 
 ```markdown
 ## Cómo me hablas tú (operador → IA)
@@ -314,7 +314,7 @@ Lê o ficheiro atual primeiro (foi deixado pelo wizard). Adiciona as secções s
 > <dim 19 — sin nombre si el operador lo pidió>
 ```
 
-### `context/current-priorities.md` — secção a adicionar
+### `context/current-priorities.md` — secçêo a adicionar
 
 ```markdown
 ## Decisión pendiente importante

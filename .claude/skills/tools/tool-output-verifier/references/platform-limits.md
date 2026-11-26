@@ -22,7 +22,7 @@
 | **WhatsApp post** | 30 chars | 1500 chars | 200-500 | "Ver mais" após 150 chars |
 | **Slack message** | 30 chars | 4000 chars | 100-300 | Threads para mais longo |
 | **Discord message** | 30 chars | 2000 chars | 100-300 | Cap duro 2000 |
-| **Blog post padrão** | 800 words | 2500 words | 1200-1800 | SEO sweet spot |
+| **Blog post padrêo** | 800 words | 2500 words | 1200-1800 | SEO sweet spot |
 | **Blog pillar page** | 2000 words | 5000 words | 3000-4000 | Long-form SEO |
 
 ## Landing pages (componentes)

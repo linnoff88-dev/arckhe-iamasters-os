@@ -10,13 +10,13 @@ Esta skill vem do repositório externo:
 
 ## Mudanças face ao original
 
-- Renomeada `web-research` → `strategy-web-research` (convenção iAmasters OS)
+- Renomeada `web-research` → `strategy-web-research` (convençêo iAmasters OS)
 - LICENSE original conservado intacto
 
 ## Como se atualiza
 
 Quando o upstream publicar mudanças:
 1. Clonar o repo de origem.
-2. Fazer diff com a versão vendorizada atual.
+2. Fazer diff com a versêo vendorizada atual.
 3. Se as mudanças forem relevantes, atualizar SKILL.md conservando o rename do `name:`.
-4. Bump de versão + entry no CHANGELOG.md raiz.
+4. Bump de versêo + entry no CHANGELOG.md raiz.

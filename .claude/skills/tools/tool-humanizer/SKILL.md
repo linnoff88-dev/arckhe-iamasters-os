@@ -45,10 +45,10 @@ Lê `references/ai-tells.md` e aplica os detetores:
 - "It's worth noting that", "it's important to note", "needless to say"
 - Advérbios excessivos ("incredibly", "remarkably", "surprisingly")
 
-**Detetores de padrão** (-1.5 cada um):
+**Detetores de padrêo** (-1.5 cada um):
 - 3+ frases consecutivas a começar igual
 - Parágrafo monotemático com frases todas de comprimento parecido (>20 palavras cada uma)
-- Negação-afirmação encadeada: "não é X, é Y. Não é Z, é W"
+- Negaçêo-afirmaçêo encadeada: "nêo é X, é Y. Nêo é Z, é W"
 - Bullet point com a mesma estrutura sintática em todo o bloco
 
 ### Passo 3 · Score
@@ -58,7 +58,7 @@ score = 10 - sum(penalties)
 score = max(0, score)
 ```
 
-Interpretação:
+Interpretaçêo:
 - 9-10 → soa humano, OK entregar
 - 7-8 → aceitável mas há tells; sugerir 2-3 alterações
 - 5-6 → claramente AI; reescrever parcialmente
@@ -76,11 +76,11 @@ Aplicar regras por ordem:
 6. **Quebrar monotonia rítmica** — alternar frases curtas (5-10 palavras) com longas (20+)
 7. **Preservar a voz do operador** — ler `brand-context/voice/voice-profile.md` se existir; usar registo apropriado conforme `context` do input
 
-### Passo 5 · Validação pós-rewrite
+### Passo 5 · Validaçêo pós-rewrite
 
 Re-passar o detetor. Se após 1 rewrite continuar < 7:
 - Devolver com flag `needs_human_pass: true`
-- Não voltar a reescrever automaticamente (risco de piorar / alucinar)
+- Nêo voltar a reescrever automaticamente (risco de piorar / alucinar)
 
 ### Passo 6 · Output
 
@@ -93,7 +93,7 @@ Re-passar o detetor. Se após 1 rewrite continuar < 7:
 - "leverage" usado 2 vezes (-1)
 - Lista de 3 abusada em 2 parágrafos (-2)
 
-### Versão humanizada
+### Versêo humanizada
 <texto reescrito>
 
 ### Alterações principais
@@ -115,9 +115,9 @@ Re-passar o detetor. Se após 1 rewrite continuar < 7:
 
 ### Passo 7 · Fecho
 
-- Se foi invocação standalone: mostrar comparativo ao utilizador
-- Se foi pipeline: devolver ao caller, não escrever mais nada
-- Append a `context/learnings.md` se detetaste um padrão AI novo não documentado em `ai-tells.md` (propor expandir o detetor)
+- Se foi invocaçêo standalone: mostrar comparativo ao utilizador
+- Se foi pipeline: devolver ao caller, nêo escrever mais nada
+- Append a `context/learnings.md` se detetaste um padrêo AI novo nêo documentado em `ai-tells.md` (propor expandir o detetor)
 
 ## Outputs
 
@@ -127,14 +127,14 @@ Re-passar o detetor. Se após 1 rewrite continuar < 7:
 
 ## Skills que chama
 
-Nenhuma. É uma tool primitiva (não orquestra nada).
+Nenhuma. É uma tool primitiva (nêo orquestra nada).
 
 ## Edge cases
 
-- **Texto muito curto (<20 palavras)**: score automático 8 (não há o suficiente para julgar). Não reescrever.
-- **Idioma que não seja português ou inglês**: degradar para checks estruturais apenas (em-dashes, comprimento, listas). O léxico AI é language-specific.
-- **Operador não tem brand-voice configurada**: usar registo neutro divulgativo (B genérico). Marcar no output: "Sem voice profile carregado, o resultado pode não encaixar 100% com a tua voz".
-- **Texto poético ou criativo**: as regras de "AI slop" não se aplicam igual; perguntar ao utilizador se quer fazer skip ao humanizer.
+- **Texto muito curto (<20 palavras)**: score automático 8 (nêo há o suficiente para julgar). Nêo reescrever.
+- **Idioma que nêo seja português ou inglês**: degradar para checks estruturais apenas (em-dashes, comprimento, listas). O léxico AI é language-specific.
+- **Operador nêo tem brand-voice configurada**: usar registo neutro divulgativo (B genérico). Marcar no output: "Sem voice profile carregado, o resultado pode nêo encaixar 100% com a tua voz".
+- **Texto poético ou criativo**: as regras de "AI slop" nêo se aplicam igual; perguntar ao utilizador se quer fazer skip ao humanizer.
 
 ## Examples
 

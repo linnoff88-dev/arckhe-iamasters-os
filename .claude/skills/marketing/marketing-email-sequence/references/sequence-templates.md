@@ -13,7 +13,7 @@ Templates detalhados para sequências de email comuns.
 **Email 1: Boas-Vindas (Imediato)**
 - Subject: Bem-vindo a [Produto] — aqui está o teu primeiro passo
 - Entrega o que foi prometido (lead magnet, acesso, etc.)
-- Uma única ação seguinte
+- Uma única açêo seguinte
 - Define expectativas para emails futuros
 
 **Email 2: Quick Win (Dia 1-2)**
@@ -24,19 +24,19 @@ Templates detalhados para sequências de email comuns.
 
 **Email 3: História/Porquê (Dia 3-4)**
 - Subject: Porque construímos [Produto]
-- Origem ou missão
-- Conexão emocional
+- Origem ou missêo
+- Conexêo emocional
 - Mostra que percebes o problema do leitor
 
 **Email 4: Prova Social (Dia 5-6)**
 - Subject: Como [Cliente] alcançou [Resultado]
 - Case study ou testemunho
-- Identificável com a situação do leitor
+- Identificável com a situaçêo do leitor
 - CTA suave para explorar
 
-**Email 5: Quebrar Objeção (Dia 7-8)**
-- Subject: "Não tenho tempo para X" — soa-te familiar?
-- Aborda a hesitação comum
+**Email 5: Quebrar Objeçêo (Dia 7-8)**
+- Subject: "Nêo tenho tempo para X" — soa-te familiar?
+- Aborda a hesitaçêo comum
 - Reformula o obstáculo
 - Mostra um caminho fácil
 
@@ -46,12 +46,12 @@ Templates detalhados para sequências de email comuns.
 - Mostra benefício claro
 - CTA direto para experimentar
 
-**Email 7: Conversão (Dia 12-14)**
+**Email 7: Conversêo (Dia 12-14)**
 - Subject: Pronto para [upgrade/comprar/comprometer]?
 - Resume o valor
 - Oferta clara
 - Urgência se aplicável
-- Reversão de risco (garantia, trial)
+- Reversêo de risco (garantia, trial)
 
 ---
 
@@ -59,7 +59,7 @@ Templates detalhados para sequências de email comuns.
 
 **Email 1: Entregar + Apresentar (Imediato)**
 - Entrega o lead magnet
-- Breve apresentação de quem és
+- Breve apresentaçêo de quem és
 - Antecipa o que vem a seguir
 
 **Email 2: Expandir o Tema (Dia 2-3)**
@@ -70,11 +70,11 @@ Templates detalhados para sequências de email comuns.
 **Email 3: Deep-Dive no Problema (Dia 4-5)**
 - Articula o problema em profundidade
 - Mostra que percebes
-- Insinua a solução
+- Insinua a soluçêo
 
-**Email 4: Framework da Solução (Dia 6-8)**
+**Email 4: Framework da Soluçêo (Dia 6-8)**
 - A tua abordagem/metodologia
-- Educativo, não comercial
+- Educativo, nêo comercial
 - Constrói rumo ao teu produto
 
 **Email 5: Case Study (Dia 9-11)**
@@ -82,15 +82,15 @@ Templates detalhados para sequências de email comuns.
 - Específico e identificável
 - CTA suave
 
-**Email 6: Diferenciação (Dia 12-14)**
+**Email 6: Diferenciaçêo (Dia 12-14)**
 - Porque é que a tua abordagem é diferente
 - Aborda as alternativas
 - Constrói preferência
 
 **Email 7: Tratamento de Objeções (Dia 15-18)**
-- Preocupação comum abordada
-- FAQ ou desmistificação
-- Reduz fricção
+- Preocupaçêo comum abordada
+- FAQ ou desmistificaçêo
+- Reduz fricçêo
 
 **Email 8: Oferta Direta (Dia 19-21)**
 - Pitch claro
@@ -104,7 +104,7 @@ Templates detalhados para sequências de email comuns.
 
 **Email 1: Check-In (Dia 30-60 de inatividade)**
 - Subject: Está tudo bem, [Nome]?
-- Preocupação genuína
+- Preocupaçêo genuína
 - Pergunta o que aconteceu
 - Quick win para voltar a engajar
 
@@ -124,23 +124,23 @@ Templates detalhados para sequências de email comuns.
 - Subject: Deixamos de te enviar emails?
 - Honesto e direto
 - Um clique para ficar ou sair
-- Limpa a lista se não houver resposta
+- Limpa a lista se nêo houver resposta
 
 ---
 
 ## Sequência de Onboarding (Utilizadores do Produto)
 
-Coordena com o onboarding in-app. O email apoia, não duplica.
+Coordena com o onboarding in-app. O email apoia, nêo duplica.
 
 **Email 1: Boas-Vindas + Primeiro Passo (Imediato)**
 - Confirma o signup
-- Uma ação crítica
-- Link direto para essa ação
+- Uma açêo crítica
+- Link direto para essa açêo
 
 **Email 2: Ajuda Para Começar (Dia 1)**
-- Se não completou o passo 1
+- Se nêo completou o passo 1
 - Dica rápida ou vídeo
-- Opção de suporte
+- Opçêo de suporte
 
 **Email 3: Destaque de Funcionalidade (Dia 2-3)**
 - Funcionalidade-chave que devem conhecer
@@ -163,6 +163,6 @@ Coordena com o onboarding in-app. O email apoia, não duplica.
 - Conteúdo de nível superior
 
 **Email 7: Upgrade/Expandir (Dia 14+)**
-- Para trial: push de conversão
+- Para trial: push de conversêo
 - Para gratuitos: prompt de upgrade
-- Para pagos: oportunidade de expansão
+- Para pagos: oportunidade de expansêo

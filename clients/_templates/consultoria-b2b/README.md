@@ -1,14 +1,14 @@
 # Template · Consultoria B2B
 
-> Para consultores B2B (estratégia, ops, transformação) que servem empresas médias/grandes com engagement de 3-12 meses.
+> Para consultores B2B (estratégia, ops, transformaçêo) que servem empresas médias/grandes com engagement de 3-12 meses.
 
 ## Para quem
 
 - Consultor solo ou equipa de 2-5 (modelo high-ticket low-volume)
 - Cada cliente: 30K-300K € de receita por engagement
 - Engagement típico: 3-12 meses
-- Output principal: estratégia documentada + acompanhamento de execução
-- A tua reputação + a tua network é o principal ativo
+- Output principal: estratégia documentada + acompanhamento de execuçêo
+- A tua reputaçêo + a tua network é o principal ativo
 
 ## Diferença com outros templates
 
@@ -16,7 +16,7 @@
 |---|---|---|---|---|
 | Ticket médio | 5-50K € | 2-15K €/mês | 200-2000 € | 30-300K € |
 | Cliente | PME | PME/scaleup | Pessoas | Empresa média/grande |
-| Decisão | Fundador | CMO/sócio | Pessoa individual | Comité (CEO + 2-3) |
+| Decisêo | Fundador | CMO/sócio | Pessoa individual | Comité (CEO + 2-3) |
 | Voice principal | A tua voice | Voice cliente | A tua voice | Voice consultor + adaptável corporate |
 | Frequência output | Por projeto | Mensal recorrente | Diário alto volume | Quarterly + on-demand |
 

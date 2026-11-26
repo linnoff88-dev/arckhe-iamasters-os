@@ -4,7 +4,7 @@ Camada estática da marca do operador. Preenche-se durante o onboarding (skill `
 
 ## Estrutura
 
-- `voice/voice-profile.md` — descrição da voz (tom, vocabulário, no-go)
+- `voice/voice-profile.md` — descriçêo da voz (tom, vocabulário, no-go)
 - `voice/samples.md` — frases representativas extraídas
 - `voice/register-a-formal.md` — registo formal (email cliente premium)
 - `voice/register-b-divulgativo.md` — registo divulgativo (LinkedIn, blog)
@@ -21,4 +21,4 @@ Camada estática da marca do operador. Preenche-se durante o onboarding (skill `
 
 ## Importante
 
-Esta pasta está no `.gitignore` por defeito (os ficheiros preenchidos são privados do operador). Os ficheiros `.gitkeep` e este README são commitados.
+Esta pasta está no `.gitignore` por defeito (os ficheiros preenchidos sêo privados do operador). Os ficheiros `.gitkeep` e este README sêo commitados.

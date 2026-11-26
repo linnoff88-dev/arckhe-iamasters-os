@@ -1,6 +1,6 @@
 # Dimensões · Express (8 críticas)
 
-Esta é a "definição de done" do wizard inicial. Cada dimensão deve ficar capturada com **dado sólido** (não genérica, não "ainda não", não vazia).
+Esta é a "definiçêo de done" do wizard inicial. Cada dimensêo deve ficar capturada com **dado sólido** (nêo genérica, nêo "ainda nêo", nêo vazia).
 
 ---
 
@@ -20,11 +20,11 @@ Esta é a "definição de done" do wizard inicial. Cada dimensão deve ficar cap
 - "Trabalho com IA" (a fazer o quê com IA?)
 - "Ajudo as pessoas" (a quem e com quê?)
 
-### 2. Localização + idioma
+### 2. Localizaçêo + idioma
 
 **O que tem de ficar capturado:**
 - Cidade + país (para timezone e referências culturais)
-- Idioma principal de trabalho (inferido se não for dito)
+- Idioma principal de trabalho (inferido se nêo for dito)
 
 **Exemplo de dado sólido:**
 > "Lisboa, Portugal. Trabalho em português principalmente, alguns clientes em inglês."
@@ -41,41 +41,41 @@ Esta é a "definição de done" do wizard inicial. Cada dimensão deve ficar cap
 - Vertical / sector se se aplicar
 
 **Exemplo de dado sólido:**
-> "Sintaxis Lab. Implemento sistemas de OCR + automação em empresas de logística, transporte e distribuição. Projeto típico: 8 semanas, 14-25K€."
+> "Sintaxis Lab. Implemento sistemas de OCR + automaçêo em empresas de logística, transporte e distribuiçêo. Projeto típico: 8 semanas, 14-25K€."
 
 **Sinais de resposta fraca:**
 - "Consultoria" (de que tipo?)
-- "Vendo formação" (sobre que tema?)
+- "Vendo formaçêo" (sobre que tema?)
 - "É complicado de explicar" (= precisa de aprofundamento com exemplo concreto)
 
 ### 4. Modelo de receita
 
 **O que tem de ficar capturado:**
 - Como entra o dinheiro (serviços / produtos / subscrições / mix)
-- Se tiver várias fontes, distribuição aproximada (não exata)
+- Se tiver várias fontes, distribuiçêo aproximada (nêo exata)
 
 **Exemplo de dado sólido:**
-> "80% projetos pontuais de implementação. 20% manutenção mensal recorrente. Zero formação por agora."
+> "80% projetos pontuais de implementaçêo. 20% manutençêo mensal recorrente. Zero formaçêo por agora."
 
 ### 5. Cliente ideal
 
 **O que tem de ficar capturado:**
-- Sector, dimensão, momento em que chegam
-- Algum traço diferenciador (não genérico)
+- Sector, dimensêo, momento em que chegam
+- Algum traço diferenciador (nêo genérico)
 
 **Exemplo de dado sólido:**
-> "Diretor de PME, 50-200 colaboradores, sector tradicional (transporte, distribuição, indústria). Chega quando algum processo manual lhe está a custar horas extra à equipa ou erros caros."
+> "Diretor de PME, 50-200 colaboradores, sector tradicional (transporte, distribuiçêo, indústria). Chega quando algum processo manual lhe está a custar horas extra à equipa ou erros caros."
 
 **Sinais de resposta fraca:**
-- "Qualquer empresa" (não)
-- "B2B" (não é um ICP)
+- "Qualquer empresa" (nêo)
+- "B2B" (nêo é um ICP)
 - "Gente que quer automatizar" (que tipo de gente?)
 
 ### 6. Stack diário
 
 **O que tem de ficar capturado:**
-- As 4-6 ferramentas que usa todos os dias (não a lista exaustiva)
-- Menção especial se usa Claude/IA, n8n, CRM concreto
+- As 4-6 ferramentas que usa todos os dias (nêo a lista exaustiva)
+- Mençêo especial se usa Claude/IA, n8n, CRM concreto
 
 **Exemplo de dado sólido:**
 > "Google Workspace, Notion, Cal.com, Stripe, n8n, Claude Code, GitHub."
@@ -91,12 +91,12 @@ Esta é a "definição de done" do wizard inicial. Cada dimensão deve ficar cap
 - Se tiver gargalo claro, captura-o também
 
 **Exemplo de dado sólido:**
-> "Maio 2026: (1) Fechar projeto com Logística do Norte. (2) Lançar página de serviços renovada. (3) Procurar perfil técnico júnior para apoio. Gargalo: faço todas as propostas comerciais eu, não escalo."
+> "Maio 2026: (1) Fechar projeto com Logística do Norte. (2) Lançar página de serviços renovada. (3) Procurar perfil técnico júnior para apoio. Gargalo: faço todas as propostas comerciais eu, nêo escalo."
 
 **Sinais de resposta fraca:**
 - "Crescer" (em que métrica?)
 - "Mais clientes" (quantos? de que tipo?)
-- "O do costume" (= não há foco real, vale a pena aprofundar 1 vez)
+- "O do costume" (= nêo há foco real, vale a pena aprofundar 1 vez)
 
 ### 8. Objetivo a 12 meses
 
@@ -108,15 +108,15 @@ Esta é a "definição de done" do wizard inicial. Cada dimensão deve ficar cap
 > "12 meses: faturar 180K€ (vs 120K atuais), contratar 1 perfil técnico, largar 50% da operativa comercial."
 
 **Sinais de resposta fraca:**
-- "Que corra bem" (não é objetivo)
+- "Que corra bem" (nêo é objetivo)
 - "Crescer muito" (quanto é muito?)
-- "Verei quando chegar" (ok, aí tens a primeira dimensão a aprofundar em deep-dive)
+- "Verei quando chegar" (ok, aí tens a primeira dimensêo a aprofundar em deep-dive)
 
 ---
 
 ## Templates de output
 
-Estes são os headers canónicos para os ficheiros sectorizados. O wizard escreve o conteúdo derivado da conversa lá dentro.
+Estes sêo os headers canónicos para os ficheiros sectorizados. O wizard escreve o conteúdo derivado da conversa lá dentro.
 
 ### `context/me.md`
 

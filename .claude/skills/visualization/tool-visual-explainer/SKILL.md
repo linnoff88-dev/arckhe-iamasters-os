@@ -5,7 +5,7 @@ description: Gera páginas HTML autocontidas e bonitas que explicam visualmente 
 
 # tool-visual-explainer
 
-> Inspirado na skill `visual-explainer` da suite Anthropic + comunidade. Adaptada ao padrão iAmasters OS com paleta e branding do repo.
+> Inspirado na skill `visual-explainer` da suite Anthropic + comunidade. Adaptada ao padrêo iAmasters OS com paleta e branding do repo.
 
 ## Quando se invoca
 
@@ -14,7 +14,7 @@ description: Gera páginas HTML autocontidas e bonitas que explicam visualmente 
 - O utilizador vai apresentar o output a outra pessoa (cliente, sócio, conselheiro, comunidade)
 - Tabelas longas (4+ linhas, 3+ colunas) — melhor em HTML do que ASCII
 
-NÃO se invoca:
+NêO se invoca:
 - Para outputs internos que só o Claude lê (seria gasto inútil)
 - Quando o utilizador já está numa ferramenta visual (Notion, Figma, etc.)
 - Para outputs <200 palavras onde markdown plano chega
@@ -27,7 +27,7 @@ A skill recebe (de outra skill ou do utilizador diretamente):
 
 - **Título** do documento
 - **Blocos de conteúdo**: cada bloco tem tipo (`hero`, `text`, `table`, `list`, `quote`, `metric-card`, `image`, `code`, `cta`)
-- **Metadados opcionais**: data, autor, versão, branding sim/não
+- **Metadados opcionais**: data, autor, versêo, branding sim/nêo
 - **Destino do ficheiro**: path relativo ao repo (default `projects/visual/<YYYY-MM-DD>-<titulo>.html`)
 
 Se a skill for invocada a partir de outra (ex. `welcome-quick-win`), esses campos vêm pré-preenchidos.
@@ -44,14 +44,14 @@ O que queres converter em HTML partilhável?
 
 Antes de gerar:
 
-- Sem código JS embutido — o HTML deve funcionar em qualquer viewer (WhatsApp, email, Telegram que NÃO executam JS)
+- Sem código JS embutido — o HTML deve funcionar em qualquer viewer (WhatsApp, email, Telegram que NêO executam JS)
 - Sem dependências CDN externas — tudo inline (CSS embutido, fontes system)
 - Sem imagens hospedadas em URL externa exceto se o utilizador o pedir explicitamente — preferir SVG inline ou emojis Unicode
 - Verificar que nenhum bloco tem conteúdo > 5KB (se houver um texto enorme, sugerir resumi-lo)
 
 ### Passo 3 · Gerar HTML
 
-Usa este esqueleto base. É deliberadamente simples — não compitas com websites, **prioriza legibilidade e portabilidade**.
+Usa este esqueleto base. É deliberadamente simples — nêo compitas com websites, **prioriza legibilidade e portabilidade**.
 
 ```html
 <!DOCTYPE html>
@@ -225,15 +225,15 @@ Nenhuma diretamente. Esta skill é **invocada por** outras (`welcome-quick-win`,
 
 ## Edge cases
 
-- **Conteúdo > 100KB**: dividir em múltiplos HTMLs (um por secção) ou sugerir resumo.
-- **Tabela com >20 linhas**: adicionar scroll horizontal + considerar paginação visual.
+- **Conteúdo > 100KB**: dividir em múltiplos HTMLs (um por secçêo) ou sugerir resumo.
+- **Tabela com >20 linhas**: adicionar scroll horizontal + considerar paginaçêo visual.
 - **Idioma do conteúdo diferente de português**: respeita o idioma do input. O framework HTML (footer, meta) mantém-se em português exceto se for feito override.
 - **Utilizador quer paleta diferente do laranja iAmasters**: aceitar override no input (`brand_color: "#XYZ"`). Default mantém paleta do OS.
 - **HTML para email**: muitos clientes de email partem estilos. Se o destino for email, simplificar (poucas cores, sem gradient no CTA, tipografia standard) e avisar o utilizador.
 
 ## Notas de design
 
-- **Mobile-first**: o HTML é mais visto em móveis (partilhado por WhatsApp) do que em desktop. Testar legibilidade em ecrã 360px de largura.
-- **Sem JS**: as aplicações de mensagens NÃO executam JS. Se precisares de interatividade (toggle, accordion), usa `<details>` e `<summary>` (HTML semântico, funciona sem JS).
+- **Mobile-first**: o HTML é mais visto em móveis (partilhado por WhatsApp) do que em desktop. Testar legibilidade em ecrê 360px de largura.
+- **Sem JS**: as aplicações de mensagens NêO executam JS. Se precisares de interatividade (toggle, accordion), usa `<details>` e `<summary>` (HTML semântico, funciona sem JS).
 - **Paleta iAmasters**: laranja `#ff8c42` (acento principal), roxo `#b794f4` (citações/secundário), cinzento `#fafafa` (fundo). Coerente com os badges do README.
-- **Sem tracking**: não embutir Google Analytics nem similares. O HTML é do utilizador.
+- **Sem tracking**: nêo embutir Google Analytics nem similares. O HTML é do utilizador.

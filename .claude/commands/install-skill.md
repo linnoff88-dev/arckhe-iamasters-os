@@ -1,10 +1,10 @@
 ---
-description: Instala uma skill desde URL de GitHub com validação local prévia. Anti-inflação: verifica estrutura antes de globalizar.
+description: Instala uma skill desde URL de GitHub com validaçêo local prévia. Anti-inflaçêo: verifica estrutura antes de globalizar.
 ---
 
 # /install-skill
 
-Instala uma skill externa desde GitHub no repo local com validação prévia de estrutura.
+Instala uma skill externa desde GitHub no repo local com validaçêo prévia de estrutura.
 
 ## Uso
 
@@ -20,14 +20,14 @@ Exemplos:
 
 ## Modo "atalho opcional" (sem URL)
 
-Se o argumento NÃO é URL mas um nome simples (ex. `cognito`):
+Se o argumento NêO é URL mas um nome simples (ex. `cognito`):
 
 1. Procurar a skill em `.claude/skills/_meta/_optional/<nome>/`.
 2. Se existe:
    - Mover para `.claude/skills/_meta/<nome>/`
-   - Atualizar CLAUDE.md skills registry (secção `_meta/` +1, `_optional/` -1)
+   - Atualizar CLAUDE.md skills registry (secçêo `_meta/` +1, `_optional/` -1)
    - Mensagem: *"Skill `<nome>` ativada. Reinicia o Claude Code para que carregue."*
-3. Se NÃO existe → erro: *"Não há skill opcional `<nome>`. Skills disponíveis em `_optional/`: <lista>."*
+3. Se NêO existe → erro: *"Nêo há skill opcional `<nome>`. Skills disponíveis em `_optional/`: <lista>."*
 
 Para desativar uma skill (movê-la de volta para `_optional/`): editar manualmente ou pedir ao operador.
 
@@ -53,29 +53,29 @@ O script valida:
 - YAML frontmatter presente (linhas 1-3 com `---`)
 - Campo `name` presente e kebab-case
 - Campo `description` presente, ≥50 chars, ≤500 chars
-- `description` contém pelo menos um verbo de intenção (cria, gera, analisa, extrai, etc.)
+- `description` contém pelo menos um verbo de intençêo (cria, gera, analisa, extrai, etc.)
 
-**Recomendado** (warnings, não bloqueiam):
+**Recomendado** (warnings, nêo bloqueiam):
 - Pasta `references/` presente se SKILL.md > 2500 caracteres
 - `examples.md` presente em references se houver
-- Skill não contém `eval()` ou execução de código sem sandbox
-- Não há paths `/etc/`, `~/`, paths absolutos suspeitos
-- Não há credenciais hardcoded (regex API keys, tokens)
+- Skill nêo contém `eval()` ou execuçêo de código sem sandbox
+- Nêo há paths `/etc/`, `~/`, paths absolutos suspeitos
+- Nêo há credenciais hardcoded (regex API keys, tokens)
 
-**Bloqueantes** (rejeição automática):
-- Não há SKILL.md
+**Bloqueantes** (rejeiçêo automática):
+- Nêo há SKILL.md
 - YAML frontmatter mal formado
 - description < 30 chars (insuficiente)
 - description duplica nome de skill já instalada localmente
-- Scripts `.sh` com `rm -rf /` ou similares destrutivos sem justificação
+- Scripts `.sh` com `rm -rf /` ou similares destrutivos sem justificaçêo
 
 ### Passo 4 · Mostrar resultado ao operador
 
 ```markdown
-## Validação de skill
+## Validaçêo de skill
 
 **URL**: https://github.com/scrapes/skills/humanizer
-**Skill**: tool-humanizer (atenção: já tens uma skill local com esse nome!)
+**Skill**: tool-humanizer (atençêo: já tens uma skill local com esse nome!)
 **Tamanho**: SKILL.md 2.1KB, references 4.5KB, scripts 0KB
 
 ### Validações
@@ -86,15 +86,15 @@ O script valida:
 - ✅ Sem código executável perigoso
 - ✅ Sem credenciais hardcoded
 
-### Ação a tomar
+### Açêo a tomar
 
 [1] Cancelar
 [2] Substituir a tua local (com backup automático)
 [3] Instalar como tool-humanizer-v2 (renomear)
-[4] Ver diff vs a tua versão local
+[4] Ver diff vs a tua versêo local
 ```
 
-### Passo 5 · Instalação local
+### Passo 5 · Instalaçêo local
 
 Se o operador aceita:
 1. Se existe local: backup em `.backup/<timestamp>/.claude/skills/...`
@@ -103,13 +103,13 @@ Se o operador aceita:
 4. Atualizar `synapsis/skills-catalog.json` com nova entrada
 5. Atualizar `CLAUDE.md` skills registry
 
-### Passo 6 · Teste de ativação
+### Passo 6 · Teste de ativaçêo
 
 Após instalar:
 - Reiniciar o Claude Code (Ctrl+C × 2 + claude)
 - Testar prompt que deveria ativar a skill (baseado na description)
-- Se ativa corretamente: confirmar instalação
-- Se não ativa: oferecer (a) editar description, (b) renomear, (c) desinstalar
+- Se ativa corretamente: confirmar instalaçêo
+- Se nêo ativa: oferecer (a) editar description, (b) renomear, (c) desinstalar
 
 ### Passo 7 · Fecho
 
@@ -125,9 +125,9 @@ Após instalar:
 
 - **Repo privado no GitHub**: pedir ao operador token ou que a torne pública temporariamente
 - **Skill duplica funcionalidade de uma local**: avisar e deixar o operador decidir se fundir ou manter ambas
-- **Skill com dependências** (outra skill não instalada): avisar e perguntar se instalar dependências também
+- **Skill com dependências** (outra skill nêo instalada): avisar e perguntar se instalar dependências também
 - **Skill huge** (>50KB): warning sobre token consumption — sugerir ler SKILL.md primeiro
 
-## Implementação
+## Implementaçêo
 
 Este comando chama `bash scripts/validate-skill.sh <url>` que faz todo o trabalho.

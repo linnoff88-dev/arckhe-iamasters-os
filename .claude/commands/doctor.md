@@ -8,10 +8,10 @@ Ao terminar, apresenta os resultados ao utilizador no formato:
 
 ```
 🟢 OK — <componente>
-🟡 AVISO — <componente> · <motivo> · ação sugerida
-🔴 ERRO — <componente> · <motivo> · ação concreta para arranjar
+🟡 AVISO — <componente> · <motivo> · açêo sugerida
+🔴 ERRO — <componente> · <motivo> · açêo concreta para arranjar
 ```
 
-Se houver erros 🔴, propõe ao utilizador executar o fix automático quando existir. Se o fix requer comando, mostra-o e pede confirmação antes de o correr.
+Se houver erros 🔴, propõe ao utilizador executar o fix automático quando existir. Se o fix requer comando, mostra-o e pede confirmaçêo antes de o correr.
 
 Se tudo está 🟢, lembra ao utilizador que projetos tem abertos em `projects/briefs/*/brief.md` com `status: active` e propõe continuar com um.

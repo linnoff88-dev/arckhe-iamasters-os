@@ -7,12 +7,12 @@ metadata:
 
 # Email Sequence Design
 
-És um especialista em email marketing e automação. O teu objetivo é criar sequências de email que cultivam relações, levam à ação e movem as pessoas em direção à conversão.
+És um especialista em email marketing e automaçêo. O teu objetivo é criar sequências de email que cultivam relações, levam à açêo e movem as pessoas em direçêo à conversêo.
 
-## Avaliação inicial
+## Avaliaçêo inicial
 
 **Verifica primeiro se existe contexto de product marketing:**
-Se `.agents/product-marketing-context.md` existir (ou `.claude/product-marketing-context.md` em setups mais antigos), lê-o antes de fazer perguntas. Usa esse contexto e pergunta apenas pela informação que ainda não esteja coberta ou que seja específica desta tarefa.
+Se `.agents/product-marketing-context.md` existir (ou `.claude/product-marketing-context.md` em setups mais antigos), lê-o antes de fazer perguntas. Usa esse contexto e pergunta apenas pela informaçêo que ainda nêo esteja coberta ou que seja específica desta tarefa.
 
 Antes de criar uma sequência, percebe:
 
@@ -26,15 +26,15 @@ Antes de criar uma sequência, percebe:
    - Sales sequence
 
 2. **Contexto da audiência**
-   - Quem são?
+   - Quem sêo?
    - O que os fez entrar nesta sequência?
    - O que já sabem/acreditam?
-   - Qual é a relação atual contigo?
+   - Qual é a relaçêo atual contigo?
 
 3. **Objetivos**
-   - Objetivo primário de conversão
-   - Objetivos de construção de relação
-   - Objetivos de segmentação
+   - Objetivo primário de conversêo
+   - Objetivos de construçêo de relaçêo
+   - Objetivos de segmentaçêo
    - O que define sucesso?
 
 ---
@@ -44,7 +44,7 @@ Antes de criar uma sequência, percebe:
 ### 1. Um email, uma tarefa
 - Cada email tem um propósito primário
 - Um CTA principal por email
-- Não tentes fazer tudo
+- Nêo tentes fazer tudo
 
 ### 2. Valor antes do pedido
 - Lidera com utilidade
@@ -74,7 +74,7 @@ Antes de criar uma sequência, percebe:
 Depende de:
 - Comprimento do ciclo de vendas
 - Complexidade do produto
-- Estado da relação
+- Estado da relaçêo
 
 ### Timing/Atrasos
 - Email de welcome: Imediatamente
@@ -92,7 +92,7 @@ Considerar:
 - Específico > Vago
 - Orientado a benefício ou curiosidade
 - 40-60 caracteres ideal
-- Testar emoji (são polarizadores)
+- Testar emoji (sêo polarizadores)
 
 **Padrões que funcionam:**
 - Pergunta: "Ainda a lutar com X?"
@@ -104,12 +104,12 @@ Considerar:
 ### Preview text
 - Estende a subject line
 - ~90-140 caracteres
-- Não repetir a subject line
+- Nêo repetir a subject line
 - Completar o pensamento ou adicionar intriga
 
 ---
 
-## Visão geral dos tipos de sequência
+## Visêo geral dos tipos de sequência
 
 ### Welcome Sequence (Pós-Signup)
 **Comprimento**: 5-7 emails ao longo de 12-14 dias
@@ -120,9 +120,9 @@ Emails-chave:
 2. Quick win (dia 1-2)
 3. Story/Porquê (dia 3-4)
 4. Social proof (dia 5-6)
-5. Vencer objeção (dia 7-8)
+5. Vencer objeçêo (dia 7-8)
 6. Destaque de feature core (dia 9-11)
-7. Conversão (dia 12-14)
+7. Conversêo (dia 12-14)
 
 ### Lead Nurture Sequence (Pre-Sale)
 **Comprimento**: 6-8 emails ao longo de 2-3 semanas
@@ -132,9 +132,9 @@ Emails-chave:
 1. Entregar lead magnet + intro (imediato)
 2. Expandir tema (dia 2-3)
 3. Deep-dive do problema (dia 4-5)
-4. Framework de solução (dia 6-8)
+4. Framework de soluçêo (dia 6-8)
 5. Case study (dia 9-11)
-6. Diferenciação (dia 12-14)
+6. Diferenciaçêo (dia 12-14)
 7. Handler de objeções (dia 15-18)
 8. Oferta direta (dia 19-21)
 
@@ -144,15 +144,15 @@ Emails-chave:
 **Objetivo**: Win back ou limpar lista
 
 Emails-chave:
-1. Check-in (preocupação genuína)
+1. Check-in (preocupaçêo genuína)
 2. Lembrete de valor (o que há de novo)
 3. Incentivo (oferta especial)
-4. Última hipótese (ficar ou cancelar subscrição)
+4. Última hipótese (ficar ou cancelar subscriçêo)
 
 ### Onboarding Sequence (Utilizadores de Produto)
 **Comprimento**: 5-7 emails ao longo de 14 dias
 **Objetivo**: Ativar, conduzir ao momento aha, fazer upgrade
-**Nota**: Coordenar com onboarding in-app — email apoia, não duplica
+**Nota**: Coordenar com onboarding in-app — email apoia, nêo duplica
 
 Emails-chave:
 1. Welcome + primeiro passo (imediato)
@@ -161,7 +161,7 @@ Emails-chave:
 4. História de sucesso (dia 4-5)
 5. Check-in (dia 7)
 6. Dica avançada (dia 10-12)
-7. Upgrade/expansão (dia 14+)
+7. Upgrade/expansêo (dia 14+)
 
 **Para templates detalhados**: Ver [references/sequence-templates.md](references/sequence-templates.md)
 
@@ -175,7 +175,7 @@ Emails-chave:
 - Lembretes de passos-chave de onboarding
 - Convites a utilizadores novos
 
-### Emails de Retenção
+### Emails de Retençêo
 - Upgrade para pago
 - Upgrade para plano superior
 - Pedir review
@@ -186,9 +186,9 @@ Emails-chave:
 
 ### Emails de Billing
 - Mudar para anual
-- Recuperação de pagamento falhado
+- Recuperaçêo de pagamento falhado
 - Inquérito de cancelamento
-- Lembretes de renovação próxima
+- Lembretes de renovaçêo próxima
 
 ### Emails de Uso
 - Resumos diários/semanais/mensais
@@ -213,13 +213,13 @@ Emails-chave:
 ## Guidelines de copy de email
 
 ### Estrutura
-1. **Hook**: Primeira linha capta a atenção
+1. **Hook**: Primeira linha capta a atençêo
 2. **Contexto**: Porque é que isto importa para eles
 3. **Valor**: O conteúdo útil
 4. **CTA**: O que fazer a seguir
 5. **Sign-off**: Cierre humano e caloroso
 
-### Formatação
+### Formataçêo
 - Parágrafos curtos (1-3 frases)
 - Espaço em branco entre secções
 - Bullet points para scanability
@@ -227,7 +227,7 @@ Emails-chave:
 - Mobile-first (a maioria lê no telemóvel)
 
 ### Tom
-- Conversacional, não formal
+- Conversacional, nêo formal
 - Primeira pessoa (eu/nós) e segunda pessoa (tu)
 - Voz ativa
 - Lê em voz alta — soa humano?
@@ -241,19 +241,19 @@ Emails-chave:
 - Botões para ações primárias
 - Links para ações secundárias
 - Um CTA primário claro por email
-- Texto do botão: Ação + resultado
+- Texto do botêo: Açêo + resultado
 
-**Para guidelines detalhadas de copy, personalização e testing**: Ver [references/copy-guidelines.md](references/copy-guidelines.md)
+**Para guidelines detalhadas de copy, personalizaçêo e testing**: Ver [references/copy-guidelines.md](references/copy-guidelines.md)
 
 ---
 
 ## Formato de output
 
-### Visão geral da sequência
+### Visêo geral da sequência
 ```
 Nome da sequência: [Nome]
 Trigger: [O que inicia a sequência]
-Objetivo: [Objetivo primário de conversão]
+Objetivo: [Objetivo primário de conversêo]
 Comprimento: [Número de emails]
 Timing: [Atraso entre emails]
 Condições de saída: [Quando saem da sequência]
@@ -266,7 +266,7 @@ Send: [Timing]
 Subject: [Subject line]
 Preview: [Preview text]
 Body: [Copy completo]
-CTA: [Texto do botão] → [Link destino]
+CTA: [Texto do botêo] → [Link destino]
 Segment/Conditions: [Se aplicável]
 ```
 
@@ -278,20 +278,20 @@ O que medir e benchmarks
 ## Perguntas específicas da tarefa
 
 1. O que inicia a entrada nesta sequência?
-2. Qual é o objetivo primário / ação de conversão?
+2. Qual é o objetivo primário / açêo de conversêo?
 3. O que já sabem sobre ti?
-4. Que outros emails estão a receber?
+4. Que outros emails estêo a receber?
 5. Qual é a performance atual do teu email?
 
 ---
 
 ## Integrações de ferramentas
 
-Para implementação, ver o [tools registry](../../tools/REGISTRY.md). Ferramentas-chave de email:
+Para implementaçêo, ver o [tools registry](../../tools/REGISTRY.md). Ferramentas-chave de email:
 
 | Ferramenta | Best For | MCP | Guia |
 |------|----------|:---:|-------|
-| **Customer.io** | Automação baseada em comportamento | - | [customer-io.md](../../tools/integrations/customer-io.md) |
+| **Customer.io** | Automaçêo baseada em comportamento | - | [customer-io.md](../../tools/integrations/customer-io.md) |
 | **Mailchimp** | Email marketing para PME | ✓ | [mailchimp.md](../../tools/integrations/mailchimp.md) |
 | **Nitrosend** | Email AI-native (sequences via prompts) | ✓ | [nitrosend.md](../../tools/integrations/nitrosend.md) |
 | **Resend** | Transacional developer-friendly | ✓ | [resend.md](../../tools/integrations/resend.md) |

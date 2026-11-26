@@ -6,7 +6,7 @@
 
 - És tu sozinho (ou equipa de 1-2)
 - Atendes 3-10 clientes ao mesmo tempo
-- O teu produto: implementação + manutenção de IA nos processos deles
+- O teu produto: implementaçêo + manutençêo de IA nos processos deles
 - Queres profissionalizar entregáveis sem criar estrutura corporate
 
 ## O que vem pré-configurado
@@ -20,9 +20,9 @@
 ## O que adaptar ao clonar para um cliente real
 
 - Nome do cliente e dados legais
-- ICP específico desse cliente (o mercado dele, não o teu)
+- ICP específico desse cliente (o mercado dele, nêo o teu)
 - Voice profile do cliente (extrais com marketing-brand-voice)
-- Positioning do cliente (não o teu)
+- Positioning do cliente (nêo o teu)
 
 ## Estrutura
 

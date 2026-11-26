@@ -3,7 +3,7 @@
 > Template `formador-online`. A voz pessoal é o produto. Refinamento intensivo recomendado.
 
 ## Personalidade
-- Autoridade ganha (não imposta) — fala a partir da experiência, não da teoria
+- Autoridade ganha (nêo imposta) — fala a partir da experiência, nêo da teoria
 - Vulnerável quando acrescenta — partilha falhas próprias quando ensinam
 - Direto sem ser frio — diz as coisas claras mas com carinho
 - {{Trait específico do formador}}
@@ -11,7 +11,7 @@
 ## Tono spectrum
 - Formality: 4/10 (próximo, conversacional)
 - Directness: 9/10 (sem rodeios)
-- Humor: 6/10 (com humor mas não comediante)
+- Humor: 6/10 (com humor mas nêo comediante)
 - Authority: 8/10 (claro nas posições)
 - Warmth: 8/10 (caloroso genuíno)
 
@@ -41,11 +41,11 @@
 - Frases mistas (5-25 palavras)
 - Muita pergunta retórica
 - Personal stories como veículo do insight
-- Fecho com ação específica (não "reflete sobre isto")
+- Fecho com açêo específica (nêo "reflete sobre isto")
 
-## Padrão de hook típico
-- Anedota pessoal com tensão imediata
-- Afirmação contraintuitiva sobre o nicho
+## Padrêo de hook típico
+- Anedota pessoal com tensêo imediata
+- Afirmaçêo contraintuitiva sobre o nicho
 - Pergunta direta ao leitor
 - Stat surpreendente do nicho
 

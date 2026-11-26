@@ -7,33 +7,33 @@
 
 ## ⛔ INSTALLATION GATE — LER ANTES DE TUDO
 
-Antes de responderes à primeira mensagem do utilizador neste repo, **tens** de verificar se a instalação está completa.
+Antes de responderes à primeira mensagem do utilizador neste repo, **tens** de verificar se a instalaçêo está completa.
 
 **Fonte de verdade**: `~/.claude/skills/_install-state.json` (state machine persistente, v0.6+).
 
-**Verificação obrigatória** (por esta ordem):
+**Verificaçêo obrigatória** (por esta ordem):
 
 1. **O state file existe?**
-   - Se NÃO existir → a instalação técnica nunca correu. Indica ao utilizador:
-     > "iAmasters OS não está instalado. Preciso que executes a partir do terminal: `bash scripts/install.sh`. Quando terminar, volta aqui."
-   - NÃO cries ficheiros à mão para simular instalação. NÃO marques nada como instalado.
+   - Se NêO existir → a instalaçêo técnica nunca correu. Indica ao utilizador:
+     > "iAmasters OS nêo está instalado. Preciso que executes a partir do terminal: `bash scripts/install.sh`. Quando terminar, volta aqui."
+   - NêO cries ficheiros à mêo para simular instalaçêo. NêO marques nada como instalado.
 
-2. **Se existir, todas as fases `required: true` estão em `status: "done"`?**
-   - Se NÃO → a instalação está incompleta. Invoca o comando `/install` (ou o wizard diretamente, conforme a fase pendente).
-   - **NÃO respondas a outros pedidos do utilizador até fechar a instalação.**
+2. **Se existir, todas as fases `required: true` estêo em `status: "done"`?**
+   - Se NêO → a instalaçêo está incompleta. Invoca o comando `/install` (ou o wizard diretamente, conforme a fase pendente).
+   - **NêO respondas a outros pedidos do utilizador até fechar a instalaçêo.**
 
-3. **O hook SessionStart (`_install-gate.sh`) já injeta este aviso automaticamente quando aplica.** Esta secção é o teu *backup* caso o hook falhe, não a fonte principal.
+3. **O hook SessionStart (`_install-gate.sh`) já injeta este aviso automaticamente quando aplica.** Esta secçêo é o teu *backup* caso o hook falhe, nêo a fonte principal.
 
-**O que NUNCA fazes durante uma instalação incompleta**:
+**O que NUNCA fazes durante uma instalaçêo incompleta**:
 - ❌ Reportar "tudo instalado" quando o state diz o contrário
-- ❌ Criar ficheiros `.json` ou `.md` à mão para "completar" fases
-- ❌ Marcar fases como `done` sem que a validação profunda o confirme
+- ❌ Criar ficheiros `.json` ou `.md` à mêo para "completar" fases
+- ❌ Marcar fases como `done` sem que a validaçêo profunda o confirme
 - ❌ Avançar para tarefas do utilizador se ficarem fases `required` por completar
 
-**Se o utilizador disser "para" / "já não quero continuar":**
+**Se o utilizador disser "para" / "já nêo quero continuar":**
 - Marca `pausedBy: "user"` no state com a fase atual
 - Despede-te: "Quando voltares, `/install --resume` retoma a partir daqui. O que está guardado, está guardado."
-- NÃO insistas. NÃO reportes a instalação como completa.
+- NêO insistas. NêO reportes a instalaçêo como completa.
 
 **Se duvidares do estado**: executa `/install-status` para ver o dashboard sem tocar em nada.
 
@@ -57,7 +57,7 @@ Antes de responderes à primeira mensagem do utilizador neste repo, **tens** de 
 ### Paths Sinapsis (engine global do operador)
 - **Skills root global**: `~/.claude/skills/` (Sinapsis instalado por install.sh)
 - **Operator state**: `~/.claude/skills/_operator-state.json`
-- **Install state (v0.6+)**: `~/.claude/skills/_install-state.json` ← fonte de verdade da instalação
+- **Install state (v0.6+)**: `~/.claude/skills/_install-state.json` ← fonte de verdade da instalaçêo
 - **Install gate hook**: `~/.claude/skills/_install-gate.sh` (SessionStart hook)
 - **Instincts**: `~/.claude/skills/_instincts-index.json`
 - **Daily summaries**: `~/.claude/skills/_daily-summaries/`
@@ -65,7 +65,7 @@ Antes de responderes à primeira mensagem do utilizador neste repo, **tens** de 
 
 ### MANDATORY first action (post-gate)
 
-Uma vez confirmado que a instalação está completa, antes de responder à primeira mensagem do utilizador:
+Uma vez confirmado que a instalaçêo está completa, antes de responder à primeira mensagem do utilizador:
 
 1. Lê `~/.claude/skills/_operator-state.json` (Sinapsis: perfil do operador, decisões, lições).
 2. Lê os 5 ficheiros sectorizados de `context/` se existirem: `me.md`, `work.md`, `team.md`, `current-priorities.md`, `goals.md`.
@@ -75,7 +75,7 @@ Uma vez confirmado que a instalação está completa, antes de responder à prim
 
 ### Session continuity (operativa diária)
 
-Quando tudo está configurado e a instalação está completa:
+Quando tudo está configurado e a instalaçêo está completa:
 1. Daily summary de ontem (Sinapsis)
 2. `context/learnings.md` (feedback consolidado de skills)
 3. Projetos abertos em `projects/briefs/*/brief.md` com `status: active`
@@ -86,7 +86,7 @@ Quando tudo está configurado e a instalação está completa:
 ## Sobre o sistema
 
 ### Sinapsis (engine de memória)
-Sinapsis é o sistema que faz com que o Claude Code aprenda contigo. Vive instalado em `~/.claude/` (não neste repo). O repo trá-lo vendored em `vendor/sinapsis/` para instalação.
+Sinapsis é o sistema que faz com que o Claude Code aprenda contigo. Vive instalado em `~/.claude/` (nêo neste repo). O repo trá-lo vendored em `vendor/sinapsis/` para instalaçêo.
 
 Sinapsis dá-te:
 - **Operator state**: a tua identidade, stack, decisões — persiste em TODOS os projetos
@@ -130,7 +130,7 @@ Capa 1 = 23 skills core + 1 opcional.
 
 ### `_meta/` — sistema (10)
 
-| Skill | Descrição curta |
+| Skill | Descriçêo curta |
 |---|---|
 | `meta-skill-creator` | Cria skills novas |
 | `meta-onboarding-wizard` | Entrevista express por **4 sub-fases com commits incrementais** (v0.6) |
@@ -140,7 +140,7 @@ Capa 1 = 23 skills core + 1 opcional.
 | `welcome-quick-win` | Primeiro entregável em 5 min |
 | `six-hats` | Método 6 chapéus |
 | `decisions-log` | Diário append-only de decisões |
-| `health-check` | Diagnóstico do OS com **validação profunda e deteção de drift** (v0.6) |
+| `health-check` | Diagnóstico do OS com **validaçêo profunda e deteçêo de drift** (v0.6) |
 | `find-skills` | Descobribilidade por intent |
 
 ### `_meta/_optional/` (1)
@@ -151,31 +151,31 @@ Capa 1 = 23 skills core + 1 opcional.
 
 ### `marketing/` (6)
 
-| Skill | Descrição |
+| Skill | Descriçêo |
 |---|---|
 | `marketing-brand-voice` | Voice profile + 3 registos |
 | `marketing-positioning` | Posicionamento competitivo |
 | `marketing-icp` | Cliente ideal |
 | `marketing-copywriting` | Copy com humanizer gate |
-| `marketing-content-repurposing` | Distribuição multiplataforma |
+| `marketing-content-repurposing` | Distribuiçêo multiplataforma |
 | `marketing-email-sequence` | Sequências de email |
 
 ### `automation/` (2)
 
-| Skill | Descrição |
+| Skill | Descriçêo |
 |---|---|
 | `automation-n8n-to-claude` | Migra workflows n8n para o ecossistema Claude |
 | `automation-n8n-builder` | Cria workflows n8n via MCP `n8n-mcp` |
 
 ### `strategy/` (1)
 
-| Skill | Descrição |
+| Skill | Descriçêo |
 |---|---|
 | `strategy-web-research` | Research com subagentes |
 
 ### `tools/` (3)
 
-| Skill | Descrição |
+| Skill | Descriçêo |
 |---|---|
 | `tool-firecrawl-scraper` | Wrapper Firecrawl |
 | `tool-humanizer` | Tira padrões AI-tell |
@@ -183,11 +183,11 @@ Capa 1 = 23 skills core + 1 opcional.
 
 ### `visualization/` (1)
 
-| Skill | Descrição |
+| Skill | Descriçêo |
 |---|---|
 | `tool-visual-explainer` | HTML autocontido partilhável |
 
-### Plugins Anthropic (instalação via marketplace)
+### Plugins Anthropic (instalaçêo via marketplace)
 
 | Skill | Como ativar |
 |---|---|
@@ -197,7 +197,7 @@ Capa 1 = 23 skills core + 1 opcional.
 
 `/install` · `/install-status` · `/start-here` · `/wrap-up` · `/doctor` · `/add-client` · `/install-skill` · `/install-mcp` · `/aprende` · `/deep-dive`
 
-Os dois primeiros (`/install`, `/install-status`) são novos em v0.6 e são a **única via oficial** para gerir a instalação a partir de dentro do Claude Code.
+Os dois primeiros (`/install`, `/install-status`) sêo novos em v0.6 e sêo a **única via oficial** para gerir a instalaçêo a partir de dentro do Claude Code.
 
 ### Capa 2 — on-demand library
 
@@ -207,7 +207,7 @@ Ver [`docs/skills-recommended.md`](docs/skills-recommended.md) para skills opcio
 
 ## Níveis de projeto — heartbeat
 
-Ao iniciar cada sessão (post-gate), verifica `projects/briefs/*/brief.md`:
+Ao iniciar cada sessêo (post-gate), verifica `projects/briefs/*/brief.md`:
 - Se houver `status: active`, lembra-lhe o que ficou em aberto.
 - Se houver um `.planning/` na raiz ou no cliente, indica que há um GSD em curso.
 - Se terminou algo (`status: done`), pergunta se arquivamos.
@@ -252,12 +252,12 @@ Se precisares de mais permissões: `claude --dangerously-skip-permissions` (pont
 
 ---
 
-## Quando NÃO usar o OS
+## Quando NêO usar o OS
 
 Casos em que é melhor abrir o Claude Code noutro lado:
 - Editar o código da tua própria app
 - Bug pontual sem necessidade de brand context
-- Sessão exploratória que não queres que suje a tua memory
+- Sessêo exploratória que nêo queres que suje a tua memory
 
 Para casos em que sim:
 - Criar conteúdo (LinkedIn, X, blog, email, video script)

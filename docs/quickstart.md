@@ -39,7 +39,7 @@ Pede algo concreto. Exemplos:
 "Faz repurpose desta aula do Café Camaleónico para redes"
 → marketing-content-repurposing
 
-"Gera um HTML partilhável a explicar esta decisão"
+"Gera um HTML partilhável a explicar esta decisêo"
 → tool-visual-explainer
 ```
 
@@ -55,7 +55,7 @@ O Claude:
 - Gera daily summary em `synapsis/daily-summaries/<TODAY>.md`
 - Atualiza skills registry se adicionaste alguma
 - Propõe git commit (aceita ou rejeita)
-- Diz-te o que começar amanhã ao voltar
+- Diz-te o que começar amanhê ao voltar
 
 ## Próximos dias
 
@@ -72,21 +72,21 @@ Recapitula-te o de ontem + propõe tarefa do dia. A memória persiste — acabou
 | Comando | O que faz |
 |---|---|
 | `/start-here` | Ritual de início (resumo + proposta) |
-| `/wrap-up` | Fecho de sessão + commit |
+| `/wrap-up` | Fecho de sessêo + commit |
 | `/add-client` | Criar cliente novo (multi-cliente) |
 | `/system-status` | Dashboard Sinapsis (engine) |
 | `/evolve` | Promover instincts aprendidos a permanentes |
 | `/eod` | End of day multi-projeto (Sinapsis) |
-| `/dashboard-sinapsis` | Visualização da aprendizagem do sistema |
+| `/dashboard-sinapsis` | Visualizaçêo da aprendizagem do sistema |
 
-## Quando NÃO usar o OS
+## Quando NêO usar o OS
 
-- Editar o código da tua app → abre o Claude Code na pasta da app, não neste repo
-- Sessão exploratória que não queres sujar memória → modo vanilla noutra pasta
-- Tarefa ultracurta (<2 min) → mais fricção que valor
+- Editar o código da tua app → abre o Claude Code na pasta da app, nêo neste repo
+- Sessêo exploratória que nêo queres sujar memória → modo vanilla noutra pasta
+- Tarefa ultracurta (<2 min) → mais fricçêo que valor
 
 ## Próxima leitura
 
 - `docs/multi-client-guide.md` (em v0.3.0) — fluxo completo de servir N clientes
-- `docs/skill-creation-guide.md` — criar as tuas próprias skills seguindo o padrão
+- `docs/skill-creation-guide.md` — criar as tuas próprias skills seguindo o padrêo
 - `docs/synapsis-overview.md` — entender o que o engine de memória faz

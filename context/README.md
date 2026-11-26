@@ -17,4 +17,4 @@ Este `context/` guarda o contexto **específico do repo iAmasters OS** que só s
 
 ## Privacidade
 
-`user.md`, `daily-memory/` estão no `.gitignore`. Só `soul.md`, `learnings.md` (genérico) e este README vão para o git.
+`user.md`, `daily-memory/` estêo no `.gitignore`. Só `soul.md`, `learnings.md` (genérico) e este README vêo para o git.

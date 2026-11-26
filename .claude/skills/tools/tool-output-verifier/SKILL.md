@@ -9,7 +9,7 @@ description: Quality gate antes de entregar outputs ao cliente. Faz 4 checks (hu
 
 - Skills marketing-copywriting, marketing-blog-writer, marketing-email-sequence, etc. invocam-na no seu último passo (gate obrigatório)
 - O utilizador cola um texto e diz "verifica isto antes de o mandar"
-- Manualmente: `/verify <path>` (slash command se for criado em versão futura)
+- Manualmente: `/verify <path>` (slash command se for criado em versêo futura)
 
 ## Process
 
@@ -76,13 +76,13 @@ Score baseado em estar dentro do intervalo ideal, aceitável ou fora.
 
 ### Passo 5 · Check 4 · Factuality flags
 
-Detetar afirmações que requerem verificação humana:
+Detetar afirmações que requerem verificaçêo humana:
 - Estatísticas com números concretos ("47%", "tripled in 2025")
 - Citações atribuídas a pessoas ou empresas
 - Claims de concorrentes ou produtos
 - Números de telefone, emails, URLs específicos
 
-Por cada flag: marcar mas NÃO bloquear (o operador decide). Anotar no report.
+Por cada flag: marcar mas NêO bloquear (o operador decide). Anotar no report.
 
 ### Passo 6 · Score combinado
 
@@ -91,17 +91,17 @@ total_score = (humanizer_score * 0.4) + (brand_voice_score * 0.4) + (length_scor
 factuality_flags = [list]
 ```
 
-**Decisão final:**
+**Decisêo final:**
 - `total_score ≥ 8 AND humanizer ≥ threshold AND brand_voice ≥ 7` → ✅ passa o gate
-- Se falhar qualquer threshold → ❌ não passa, sugestões para corrigir
-- `factuality_flags` são sempre reportadas, não bloqueiam automaticamente
+- Se falhar qualquer threshold → ❌ nêo passa, sugestões para corrigir
+- `factuality_flags` sêo sempre reportadas, nêo bloqueiam automaticamente
 
 ### Passo 7 · Output
 
 ```markdown
 ## Output Verification Report
 
-**Overall**: 7.8 / 10 → ❌ NÃO PASSA (humanizer 6.5 < 7)
+**Overall**: 7.8 / 10 → ❌ NêO PASSA (humanizer 6.5 < 7)
 
 ### Checks
 - ✅ Length: dentro do intervalo ideal (1450 chars em LinkedIn post, ideal 1200-1800)
@@ -109,14 +109,14 @@ factuality_flags = [list]
 - ✅ Brand voice: 8.5 / 10 (registo B divulgativo correto)
 - ⚠️ Factuality: 2 flags
   - "47% de melhoria em produtividade" (linha 12) — verificar fonte
-  - "segundo a Gartner 2025" (linha 18) — confirmar citação
+  - "segundo a Gartner 2025" (linha 18) — confirmar citaçêo
 
 ### Sugestões para subir humanizer
 1. Substituir em-dashes por vírgulas ou pontos
 2. Trocar "leverage" por "usar" ou "aplicar" nas linhas 4 e 9
-3. Reescrever linha 7 ("Não é só X, mas também Y")
+3. Reescrever linha 7 ("Nêo é só X, mas também Y")
 
-### Reescrevemos? (sim/não)
+### Reescrevemos? (sim/nêo)
 Se disseres sim, invoca tool-humanizer com max-rewrites:1.
 ```
 
@@ -137,14 +137,14 @@ Se `score-only: true`, devolver só:
 
 A skill caller decide:
 - Tentar de novo com tool-humanizer
-- Aceitar o score se não for bloqueante
+- Aceitar o score se nêo for bloqueante
 - Devolver ao utilizador com warning
 
 ### Passo 9 · Fecho
 
 - Append a `context/learnings.md` se detetaste:
-  - Padrão de falha recorrente numa skill ("marketing-copywriting falha sempre humanizer em email")
-  - Configuração de threshold inadequada para uma plataforma
+  - Padrêo de falha recorrente numa skill ("marketing-copywriting falha sempre humanizer em email")
+  - Configuraçêo de threshold inadequada para uma plataforma
 
 ## Outputs
 
@@ -159,10 +159,10 @@ A skill caller decide:
 
 ## Edge cases
 
-- **Não há brand-voice configurada**: skip Check 2, baixar peso para 30% humanizer + 30% brand-voice (que devolve 5 por defeito) + 40% length. Marcar warning.
+- **Nêo há brand-voice configurada**: skip Check 2, baixar peso para 30% humanizer + 30% brand-voice (que devolve 5 por defeito) + 40% length. Marcar warning.
 - **Plataforma desconhecida**: usar defaults (humanizer ≥ 7, length flexível). Pedir ao utilizador para clarificar plataforma.
 - **Texto multi-idioma**: validar cada idioma em separado, dar score médio.
-- **Threshold conflicting com purpose**: ex. email "pessoal a um amigo" não requer humanizer 8. Pedir ao utilizador para confirmar purpose se humanizer falhar por threshold.
+- **Threshold conflicting com purpose**: ex. email "pessoal a um amigo" nêo requer humanizer 8. Pedir ao utilizador para confirmar purpose se humanizer falhar por threshold.
 
 ## Examples
 

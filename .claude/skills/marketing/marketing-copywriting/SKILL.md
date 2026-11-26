@@ -43,11 +43,11 @@ Aplicar template de plataforma:
 
 #### LinkedIn post
 ```
-[Hook 1-2 linhas — afirmação contundente ou pergunta direta]
+[Hook 1-2 linhas — afirmaçêo contundente ou pergunta direta]
 
 [Contexto pessoal — "Há X meses que..." / "Vi...". Aporta credibilidade]
 
-[Insight principal — a lição ou o insight. 1-2 parágrafos]
+[Insight principal — a liçêo ou o insight. 1-2 parágrafos]
 
 [Detalhe concreto — números, exemplos, gotchas]
 
@@ -71,11 +71,11 @@ Cada tweet ~220-260 chars.
 
 #### Email cliente (registo A)
 ```
-Assunto: [Específico, não genérico]
+Assunto: [Específico, nêo genérico]
 
-[Saudação calorosa mas formal conforme relação]
+[Saudaçêo calorosa mas formal conforme relaçêo]
 
-[Contexto imediato — "Após a nossa reunião de...", "Como te mencionei..."]
+[Contexto imediato — "Após a nossa reuniêo de...", "Como te mencionei..."]
 
 [Corpo — sem rodeios. 3 parágrafos no máximo]
 
@@ -87,18 +87,18 @@ Assunto: [Específico, não genérico]
 #### Landing hero
 - Headline: 7-9 palavras, claim diferencial do positioning
 - Subheadline: 15-25 palavras, especificar para quem e o quê
-- CTA primary: 2-3 palavras, verbo de ação
+- CTA primary: 2-3 palavras, verbo de açêo
 - CTA secondary: 3-5 palavras, "ver demo / ver casos"
 
 ### Passo 4 · Gerar 2-3 variações
 
 Por defeito, gerar 3 variações (com etiquetas de ângulo):
 
-**Variação 1 — Storytelling**: arranca com anedota pessoal/cliente
-**Variação 2 — Insight contraintuitivo**: arranca com algo que o leitor não espera
-**Variação 3 — Problema → solução**: arranca a descrever a dor do ICP
+**Variaçêo 1 — Storytelling**: arranca com anedota pessoal/cliente
+**Variaçêo 2 — Insight contraintuitivo**: arranca com algo que o leitor nêo espera
+**Variaçêo 3 — Problema → soluçêo**: arranca a descrever a dor do ICP
 
-Cada variação:
+Cada variaçêo:
 - Aplica o voice-profile + register correto
 - Respeita comprimento de plataforma
 - Inclui números concretos quando possível
@@ -106,75 +106,75 @@ Cada variação:
 
 ### Passo 5 · Passar pelo gate (obrigatório)
 
-Para CADA variação, invoca `tool-output-verifier` em pipeline-mode:
+Para CADA variaçêo, invoca `tool-output-verifier` em pipeline-mode:
 
 ```json
 {
-  "text": "<variação>",
+  "text": "<variaçêo>",
   "platform": "linkedin",
   "purpose": "post"
 }
 ```
 
-Se alguma variação falhar o gate (`passes_gate: false`):
+Se alguma variaçêo falhar o gate (`passes_gate: false`):
 - Se humanizer < threshold → tentar UMA vez com tool-humanizer em rewrite mode
 - Se brand-voice < 7 → reescrever a aplicar o voice-profile mais estritamente
 - Se length out of range → ajustar comprimento
-- Se após 1 retry continuar a falhar → marcar variação com ⚠️ e deixar o operador decidir
+- Se após 1 retry continuar a falhar → marcar variaçêo com ⚠️ e deixar o operador decidir
 
 ### Passo 6 · Output
 
 ```markdown
 ## 3 variações para LinkedIn post · "Tema X"
 
-### Variação 1 · Storytelling — score 9.0/10 ✅
+### Variaçêo 1 · Storytelling — score 9.0/10 ✅
 [Texto]
 
 **Hook**: anedota pessoal
-**Estrutura**: setup → revelação → lição
+**Estrutura**: setup → revelaçêo → liçêo
 **CTA**: pergunta aberta sobre experiência do leitor
 
 ---
 
-### Variação 2 · Insight contraintuitivo — score 8.5/10 ✅
+### Variaçêo 2 · Insight contraintuitivo — score 8.5/10 ✅
 [Texto]
 
-**Hook**: afirmação que surpreende
+**Hook**: afirmaçêo que surpreende
 **Estrutura**: claim → evidência → matiz
 **CTA**: convite a discordar
 
 ---
 
-### Variação 3 · Problema/solução — score 7.5/10 ⚠️ humanizer 6.8 (1 retry usado)
+### Variaçêo 3 · Problema/soluçêo — score 7.5/10 ⚠️ humanizer 6.8 (1 retry usado)
 [Texto]
 
-**Notas**: Continua a ter 2 em-dashes. Sugestão: rever manualmente antes de publicar.
+**Notas**: Continua a ter 2 em-dashes. Sugestêo: rever manualmente antes de publicar.
 
 ---
 
 Com qual ficas? Ou queres que misture 2?
 ```
 
-### Passo 7 · Iteração com feedback
+### Passo 7 · Iteraçêo com feedback
 
 Se o operador pedir ajustes:
 - "Mais curto" → reduz 30%
 - "Mais próximo" → muda para registo C parcialmente
 - "Muda o hook" → gera 2 hooks alternativos
-- "Não me convence o cierre" → 3 cierres alternativos
+- "Nêo me convence o cierre" → 3 cierres alternativos
 
 Aplicar e voltar a verificar (Passo 5).
 
 ### Passo 8 · Cierre
 
-- Guardar versão final do operador em `projects/marketing-copywriting/<YYYY-MM-DD>-<slug>/post.md`
+- Guardar versêo final do operador em `projects/marketing-copywriting/<YYYY-MM-DD>-<slug>/post.md`
 - Se o operador pediu alterações significativas → append em `context/learnings.md` sob `## marketing-copywriting`
-- Se detetaste um padrão novo no feedback → propor no wrap-up atualizar voice-profile ou registers
+- Se detetaste um padrêo novo no feedback → propor no wrap-up atualizar voice-profile ou registers
 
 ## Outputs
 
 - `projects/marketing-copywriting/<data>-<slug>/`:
-  - `post.md` — versão final
+  - `post.md` — versêo final
   - `variations.md` — todas as variações geradas
   - `metadata.json` — plataforma, purpose, scores
 
@@ -186,9 +186,9 @@ Aplicar e voltar a verificar (Passo 5).
 ## Edge cases
 
 - **Sem brand-voice configurado**: warning + modo "neutro divulgativo" + sugerir executar `marketing-brand-voice` antes.
-- **Plataforma não na lista**: usar template genérico + avisar.
+- **Plataforma nêo na lista**: usar template genérico + avisar.
 - **Operador pede algo contra positioning** (ex. atacar segmento que é ICP): perguntar se tem a certeza, se disser que sim, gerar mas flagar.
-- **Tema sensível** (política, religião, etc.): gerar mas avisar que as plataformas podem afetar visibilidade.
+- **Tema sensível** (política, religiêo, etc.): gerar mas avisar que as plataformas podem afetar visibilidade.
 - **Output requerido em idioma distinto do voice-profile**: marcar low-confidence; recomendar rever manualmente.
 
 ## Examples

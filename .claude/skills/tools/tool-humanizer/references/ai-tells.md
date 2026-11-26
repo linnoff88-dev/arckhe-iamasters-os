@@ -1,6 +1,6 @@
 # AI Tells — padrões detetáveis de escrita de IA
 
-> Lista mantida pela comunidade. Se detetares um novo padrão em sessão, faz append aqui e propõe-no no wrap-up.
+> Lista mantida pela comunidade. Se detetares um novo padrêo em sessêo, faz append aqui e propõe-no no wrap-up.
 
 ## Padrões léxicos (palavras e frases)
 
@@ -84,9 +84,9 @@ ChatGPT/Claude usam em-dash em vez de:
 ### Regra de 3 abusada
 "X, Y, and Z" repetido parágrafo após parágrafo.
 
-Humanos variam: 2 pontos, 4 pontos, listas não paralelas.
+Humanos variam: 2 pontos, 4 pontos, listas nêo paralelas.
 
-### Negação-afirmação
+### Negaçêo-afirmaçêo
 "It's not X, it's Y. It's not A, it's B."
 "No se trata de X, se trata de Y."
 
@@ -95,13 +95,13 @@ Repetir essa estrutura 3+ vezes no mesmo bloco = IA.
 ### Frases todas iguais
 - Mesmo comprimento (todas com 20-25 palavras)
 - Mesmo arranque (todas pronomes, todas verbo)
-- Mesmo ritmo (sujeito + verbo + complemento, sem variação)
+- Mesmo ritmo (sujeito + verbo + complemento, sem variaçêo)
 
 ### Bullet points hipersimétricos
 Todos os bullets:
 - começam com verbo
 - têm exatamente 3 palavras de noun phrase
-- terminam em ponto sem variação
+- terminam em ponto sem variaçêo
 
 ### Conclusões óbvias
 "In conclusion, AI is changing the world."
@@ -120,7 +120,7 @@ Tudo "transforma", "revoluciona", "empodera". Sem contras, riscos, limitações.
 
 3+ hedges numa frase = IA insegura.
 
-### Sem opinião pessoal
+### Sem opiniêo pessoal
 Frases na passiva, sem "eu", "acho", "vi", "enganei-me".
 
 Humanos metem "eu" a cada 100-150 palavras pelo menos.
@@ -151,19 +151,19 @@ vs. humano:
 "Hay dos opciones: A o B."
 
 ### Headings a cada 3 frases
-Subtítulos forçados que não acrescentam hierarquia real.
+Subtítulos forçados que nêo acrescentam hierarquia real.
 
 ## Padrões específicos do Claude
 
 ### "I'd be happy to..."
 "Me encantaría ayudarte con..."
 
-Quando aparece em outputs entregáveis ao cliente final = IA pura (é resposta de chat, não conteúdo).
+Quando aparece em outputs entregáveis ao cliente final = IA pura (é resposta de chat, nêo conteúdo).
 
 ### "Let me know if you need..."
 "Déjame saber si necesitas..."
 
-Estrutura de chat metida em blog/email onde não devia.
+Estrutura de chat metida em blog/email onde nêo devia.
 
 ### "Here's a breakdown..."
 "Aquí tienes un desglose..."
@@ -175,7 +175,7 @@ Conector típico do Claude entre secções.
 ### "It's a great question!"
 "¡Es una gran pregunta!"
 
-Validação do utilizador no conteúdo.
+Validaçêo do utilizador no conteúdo.
 
 ### "Certainly!"
 "¡Por supuesto!"
@@ -184,12 +184,12 @@ Affirming token no início do output.
 
 ## Como adicionar novos padrões
 
-Se detetares um padrão de IA não listado:
+Se detetares um padrêo de IA nêo listado:
 
 1. Documenta 3+ exemplos onde aparece
-2. Verifica que é predominantemente IA (não aparece em escrita humana frequente)
+2. Verifica que é predominantemente IA (nêo aparece em escrita humana frequente)
 3. Faz append na categoria apropriada com peso de penalty
-4. No wrap-up, propõe commit: "feat(humanizer): detect <padrão>"
+4. No wrap-up, propõe commit: "feat(humanizer): detect <padrêo>"
 
 ## Pesos por categoria (para scoring)
 
@@ -201,7 +201,7 @@ Se detetares um padrão de IA não listado:
 | Frases-muleta | -1.0 |
 | Abuso de em-dash | -1.0 (a partir do 2.º match) |
 | Regra de 3 abusada | -1.5 (se 3+ parágrafos seguidos) |
-| Negação-afirmação | -1.5 (se 3+ vezes) |
+| Negaçêo-afirmaçêo | -1.5 (se 3+ vezes) |
 | Triplo emoji | -2.0 |
 | Hashtags excessivas (5+) | -1.0 |
-| Conclusão óbvia | -1.0 |
+| Conclusêo óbvia | -1.0 |

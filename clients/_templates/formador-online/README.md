@@ -13,7 +13,7 @@
 
 | Aspeto | freelance-ia | agencia-marketing | formador-online |
 |---|---|---|---|
-| Produto | Serviço implementação | Serviço recorrente | Curso/comunidade escalável |
+| Produto | Serviço implementaçêo | Serviço recorrente | Curso/comunidade escalável |
 | Cliente final | Empresa B2B | Empresa B2B/B2C | Pessoas individuais |
 | Voice | Profissional acessível | Voice do cliente final | Voice pessoal do formador |
 | Skills favoritas | copywriting + repurposing | content-repurposing + copywriting | content-repurposing (alta frequência) + email-sequence |
@@ -21,7 +21,7 @@
 ## O que vem pré-configurado
 
 - **Voice profile**: próximo, autoridade ganha, vulnerabilidade calibrada (B com C importante)
-- **Positioning**: especialista em transformação específica mensurável
+- **Positioning**: especialista em transformaçêo específica mensurável
 - **ICP**: persona aspiracional com dor concreta que pode pagar 200-2000€
 - **Estrutura**: orientada a content engine (alta frequência de output multiplataforma)
 

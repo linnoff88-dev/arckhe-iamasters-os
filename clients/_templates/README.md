@@ -1,13 +1,13 @@
 # Templates de cliente vertical
 
-> Na v0.1.0 os templates estão vazios (só .gitkeep). Preenchem-se na v0.3.0.
+> Na v0.1.0 os templates estêo vazios (só .gitkeep). Preenchem-se na v0.3.0.
 
 ## Verticais planeados
 
 1. **freelance-ia** — operador IA solo, serve múltiplos clientes a partir do seu portátil
 2. **agencia-marketing** — agência pequena 2-10 pessoas, especializada em marketing/conteúdo
 3. **formador-online** — coach ou educador que vende cursos/comunidade
-4. **consultoria-b2b** — consultor B2B (estratégia, ops, transformação)
+4. **consultoria-b2b** — consultor B2B (estratégia, ops, transformaçêo)
 
 ## O que cada template traz
 
@@ -35,5 +35,5 @@ Isto clona o template do vertical selecionado para `clients/<nome-cliente>/` e d
 ## Contribuir verticais novos
 
 1. Criar `clients/_templates/<nome-vertical>/`
-2. Seguir a estrutura padrão
-3. Pull request com a justificação do vertical (que tipo de operador precisa dele)
+2. Seguir a estrutura padrêo
+3. Pull request com a justificaçêo do vertical (que tipo de operador precisa dele)

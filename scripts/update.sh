@@ -2,9 +2,9 @@
 # ============================================================
 #  iAmasters OS — update.sh
 #  Atualiza o repo a partir do upstream com conflict resolution
-#  - Skills próprias do operador NÃO se sobrescrevem
-#  - Brand context, context, projects NUNCA são tocados
-#  - Sinapsis vendorizado atualiza-se se houver nova versão upstream
+#  - Skills próprias do operador NêO se sobrescrevem
+#  - Brand context, context, projects NUNCA sêo tocados
+#  - Sinapsis vendorizado atualiza-se se houver nova versêo upstream
 # ============================================================
 
 set -e
@@ -36,14 +36,14 @@ cd "$REPO_ROOT"
 echo -e "${BLUE}[1/6]${NC} A verificar estado do repo..."
 
 if [ ! -d ".git" ]; then
-    echo -e "${RED}  ERROR${NC} Este diretório não é um git repo"
+    echo -e "${RED}  ERROR${NC} Este diretório nêo é um git repo"
     exit 1
 fi
 
 # Detect uncommitted changes
 if ! git diff-index --quiet HEAD -- 2>/dev/null; then
     echo -e "${YELLOW}  ! Tens mudanças por commitar${NC}"
-    echo -e "${YELLOW}    Recomendação: commit ou stash antes do update${NC}"
+    echo -e "${YELLOW}    Recomendaçêo: commit ou stash antes do update${NC}"
     read -p "  Continuar de qualquer forma? (y/N) " -n 1 -r
     echo
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -75,11 +75,11 @@ echo -e "${GREEN}  OK${NC} Backup em: ${BACKUP_DIR/$REPO_ROOT/.}/"
 echo -e "${BLUE}[3/6]${NC} A verificar remote..."
 
 if ! git remote get-url origin &> /dev/null; then
-    echo -e "${YELLOW}  ! Não há remote 'origin' configurado${NC}"
+    echo -e "${YELLOW}  ! Nêo há remote 'origin' configurado${NC}"
     echo -e "${YELLOW}    Para ativar updates futuros:${NC}"
     echo -e "${YELLOW}    git remote add origin <url>${NC}"
     echo
-    echo "Update local-only completado (não há upstream)."
+    echo "Update local-only completado (nêo há upstream)."
     exit 0
 fi
 
@@ -90,7 +90,7 @@ echo -e "${GREEN}  OK${NC} Remote: $REMOTE_URL"
 echo -e "${BLUE}[4/6]${NC} A fazer fetch do upstream..."
 
 git fetch origin "$CURRENT_BRANCH" 2>&1 | tail -3 || {
-    echo -e "${RED}  ERROR${NC} Fetch falhou. Verifica ligação e permissões."
+    echo -e "${RED}  ERROR${NC} Fetch falhou. Verifica ligaçêo e permissões."
     exit 1
 }
 
@@ -99,7 +99,7 @@ LOCAL=$(git rev-parse HEAD)
 REMOTE=$(git rev-parse "origin/$CURRENT_BRANCH" 2>/dev/null || echo "")
 
 if [ -z "$REMOTE" ]; then
-    echo -e "${YELLOW}  ! Branch '$CURRENT_BRANCH' não existe em origin${NC}"
+    echo -e "${YELLOW}  ! Branch '$CURRENT_BRANCH' nêo existe em origin${NC}"
     echo "Update local-only completado."
     exit 0
 fi
@@ -154,7 +154,7 @@ echo -e "${BOLD}Resumo de mudanças:${NC}"
 echo -e "  ${GREEN}Safe to update${NC}: ${#SAFE_TO_UPDATE[@]} ficheiros (system, vendor)"
 echo -e "  ${CYAN}Skills novas${NC}: ${#SKILLS_NEW[@]} ficheiros"
 echo -e "  ${YELLOW}Skills modificadas${NC}: ${#SKILLS_MODIFIED[@]} ficheiros (potencial conflito)"
-echo -e "  ${RED}User data${NC}: ${#USER_DATA_CONFLICT[@]} ficheiros (NUNCA são tocados, ignoramos upstream)"
+echo -e "  ${RED}User data${NC}: ${#USER_DATA_CONFLICT[@]} ficheiros (NUNCA sêo tocados, ignoramos upstream)"
 echo
 
 # ── Step 6: Apply updates ──
@@ -162,7 +162,7 @@ echo -e "${BLUE}[6/6]${NC} A aplicar updates..."
 
 # Strategy:
 # - SAFE_TO_UPDATE: pull direto (com git checkout origin/branch -- file)
-# - SKILLS_NEW: pull (não havia local, não há conflito)
+# - SKILLS_NEW: pull (nêo havia local, nêo há conflito)
 # - SKILLS_MODIFIED: perguntar ao operador caso a caso
 # - USER_DATA_CONFLICT: skip (manter local)
 
@@ -183,11 +183,11 @@ if [ ${#SKILLS_MODIFIED[@]} -gt 0 ]; then
     echo
     for file in "${SKILLS_MODIFIED[@]}"; do
         echo -e "${BOLD}$file${NC}"
-        echo "  [k] Keep local (manter a tua versão)"
+        echo "  [k] Keep local (manter a tua versêo)"
         echo "  [u] Use upstream (aceitar mudança do repo)"
         echo "  [d] Diff (ver diferença)"
         echo "  [s] Skip (decidir depois)"
-        read -p "  Ação: " -n 1 -r action
+        read -p "  Açêo: " -n 1 -r action
         echo
         case "$action" in
             u|U)
@@ -197,7 +197,7 @@ if [ ${#SKILLS_MODIFIED[@]} -gt 0 ]; then
             d|D)
                 git diff HEAD..origin/"$CURRENT_BRANCH" -- "$file" | head -30
                 echo "  (diff truncado a 30 linhas)"
-                read -p "  Ação após ver diff (k/u/s): " -n 1 -r action2
+                read -p "  Açêo após ver diff (k/u/s): " -n 1 -r action2
                 echo
                 if [[ "$action2" =~ ^[uU]$ ]]; then
                     git checkout "origin/$CURRENT_BRANCH" -- "$file"

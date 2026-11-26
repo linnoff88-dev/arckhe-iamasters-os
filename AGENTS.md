@@ -16,7 +16,7 @@ Variantes que também deves reconhecer:
 - "Quero usar o iAmasters OS"
 - Qualquer URL do repo `iamasters-academy/iamasters-os`
 
-### O teu workflow exato (não improvises)
+### O teu workflow exato (nêo improvises)
 
 #### Passo 1 · Confirma intent e prerequisitos (30s)
 
@@ -33,12 +33,12 @@ Vou instalar o iAmasters OS no teu sistema. O processo:
 Total: ~15-20 minutos. Começamos?
 
 ⚠️ Antes de seguir, confirma que tens:
-- Anthropic Pro ou Max (Free não chega para uso real, ver docs/anthropic-plans.md)
+- Anthropic Pro ou Max (Free nêo chega para uso real, ver docs/anthropic-plans.md)
 - Git instalado (já deve estar em macOS / Windows com Desktop)
 - ~50MB livres no disco
 ```
 
-Espera confirmação afirmativa ("sim", "vamos", "ok", "adiante") antes de continuar.
+Espera confirmaçêo afirmativa ("sim", "vamos", "ok", "adiante") antes de continuar.
 
 #### Passo 2 · Clone
 
@@ -61,15 +61,15 @@ O script `install.sh` é idempotente e devolve saída estruturada. Faz parse:
 - ⚠️ Avisos: `[WARN] <componente> — <motivo>`
 - ❌ Erros: `[ERROR] <componente> — <motivo>`
 
-Se houver erros, NÃO sigas para o passo 4. Diagnostica com `/doctor` (instala-se junto com o OS) e reporta ao utilizador em português o que falha e como arranjar.
+Se houver erros, NêO sigas para o passo 4. Diagnostica com `/doctor` (instala-se junto com o OS) e reporta ao utilizador em português o que falha e como arranjar.
 
 #### Passo 4 · Onboarding wizard
 
-Uma vez `install.sh` termina com sucesso, lança o fluxo de configuração:
+Uma vez `install.sh` termina com sucesso, lança o fluxo de configuraçêo:
 
 1. Lê `~/.claude/skills/_operator-state.json` para confirmar que o Sinapsis se instalou
 2. Invoca a skill `meta-onboarding-wizard` (em `.claude/skills/_meta/meta-onboarding-wizard/SKILL.md`)
-3. Segue exatamente os passos dela — entrevista o utilizador por secções (não tudo de uma vez)
+3. Segue exatamente os passos dela — entrevista o utilizador por secções (nêo tudo de uma vez)
 4. Preenche os ficheiros `context/me.md`, `context/work.md`, `context/team.md`, `context/current-priorities.md`, `context/goals.md`
 
 #### Passo 5 · Welcome quick-win (PRIMEIRO WOW garantido)
@@ -94,15 +94,15 @@ WhatsApp ou na comunidade iAmasters Skool se gostaste.
 O que queres fazer agora?
 1. Configurar o teu Brand Voice completo (10 min mais)
 2. Executar outra skill (sugiro copywriting)
-3. Fechar sessão por hoje
+3. Fechar sessêo por hoje
 ```
 
-### Regras durante a instalação
+### Regras durante a instalaçêo
 
 - **Idioma**: português sempre, sem exceções
-- **Tom**: direto, caloroso, sem rodeios. NÃO uses emojis em excesso (1-2 por mensagem máximo)
-- **Permissões**: o utilizador provavelmente abrirá o Claude Desktop com "omitir permissões" ativado na primeira tentativa — aproveita mas NÃO executes ações destrutivas (rm -rf, git reset --hard, etc.) sem confirmar
-- **Se o utilizador não for o Angel**: SEMPRE perguntar antes de tocar em ficheiros fora de `~/iamasters-os/`. O Sinapsis vive em `~/.claude/` — só o `install.sh` lhe toca
+- **Tom**: direto, caloroso, sem rodeios. NêO uses emojis em excesso (1-2 por mensagem máximo)
+- **Permissões**: o utilizador provavelmente abrirá o Claude Desktop com "omitir permissões" ativado na primeira tentativa — aproveita mas NêO executes ações destrutivas (rm -rf, git reset --hard, etc.) sem confirmar
+- **Se o utilizador nêo for o Angel**: SEMPRE perguntar antes de tocar em ficheiros fora de `~/iamasters-os/`. O Sinapsis vive em `~/.claude/` — só o `install.sh` lhe toca
 - **Se algo falhar**: para imediatamente, executa `/doctor`, reporta em português. Nunca sigas para o passo seguinte com erro em aberto
 
 ---
@@ -113,23 +113,23 @@ O que queres fazer agora?
 
 1. Lê o `CLAUDE.md` (entry point principal)
 2. Segue as instruções de "Session Entry — EXECUTE ON FIRST MESSAGE OF EVERY SESSION"
-3. Se `~/.claude/skills/_operator-state.json` não existir → onboarding wizard
-4. Se existir mas `context/me.md` não existir → `meta-start-here`
+3. Se `~/.claude/skills/_operator-state.json` nêo existir → onboarding wizard
+4. Se existir mas `context/me.md` nêo existir → `meta-start-here`
 5. Se tudo configurado → ritual normal `/start-here`
 
 ---
 
-## 🔌 Se NÃO és Claude Code (Codex, Cursor, outros)
+## 🔌 Se NêO és Claude Code (Codex, Cursor, outros)
 
-Este repo está otimizado para Claude Code, mas as skills são markdown standard e outros agentes podem usá-las.
+Este repo está otimizado para Claude Code, mas as skills sêo markdown standard e outros agentes podem usá-las.
 
 ### Limitações conhecidas
 
-1. **Não executes os hooks do Sinapsis** — estão em `~/.claude/settings.json` e são específicos do Claude Code
-2. **Podes usar as skills** que vivem em `.claude/skills/<categoria>/<nome>/SKILL.md` — são markdown standard
-3. **Podes ler brand-context e context** — são markdown plain
+1. **Nêo executes os hooks do Sinapsis** — estêo em `~/.claude/settings.json` e sêo específicos do Claude Code
+2. **Podes usar as skills** que vivem em `.claude/skills/<categoria>/<nome>/SKILL.md` — sêo markdown standard
+3. **Podes ler brand-context e context** — sêo markdown plain
 4. **Skills format**: cada skill tem `SKILL.md` com YAML frontmatter (name, description) seguido de instruções
-5. **Comandos**: vivem em `.claude/commands/<nome>.md` e são slash commands do Claude Code; outros agentes podem lê-los como referência
+5. **Comandos**: vivem em `.claude/commands/<nome>.md` e sêo slash commands do Claude Code; outros agentes podem lê-los como referência
 
 ### Como invocar uma skill genericamente
 
@@ -141,20 +141,20 @@ Este repo está otimizado para Claude Code, mas as skills são markdown standard
 ### Compatibilidade testada
 
 - ✅ **Claude Code** (ambiente principal, todos os hooks Sinapsis ativos)
-- 🟡 **Codex (OpenAI)** — skills funcionam, hooks Sinapsis não se aplicam
-- 🟡 **Cursor** — skills funcionam como prompts, não há integração direta
-- ❌ **Antigravity / Other** — não testado
+- 🟡 **Codex (OpenAI)** — skills funcionam, hooks Sinapsis nêo se aplicam
+- 🟡 **Cursor** — skills funcionam como prompts, nêo há integraçêo direta
+- ❌ **Antigravity / Other** — nêo testado
 
 ---
 
 ## Variáveis chave (qualquer agente)
 
 - **Idioma operativo**: português
-- **Estilo de resposta**: direto, sem rodeios, 2-3 opções máx com recomendação
-- **Validação humana**: sempre antes de ações destrutivas
+- **Estilo de resposta**: direto, sem rodeios, 2-3 opções máx com recomendaçêo
+- **Validaçêo humana**: sempre antes de ações destrutivas
 - **Segredos**: nunca commitar `.env`, credentials, API keys
 
-## Estrutura mínima do repo (não partir)
+## Estrutura mínima do repo (nêo partir)
 
 ```
 .claude/skills/<categoria>/<nome>/SKILL.md     ← skills curadas
@@ -164,14 +164,14 @@ brand-context/positioning/positioning.md
 brand-context/icp/icp.md
 context/me.md                                   ← perfil pessoal
 context/work.md                                 ← negócio, serviços, receita
-context/team.md                                 ← equipa e comunicação
+context/team.md                                 ← equipa e comunicaçêo
 context/current-priorities.md                   ← foco atual (muda com frequência)
 context/goals.md                                ← objetivos trimestrais
 context/decisions-log.md                        ← decisões append-only
 context/learnings.md                            ← feedback de skills
 projects/briefs/<nome>/brief.md                 ← planned projects
 clients/<nome>/{brand-context,context,projects} ← multi-cliente
-vendor/sinapsis/                                ← Sinapsis vendorizado, não tocar
+vendor/sinapsis/                                ← Sinapsis vendorizado, nêo tocar
 ```
 
 ## Para suporte cross-tool mais profundo

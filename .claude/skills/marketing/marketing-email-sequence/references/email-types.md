@@ -1,15 +1,15 @@
 # Referência de Tipos de Email
 
-Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist de auditoria e referência de implementação.
+Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist de auditoria e referência de implementaçêo.
 
 ## Conteúdos
 - Emails de Onboarding (série de novos utilizadores, série de novos clientes, lembrete de passo crítico de onboarding, convite de novo utilizador)
-- Emails de Retenção (upgrade para pago, upgrade para plano superior, pedir avaliação, oferecer suporte de forma proativa, relatório de utilização do produto, inquérito NPS, programa de referrals)
-- Emails de Billing (mudar para anual, recuperação de pagamento falhado, inquérito de cancelamento, lembrete de renovação próxima)
-- Emails de Utilização (resumo diário/semanal/mensal, notificações de eventos-chave ou milestones)
+- Emails de Retençêo (upgrade para pago, upgrade para plano superior, pedir avaliaçêo, oferecer suporte de forma proativa, relatório de utilizaçêo do produto, inquérito NPS, programa de referrals)
+- Emails de Billing (mudar para anual, recuperaçêo de pagamento falhado, inquérito de cancelamento, lembrete de renovaçêo próxima)
+- Emails de Utilizaçêo (resumo diário/semanal/mensal, notificações de eventos-chave ou milestones)
 - Emails de Win-Back (trials expirados, clientes cancelados)
-- Emails de Campanha (roundup mensal/newsletter, promoções sazonais, atualizações de produto, roundup de notícias da indústria, atualização de preços)
-- Checklist de Auditoria de Email (onboarding, retenção, billing, utilização, win-back, campanhas)
+- Emails de Campanha (roundup mensal/newsletter, promoções sazonais, atualizações de produto, roundup de notícias da indústria, atualizaçêo de preços)
+- Checklist de Auditoria de Email (onboarding, retençêo, billing, utilizaçêo, win-back, campanhas)
 
 ## Emails de Onboarding
 
@@ -26,13 +26,13 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 - Email 6: Dica avançada (dia 10)
 - Email 7: Prompt de upgrade ou próximo milestone (dia 14)
 
-**Métricas-chave**: Taxa de ativação, adoção de funcionalidades
+**Métricas-chave**: Taxa de ativaçêo, adoçêo de funcionalidades
 
 ---
 
 ### Série de Novos Clientes
 **Trigger**: Utilizador converte para pago
-**Objetivo**: Reforçar a decisão de compra, impulsionar a adoção, reduzir churn precoce
+**Objetivo**: Reforçar a decisêo de compra, impulsionar a adoçêo, reduzir churn precoce
 **Sequência típica**: 3-5 emails ao longo de 14 dias
 
 - Email 1: Obrigado + o que vem a seguir (imediato)
@@ -41,19 +41,19 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 - Email 4: História de sucesso de cliente parecido (dia 7)
 - Email 5: Check-in + apresentar recursos de suporte (dia 14)
 
-**Ponto-chave**: Diferente da série de novos utilizadores — estes já se comprometeram. Foco em reforço e expansão, não em conversão.
+**Ponto-chave**: Diferente da série de novos utilizadores — estes já se comprometeram. Foco em reforço e expansêo, nêo em conversêo.
 
 ---
 
 ### Lembrete de Passo Crítico de Onboarding
-**Trigger**: Utilizador não completou passo crítico de setup após X tempo
-**Objetivo**: Empurrar a conclusão de uma ação de alto valor
+**Trigger**: Utilizador nêo completou passo crítico de setup após X tempo
+**Objetivo**: Empurrar a conclusêo de uma açêo de alto valor
 **Formato**: Email único ou mini-sequência de 2-3 emails
 
 **Exemplos de triggers**:
-- Não ligou a integração após 48 horas
-- Não convidou membro da equipa após 3 dias
-- Não completou o perfil após 24 horas
+- Nêo ligou a integraçêo após 48 horas
+- Nêo convidou membro da equipa após 3 dias
+- Nêo completou o perfil após 24 horas
 
 **Abordagem de copy**:
 - Recorda o que começou
@@ -69,7 +69,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 **Destinatário**: A pessoa que está a ser convidada
 
 - Email 1: Foste convidado (imediato)
-- Email 2: Lembrete se não aceitou (dia 2)
+- Email 2: Lembrete se nêo aceitou (dia 2)
 - Email 3: Lembrete final (dia 5)
 
 **Abordagem de copy**:
@@ -80,7 +80,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 ---
 
-## Emails de Retenção
+## Emails de Retençêo
 
 ### Upgrade para Pago
 **Trigger**: Utilizador gratuito mostra engagement, ou trial a acabar
@@ -89,12 +89,12 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 **Opções de trigger**:
 - Baseado em tempo (trial dia 10, 12, 14)
-- Baseado em comportamento (atingiu limite de utilização, usou funcionalidade premium)
+- Baseado em comportamento (atingiu limite de utilizaçêo, usou funcionalidade premium)
 - Baseado em engagement (utilizador gratuito muito ativo)
 
 **Estrutura da sequência**:
 - Resumo de valor: O que conseguiu até agora
-- Comparação de funcionalidades: O que está a perder
+- Comparaçêo de funcionalidades: O que está a perder
 - Prova social: Quem mais fez upgrade
 - Urgência: Trial a acabar, oferta limitada
 - Final: Última oportunidade + caminho fácil
@@ -108,7 +108,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 **Exemplos de trigger**:
 - 80% do limite de seats atingido
-- 90% do limite de armazenamento/utilização
+- 90% do limite de armazenamento/utilizaçêo
 - Tentou usar uma funcionalidade do tier superior
 - Padrões de comportamento de power user
 
@@ -120,54 +120,54 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 ---
 
-### Pedir Avaliação
-**Trigger**: Milestone do cliente (30/60/90 dias, conquista importante, resolução de suporte)
+### Pedir Avaliaçêo
+**Trigger**: Milestone do cliente (30/60/90 dias, conquista importante, resoluçêo de suporte)
 **Objetivo**: Gerar prova social em G2, Capterra, app stores
 **Formato**: Email único
 
 **Melhor timing**:
-- Após interação positiva de suporte
+- Após interaçêo positiva de suporte
 - Após alcançar resultado mensurável
-- Após renovação
-- NÃO após problemas de billing ou bugs
+- Após renovaçêo
+- NêO após problemas de billing ou bugs
 
 **Abordagem de copy**:
 - Agradece por ser cliente
 - Menciona valor/milestone específico se possível
 - Explica porque é que as avaliações importam (ajudam outros a decidir)
-- Link direto para a plataforma de avaliação
+- Link direto para a plataforma de avaliaçêo
 - Mantém curto — isto é um pedido
 
 ---
 
 ### Oferecer Suporte de Forma Proativa
-**Trigger**: Sinais de dificuldade (queda na utilização, ações falhadas, encontros com erros)
+**Trigger**: Sinais de dificuldade (queda na utilizaçêo, ações falhadas, encontros com erros)
 **Objetivo**: Salvar utilizador em risco, melhorar experiência
 **Formato**: Email único
 
 **Exemplos de trigger**:
-- Utilização caiu significativamente semana sobre semana
-- Várias tentativas falhadas de uma ação
+- Utilizaçêo caiu significativamente semana sobre semana
+- Várias tentativas falhadas de uma açêo
 - Consultou docs de ajuda repetidamente
 - Preso no mesmo passo de onboarding
 
 **Abordagem de copy**:
-- Tom de preocupação genuína
+- Tom de preocupaçêo genuína
 - Específico: "Reparei que..." (se os dados permitirem)
-- Oferece ajuda direta (não apenas um link para docs)
+- Oferece ajuda direta (nêo apenas um link para docs)
 - Pessoal, vindo do suporte ou CSM
 - Sem pitch comercial — pura ajuda
 
 ---
 
-### Relatório de Utilização do Produto
+### Relatório de Utilizaçêo do Produto
 **Trigger**: Baseado em tempo (semanal, mensal, trimestral)
 **Objetivo**: Demonstrar valor, impulsionar engagement, reduzir churn
 **Formato**: Email único, recorrente
 
 **O que incluir**:
 - Resumo de métricas-chave/atividade
-- Comparação com o período anterior
+- Comparaçêo com o período anterior
 - Conquistas/milestones
 - Sugestões de melhoria
 - CTA leve para explorar mais
@@ -183,7 +183,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 ### Inquérito NPS
 **Trigger**: Baseado em tempo (trimestral) ou baseado em evento (pós-milestone)
-**Objetivo**: Medir satisfação, identificar promoters e detractors
+**Objetivo**: Medir satisfaçêo, identificar promoters e detractors
 **Formato**: Email único
 
 **Boas práticas**:
@@ -193,7 +193,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 - Diz-lhes como vais usar o feedback
 
 **Follow-up com base no score**:
-- Promoters (9-10): Agradece + pede avaliação/referral
+- Promoters (9-10): Agradece + pede avaliaçêo/referral
 - Passives (7-8): Pergunta o que tornaria num 10
 - Detractors (0-6): Outreach pessoal para perceber problemas
 
@@ -207,7 +207,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 **Bom timing**:
 - Após resposta positiva ao NPS
 - Após o cliente atingir resultado
-- Após renovação
+- Após renovaçêo
 - Campanhas sazonais
 
 **Abordagem de copy**:
@@ -221,7 +221,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 ## Emails de Billing
 
 ### Mudar para Anual
-**Trigger**: Subscritor mensal na altura de renovação ou campanha
+**Trigger**: Subscritor mensal na altura de renovaçêo ou campanha
 **Objetivo**: Converter mensal para anual (melhorar LTV, reduzir churn)
 **Formato**: Email único ou sequência de 2 emails
 
@@ -232,14 +232,14 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 - Switch fácil em um clique
 
 **Melhor timing**:
-- Perto da data de renovação mensal
+- Perto da data de renovaçêo mensal
 - Final de ano / ano novo
 - Após 3-6 meses de lealdade
 - Anúncio de aumento de preço (fixar a tarifa antiga)
 
 ---
 
-### Recuperação de Pagamento Falhado
+### Recuperaçêo de Pagamento Falhado
 **Trigger**: Pagamento falha
 **Objetivo**: Recuperar receita, reter cliente
 **Sequência típica**: 3-4 emails ao longo de 7-14 dias
@@ -248,46 +248,46 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 - Email 1 (Dia 0): Aviso amigável, link para atualizar pagamento
 - Email 2 (Dia 3): Lembrete, o serviço pode ser interrompido
 - Email 3 (Dia 7): Urgente, a conta será suspensa
-- Email 4 (Dia 10-14): Aviso final, o que vão perder
+- Email 4 (Dia 10-14): Aviso final, o que vêo perder
 
 **Abordagem de copy**:
-- Assume que é um acidente (cartão expirado, etc.)
+- Assume que é um acidente (cartêo expirado, etc.)
 - Claro, direto, sem culpa
 - CTA único para atualizar pagamento
-- Explica o que acontece se não for resolvido
+- Explica o que acontece se nêo for resolvido
 
-**Métricas-chave**: Taxa de recuperação, tempo até recuperação
+**Métricas-chave**: Taxa de recuperaçêo, tempo até recuperaçêo
 
 ---
 
 ### Inquérito de Cancelamento
-**Trigger**: Utilizador cancela subscrição
+**Trigger**: Utilizador cancela subscriçêo
 **Objetivo**: Aprender porquê, oportunidade de salvar
 **Formato**: Email único (imediato)
 
 **Opções**:
-- Inquérito in-app no cancelamento (maior taxa de conclusão)
+- Inquérito in-app no cancelamento (maior taxa de conclusêo)
 - Email de follow-up se saltarem o in-app
 - Outreach pessoal para contas de alto valor
 
 **Perguntas a fazer**:
-- Razão principal do cancelamento
+- Razêo principal do cancelamento
 - O que poderíamos ter feito melhor
-- Algo mudaria a tua decisão
-- Podemos ajudar com a transição
+- Algo mudaria a tua decisêo
+- Podemos ajudar com a transiçêo
 
-**Oportunidade de winback**: Com base na razão, oferece uma alternativa específica (desconto, pausa, downgrade, formação).
+**Oportunidade de winback**: Com base na razêo, oferece uma alternativa específica (desconto, pausa, downgrade, formaçêo).
 
 ---
 
-### Lembrete de Renovação Próxima
-**Trigger**: X dias antes da renovação (típico: 14 ou 30 dias)
+### Lembrete de Renovaçêo Próxima
+**Trigger**: X dias antes da renovaçêo (típico: 14 ou 30 dias)
 **Objetivo**: Sem cobranças surpresa, oportunidade de expandir
 **Formato**: Email único
 
 **O que incluir**:
-- Data e montante da renovação
-- O que está incluído na renovação
+- Data e montante da renovaçêo
+- O que está incluído na renovaçêo
 - Como atualizar pagamento/plano
 - Alterações a preços/funcionalidades (se houver)
 - Opcional: Oportunidade de upsell
@@ -296,7 +296,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 ---
 
-## Emails de Utilização
+## Emails de Utilizaçêo
 
 ### Resumo Diário/Semanal/Mensal
 **Trigger**: Baseado em tempo
@@ -315,7 +315,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 - Sugestões / o que experimentar a seguir
 - CTA para aprofundar
 
-**Personalização**: Tem de ser relevante para a utilização real. Relatórios vazios são piores do que não ter relatório.
+**Personalizaçêo**: Tem de ser relevante para a utilizaçêo real. Relatórios vazios sêo piores do que nêo ter relatório.
 
 ---
 
@@ -325,14 +325,14 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 **Formato**: Email único por evento
 
 **Exemplos de milestone**:
-- Primeira [ação] completada
+- Primeira [açêo] completada
 - 10º/100º [item] criado
 - Objetivo atingido
-- Milestone de colaboração de equipa
-- Streak de utilização
+- Milestone de colaboraçêo de equipa
+- Streak de utilizaçêo
 
 **Abordagem de copy**:
-- Tom de celebração
+- Tom de celebraçêo
 - Conquista específica
 - Contexto (comparado com outros, comparado com antes)
 - O que vem a seguir / próximo milestone
@@ -342,18 +342,18 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 ## Emails de Win-Back
 
 ### Trials Expirados
-**Trigger**: Trial terminou sem conversão
+**Trigger**: Trial terminou sem conversêo
 **Objetivo**: Converter ou reengajar
 **Sequência típica**: 3-4 emails ao longo de 30 dias
 
 **Estrutura da sequência**:
-- Email 1 (Dia 1 pós-expiração): Trial terminou, eis o que estás a perder
+- Email 1 (Dia 1 pós-expiraçêo): Trial terminou, eis o que estás a perder
 - Email 2 (Dia 7): O que te impediu? (recolhe feedback)
 - Email 3 (Dia 14): Oferta de incentivo (desconto, trial estendido)
 - Email 4 (Dia 30): Último contacto, a porta está aberta
 
-**Segmentação**: Abordagem diferente conforme o nível de engagement no trial:
-- Alto engagement: Foco em remover fricção para converter
+**Segmentaçêo**: Abordagem diferente conforme o nível de engagement no trial:
+- Alto engagement: Foco em remover fricçêo para converter
 - Baixo engagement: Oferece um recomeço, mais ajuda de onboarding
 - Sem engagement: Pergunta o que aconteceu, oferece demo/call
 
@@ -366,16 +366,16 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 **Estrutura da sequência**:
 - Email 1 (Dia 30): O que há de novo desde que saíste
-- Email 2 (Dia 60): Resolvemos [razão comum]
+- Email 2 (Dia 60): Resolvemos [razêo comum]
 - Email 3 (Dia 90): Oferta especial para voltar
 
 **Abordagem de copy**:
 - Sem culpa, sem desespero
 - Atualizações e melhorias genuínas
-- Personaliza com base na razão do cancelamento, se conhecida
+- Personaliza com base na razêo do cancelamento, se conhecida
 - Facilita o regresso
 
-**Ponto-chave**: É mais provável que voltem se a razão tiver sido resolvida.
+**Ponto-chave**: É mais provável que voltem se a razêo tiver sido resolvida.
 
 ---
 
@@ -383,7 +383,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 ### Roundup Mensal / Newsletter
 **Trigger**: Baseado em tempo (mensal)
-**Objetivo**: Engagement, presença de marca, distribuição de conteúdo
+**Objetivo**: Engagement, presença de marca, distribuiçêo de conteúdo
 **Formato**: Email único, recorrente
 
 **Mix de conteúdo**:
@@ -398,7 +398,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 - Formato fácil de scanear
 - Mix de tipos de conteúdo
 - Um CTA primário em foco
-- Unsubscribes são ok — mantêm a lista saudável
+- Unsubscribes sêo ok — mantêm a lista saudável
 
 ---
 
@@ -416,26 +416,26 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 **Estrutura da sequência**:
 - Anúncio: Revelar a oferta
-- Lembrete: A meio da promoção
+- Lembrete: A meio da promoçêo
 - Última oportunidade: Horas finais
 
 ---
 
 ### Atualizações de Produto
 **Trigger**: Lançamento de nova funcionalidade
-**Objetivo**: Adoção, engagement, demonstrar momentum
+**Objetivo**: Adoçêo, engagement, demonstrar momentum
 **Formato**: Email único por lançamento principal
 
 **O que incluir**:
 - O que há de novo (claro e simples)
-- Porque importa (benefício, não apenas funcionalidade)
+- Porque importa (benefício, nêo apenas funcionalidade)
 - Como usar (link direto)
 - Quem pediu (reconhecimento da comunidade)
 
-**Segmentação**: Considera segmentar com base na relevância:
+**Segmentaçêo**: Considera segmentar com base na relevância:
 - Utilizadores que mais beneficiam
 - Utilizadores que pediram a funcionalidade
-- Power users primeiro (sensação de beta)
+- Power users primeiro (sensaçêo de beta)
 
 ---
 
@@ -446,7 +446,7 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 **Conteúdo**:
 - Notícias e links curados
-- A tua opinião / comentário
+- A tua opiniêo / comentário
 - O que significa para os leitores
 - Como o teu produto ajuda
 
@@ -454,9 +454,9 @@ Guia abrangente para emails de lifecycle e de campanha. Usa isto como checklist 
 
 ---
 
-### Atualização de Preços
+### Atualizaçêo de Preços
 **Trigger**: Anúncio de mudança de preço
-**Objetivo**: Comunicação transparente, minimizar churn
+**Objetivo**: Comunicaçêo transparente, minimizar churn
 **Formato**: Email único (ou sequência para mudanças grandes)
 
 **Timeline**:
@@ -484,22 +484,22 @@ Usa isto para auditar o teu programa de email atual:
 - [ ] Lembretes de passos críticos de onboarding
 - [ ] Sequência de convite de novo utilizador
 
-### Retenção
+### Retençêo
 - [ ] Sequência de upgrade para pago
 - [ ] Triggers de upgrade para plano superior
-- [ ] Pedir avaliação (com timing adequado)
+- [ ] Pedir avaliaçêo (com timing adequado)
 - [ ] Outreach proativo de suporte
-- [ ] Relatórios de utilização do produto
+- [ ] Relatórios de utilizaçêo do produto
 - [ ] Inquérito NPS
 - [ ] Emails do programa de referrals
 
 ### Billing
 - [ ] Campanha de mudança para anual
-- [ ] Sequência de recuperação de pagamento falhado
+- [ ] Sequência de recuperaçêo de pagamento falhado
 - [ ] Inquérito de cancelamento
-- [ ] Lembretes de renovação próxima
+- [ ] Lembretes de renovaçêo próxima
 
-### Utilização
+### Utilizaçêo
 - [ ] Resumos diários/semanais/mensais
 - [ ] Notificações de eventos-chave
 - [ ] Celebrações de milestone
@@ -512,4 +512,4 @@ Usa isto para auditar o teu programa de email atual:
 - [ ] Roundup mensal / newsletter
 - [ ] Calendário de promoções sazonais
 - [ ] Anúncios de atualizações de produto
-- [ ] Comunicações de atualização de preços
+- [ ] Comunicações de atualizaçêo de preços

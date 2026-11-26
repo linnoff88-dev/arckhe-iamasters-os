@@ -1,6 +1,6 @@
 ---
 name: welcome-quick-win
-description: Gera o primeiro entregável do utilizador em 5 minutos após o onboarding. Pede o seu URL público (LinkedIn / web), executa análise de posicionamento, produz 3 hooks LinkedIn e plano de 3 ações para a semana, tudo empacotado em HTML autocontido e partilhável. Invoca-se automaticamente no fim do onboarding wizard ou à mão via `/welcome`. É a skill que entrega o "primeiro wow" do OS.
+description: Gera o primeiro entregável do utilizador em 5 minutos após o onboarding. Pede o seu URL público (LinkedIn / web), executa análise de posicionamento, produz 3 hooks LinkedIn e plano de 3 ações para a semana, tudo empacotado em HTML autocontido e partilhável. Invoca-se automaticamente no fim do onboarding wizard ou à mêo via `/welcome`. É a skill que entrega o "primeiro wow" do OS.
 ---
 
 # welcome-quick-win
@@ -8,12 +8,12 @@ description: Gera o primeiro entregável do utilizador em 5 minutos após o onbo
 ## Quando é invocada
 
 - Automaticamente ao terminar `meta-onboarding-wizard` (se a flag `welcomeCompleted: false` em `~/.claude/skills/_operator-state.json`)
-- À mão quando o utilizador executa o slash command `/welcome`
+- À mêo quando o utilizador executa o slash command `/welcome`
 - Quando o utilizador pede explicitamente: "dá-me o meu primeiro entregável", "testa o sistema", "faz uma primeira tarefa de exemplo"
 
 ## Por que importa
 
-Esta é a skill que converte "acabei de instalar o sistema" em "tenho algo concreto no ecrã, bonito, que se pode partilhar". É o momento crítico de adoção — o avatar não técnico decide aqui se o sistema lhe serve ou se o abandona. **O teu trabalho é entregar valor real em 5 minutos sem fricção.**
+Esta é a skill que converte "acabei de instalar o sistema" em "tenho algo concreto no ecrê, bonito, que se pode partilhar". É o momento crítico de adoçêo — o avatar nêo técnico decide aqui se o sistema lhe serve ou se o abandona. **O teu trabalho é entregar valor real em 5 minutos sem fricçêo.**
 
 ## Process
 
@@ -32,7 +32,7 @@ onde se veja o que fazes profissionalmente. Pode ser:
 Cola-me UM URL.
 ```
 
-Se o utilizador responder "não tenho nada público":
+Se o utilizador responder "nêo tenho nada público":
 
 - Pede-lhe um parágrafo: "Conta-me em 3-5 frases o que fazes, para quem, e qual é o teu diferencial."
 - Salta para o Passo 3 com esse texto como input direto.
@@ -42,13 +42,13 @@ Se o utilizador responder "não tenho nada público":
 Invoca `tool-firecrawl-scraper` com o URL recebido.
 
 **Se falhar** (sem API key, domínio bloqueado, timeout):
-- Reporta ao utilizador: "Não consegui ler o teu URL automaticamente."
-- Pede-lhe que cole à mão: "Copia 2-3 parágrafos chave da tua página (About, serviços, descrição)."
+- Reporta ao utilizador: "Nêo consegui ler o teu URL automaticamente."
+- Pede-lhe que cole à mêo: "Copia 2-3 parágrafos chave da tua página (About, serviços, descriçêo)."
 - Continua com esse texto como input.
 
 **Se tiver sucesso**: extrai:
 - Título / headline / hero text
-- Secção "About" ou equivalente
+- Secçêo "About" ou equivalente
 - Serviços ou produtos
 - Tom geral (formal / próximo / divulgativo)
 
@@ -73,12 +73,12 @@ Baseado na análise de posicionamento + `scraped_content`, gera 3 hooks de post 
 
 Cada hook deve:
 - **Começar com frase curta** (≤12 palavras) que pare o scroll
-- **Ligar a uma dor do ICP** (não "eu eu eu")
-- **Ter um POV claro** (opinião, não descrição genérica)
+- **Ligar a uma dor do ICP** (nêo "eu eu eu")
+- **Ter um POV claro** (opiniêo, nêo descriçêo genérica)
 - **Estar em português natural**, sem AI-tells (em-dashes estranhos, "navegar", "abraçar", "desbloquear")
-- Comprimento máximo do hook: 2 linhas (não o post completo, só o gancho)
+- Comprimento máximo do hook: 2 linhas (nêo o post completo, só o gancho)
 
-Se existir `brand-context/voice/voice-profile.md` carrega-o e aplica o tom. Se não existir, usa registo divulgativo neutro e avisa o utilizador que poderá personalizar depois com `marketing-brand-voice`.
+Se existir `brand-context/voice/voice-profile.md` carrega-o e aplica o tom. Se nêo existir, usa registo divulgativo neutro e avisa o utilizador que poderá personalizar depois com `marketing-brand-voice`.
 
 ### Passo 5 · Plano da semana — 3 ações concretas
 
@@ -92,12 +92,12 @@ Gera 3 ações específicas que o utilizador pode fazer esta semana baseadas no 
 
 As ações devem ser:
 - **Executáveis sem contratar ninguém** (o utilizador fá-las sozinho)
-- **Com output verificável** (não "refletir sobre X")
+- **Com output verificável** (nêo "refletir sobre X")
 - **Ligadas ao diagnóstico de posicionamento** (atacam as oportunidades detetadas)
 
 ### Passo 6 · Empacotar tudo em HTML autocontido
 
-Se a skill `tool-visual-explainer` estiver disponível no repo, invoca-a com um brief do conteúdo. Se não, gera HTML inline seguindo este esqueleto:
+Se a skill `tool-visual-explainer` estiver disponível no repo, invoca-a com um brief do conteúdo. Se nêo, gera HTML inline seguindo este esqueleto:
 
 - HTML5 válido, uma só página, sem dependências externas (sem CDN)
 - CSS embebido em `<style>` — sem JS (partilhável por WhatsApp)
@@ -129,14 +129,14 @@ O que fazemos agora?
 
   1. Configurar o teu Brand Voice completo (10 min mais, recomendado)
   2. Executar outra skill (sugiro `marketing-copywriting`)
-  3. Fechar sessão por hoje com `/wrap-up`
+  3. Fechar sessêo por hoje com `/wrap-up`
 ```
 
 Espera resposta do utilizador antes de fazer mais nada.
 
 ### Passo 8 · Marcar como completado e aprender
 
-1. Edita `~/.claude/skills/_operator-state.json` e põe `welcomeCompleted: true` (para que não se volte a disparar automaticamente).
+1. Edita `~/.claude/skills/_operator-state.json` e põe `welcomeCompleted: true` (para que nêo se volte a disparar automaticamente).
 2. Append em `context/learnings.md` em `## welcome-quick-win`:
    ```
    - <data>: completado para <nome do utilizador>. URL usado: <url>.
@@ -155,17 +155,17 @@ Espera resposta do utilizador antes de fazer mais nada.
 - **`tool-firecrawl-scraper`** — para extrair conteúdo do URL público (Passo 2)
 - **`marketing-positioning`** — para a análise de posicionamento (Passo 3)
 - **`tool-visual-explainer`** (se disponível) — para empacotar HTML (Passo 6); fallback HTML inline
-- **`tool-output-verifier`** (opcional) — para verificar a quality do HTML antes de entregar; se não se detetar AI-slop em hooks LinkedIn, omitir
+- **`tool-output-verifier`** (opcional) — para verificar a quality do HTML antes de entregar; se nêo se detetar AI-slop em hooks LinkedIn, omitir
 
 ## Edge cases
 
 - **Sem URL público**: pedir parágrafo descritivo, saltar Passo 2.
-- **Firecrawl sem API key ou falha**: pedir ao utilizador que cole conteúdo à mão.
+- **Firecrawl sem API key ou falha**: pedir ao utilizador que cole conteúdo à mêo.
 - **LinkedIn rejeita scraping (robots.txt ou redirecionamento para login)**: pedir export manual do perfil ou parágrafo descritivo.
-- **`marketing-positioning` não disponível**: fazer análise tu próprio seguindo a estrutura do Passo 3.
-- **`tool-visual-explainer` não instalado**: gerar HTML inline (esqueleto do Passo 6).
+- **`marketing-positioning` nêo disponível**: fazer análise tu próprio seguindo a estrutura do Passo 3.
+- **`tool-visual-explainer` nêo instalado**: gerar HTML inline (esqueleto do Passo 6).
 - **Sem `brand-context/voice/voice-profile.md`**: usar registo divulgativo neutro + aviso ao utilizador.
-- **Utilizador demora muito a responder ao Passo 1 (>2 min sem resposta)**: NÃO insistir, esperar.
+- **Utilizador demora muito a responder ao Passo 1 (>2 min sem resposta)**: NêO insistir, esperar.
 - **Plan Anthropic Free**: provável que a skill esgote contexto. Detetar antes e avisar: "Esta skill funciona melhor com Pro/Max. Continuas ou deixamos?"
 
 ## Examples
@@ -178,5 +178,5 @@ Ver `references/examples.md` para 2 exemplos completos:
 
 - Esta skill é **o momento da verdade** do OS. Se falhar, o utilizador abandona. Por isso tem fallbacks em cada passo.
 - O HTML output é deliberadamente partilhável (sem JS, mobile-first) — converte o output pessoal em objeto social que circula pela comunidade.
-- Não se invoca `tool-output-verifier` por defeito para não adicionar tempo ao primeiro wow; se o utilizador pedir depois, sim.
-- Se o utilizador tiver Brand Voice já configurado, os hooks LinkedIn são gerados na sua voz; se não, em voz neutra com aviso.
+- Nêo se invoca `tool-output-verifier` por defeito para nêo adicionar tempo ao primeiro wow; se o utilizador pedir depois, sim.
+- Se o utilizador tiver Brand Voice já configurado, os hooks LinkedIn sêo gerados na sua voz; se nêo, em voz neutra com aviso.
